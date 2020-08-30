@@ -1,8 +1,10 @@
 /data/encoded/
 /data/medline_lastview.parquet/
-/data/subsets/
 /data/labels/original/
 /data/labels/mixthem.py
 /data/labels/swapthem.py
 /data/labels/toswap.csv
 /.idea
+get_ready.py
+get_stats.py
+make_features.py

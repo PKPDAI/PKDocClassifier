@@ -8,10 +8,11 @@ The final pipeline retrieved more than 120K PK publications and runs weekly upda
 
 # Reproducing our results
 
-## 1. Installation 
+## 1. Data download
 
+If you would like to reproduce the steps taken for data retrieval and parsing you will need to download the whole MEDLINE dataset and store it into a spark dataframe. 
+However, you can also skip this step and use the parsed data available at 
 
-## 2. Data download
-
+## 2. Installing dependencies 
 
 ## 3. Run
