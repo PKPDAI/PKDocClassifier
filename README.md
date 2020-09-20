@@ -5,11 +5,9 @@ This repository contains custom pipes and models to classify scientific publicat
 
 # Reproducing our results
 
-
 ## 1. Installing dependencies 
 
 You will need and environment with **Python 3.7 or greater**. We strongly recommend that you use an isolated Python environment (such as virtualenv or conda) to install the packages related to this project. Our default option will be to create a virtual environment with conda:
-
     
 1. If you don't have conda follow the instructions [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html?highlight=conda#regular-installation)
 
@@ -51,3 +49,6 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
 ## 3. Run
 
 1. To generate the different type of features
+
+The first step will be to generate the input features for each experiment before running the bootstrapping analyses. 
+
