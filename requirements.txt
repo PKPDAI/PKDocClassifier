@@ -1,33 +1,13 @@
-audioread==2.1.8
-bleach==3.1.4
-certifi==2020.6.20
-cffi==1.14.0
-chardet==3.0.4
-clausiepy==0.0.1
-idna==2.9
-importlib-metadata==1.6.0
-jeepney==0.4.3
-keyring==21.2.0
-librosa==0.7.2
 lxml==4.5.2
-numexpr==2.7.1
 pandas == 1.1.1
-pkginfo==1.5.0.1
 pubmed-parser @ git+https://github.com/fgh95/pubmed_parser.git@b4697873051b8a44de58ef0a43350a08a0e2f688
-pycparser==2.20
-Pygments==2.6.1
-python-dateutil==2.8.1
-pytz==2020.1
-readme-renderer==25.0
-requests==2.23.0
-requests-toolbelt==0.9.1
-resampy==0.2.2
-SecretStorage==3.1.2
-six==1.15.0
-SoundFile==0.10.3.post1
-tables==3.6.1
-twine==3.1.1
-Unidecode==1.1.1
-urllib3==1.25.10
-webencodings==0.5.1
-zipp==3.1.0
+pyspark==3.0.1
+spacy==2.3.2
+scispacy==0.2.5
+en-ner-bc5cdr-md @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.2.5/en_ner_bc5cdr_md-0.2.5.tar.gz
+scikit-learn==0.23.2
+nltk==3.5
+pyarrow==1.0.1
+
+
+
