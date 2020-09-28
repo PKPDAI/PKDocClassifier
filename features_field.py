@@ -1,4 +1,4 @@
-""" This script trains & applies a pre-processing SKlern pipeline and saves the output for future analyses"""
+""" This script trains & applies a pre-processing pipeline and saves the preprocessed text for future analyses"""
 
 import pandas as pd
 import os
@@ -41,7 +41,7 @@ if __name__ == '__main__':
     path_dev = os.path.join("data", "subsets", "dev_subset.parquet")
     out_dir = os.path.join("data", "encoded", "fields")
     if not os.path.isdir(out_dir):
-        os.mkdir(out_dir)
+        os.makedirs(out_dir, exist_ok=True)
     # 2. Define Field combinations
     to_process = [dict(name="title", field=["title"], ngram=1),
                   dict(name="abstract", field=["title", "abstract"], ngram=1),
@@ -53,7 +53,7 @@ if __name__ == '__main__':
                   dict(name="mesh", field=["title", "abstract", "mesh_terms"], ngram=1),
                   dict(name="pub_type", field=["title", "abstract", "publication_types"], ngram=1)
                   ]
-
+    # 3. Run encodings and save into output directory
     for inp_dict in tqdm(to_process):
         path_out_dev = os.path.join(out_dir, "dev_" + inp_dict["name"] + ".parquet")
         processthem(inp_path=path_dev, out_path=path_out_dev, field_list=inp_dict["field"], ngrams=inp_dict["ngram"])

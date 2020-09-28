@@ -17,11 +17,11 @@ def get_stats(inp_path, inp_labels_path):
 
 if __name__ == '__main__':
     # 0. Data path
-    data_dir = os.path.join("Analyses", "data")
+
     # 1. Input paths
-    path_dev = os.path.join(data_dir, "subsets", "dev_subset.parquet")
-    path_test = os.path.join(data_dir, "subsets", "test_subset.parquet")
-    path_labels_dev = os.path.join(data_dir, "labels", "dev_data.csv")
-    path_labels_test = os.path.join(data_dir, "labels", "test_data.csv")
+    path_dev = os.path.join("data", "subsets", "dev_subset.parquet")
+    path_test = os.path.join("data", "subsets", "test_subset.parquet")
+    path_labels_dev = os.path.join("data", "labels", "dev_data.csv")
+    path_labels_test = os.path.join("data", "labels", "test_data.csv")
     get_stats(inp_path=path_dev, inp_labels_path=path_labels_dev)
     get_stats(inp_path=path_test, inp_labels_path=path_labels_test)

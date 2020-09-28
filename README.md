@@ -28,6 +28,11 @@ Then, clone and access this repository on your local machine through:
 git clone https://github.com/fgh95/PKDocClassifier
 cd PKDocClassifier
 ````
+If you are on MacOSX run: 
+
+````
+brew install libomp
+````
 
 Install all dependencies by running: 
 

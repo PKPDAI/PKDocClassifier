@@ -8,6 +8,7 @@ en-ner-bc5cdr-md @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v
 scikit-learn==0.23.2
 nltk==3.5
 pyarrow==1.0.1
-
-
-
+tqdm==4.49.0
+numpy==1.19.2
+matplotlib==3.3.2
+xgboost == 0.90

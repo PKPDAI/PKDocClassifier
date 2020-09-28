@@ -1,0 +1,12 @@
+README.md
+setup.py
+encoders/__init__.py
+encoders/bootstrap.py
+encoders/utils.py
+pk_classifier.egg-info/PKG-INFO
+pk_classifier.egg-info/SOURCES.txt
+pk_classifier.egg-info/dependency_links.txt
+pk_classifier.egg-info/requires.txt
+pk_classifier.egg-info/top_level.txt
+sparksetup/__init__.py
+sparksetup/sparkconf.py
