@@ -3,12 +3,13 @@ import numpy as np
 import os
 from sklearn.pipeline import Pipeline, FeatureUnion
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-from sklearn.metrics import f1_score, precision_recall_fscore_support, make_scorer
+from sklearn.metrics import f1_score, precision_recall_fscore_support
 from sklearn.model_selection import train_test_split
 import xgboost as xgb
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 from encoders.bootstrap import Tokenizer, TextSelector
+import argparse
 
 
 def f1_eval(y_pred, dtrain):
@@ -36,8 +37,8 @@ def update(entry, main_data):
     return main_data
 
 
-def processthem(inp_tuple, rounds, test_prop, out_path_results, out_path_figure, out_path_bootstrap):
-    all_features, all_labs = read_in(inp_tuple[0], inp_tuple[1])
+def processthem(input_tuple, rounds, test_prop, out_path_results, out_path_figure, out_path_bootstrap):
+    all_features, all_labs = read_in(input_tuple[0], input_tuple[1])
 
     all_metrics_test = []
     ids_per_test = pd.DataFrame(all_labs['pmid'], columns=['pmid'])
@@ -148,14 +149,14 @@ def processthem(inp_tuple, rounds, test_prop, out_path_results, out_path_figure,
     print("Validation Median:", df_results_test.median())
     print("Validation std:", df_results_test.std())
     df_results_test.to_csv(out_path_results)
-    plotit(df_results_test, out_path=out_path_figure, field=None)
+    plot_it(df_results_test, out_path=out_path_figure)
 
     ids_per_test['CorrectlyClassified'] = ids_per_test[['times_correct']].div(ids_per_test.times_test, axis=0) * 100
     ids_per_val = ids_per_test.sort_values(by=['CorrectlyClassified'], ascending=True)
     ids_per_val.to_csv(out_path_bootstrap)
 
 
-def plotit(df_results, out_path=None, field=None):
+def plot_it(df_results, out_path=None):
     f1s = df_results['F1-score'].values
     plt.figure(figsize=(10, 10))
     plt.hist(f1s, bins='auto')  # arguments are passed to np.histogram
@@ -170,9 +171,54 @@ def plotit(df_results, out_path=None, field=None):
         plt.close()
 
 
+def run(input_dir: str, output_dir: str, output_dir_bootstrap: str, path_labels: str):
+    if not os.path.isdir(output_dir):
+        os.makedirs(output_dir, exist_ok=True)
+    if not os.path.isdir(output_dir_bootstrap):
+        os.makedirs(output_dir_bootstrap, exist_ok=True)
+
+    for inp_file in os.listdir(input_dir):
+        inp_path = os.path.join(input_dir, inp_file)
+        experiment_name = inp_file.replace("dev_", "").replace(".parquet", "")
+        print("================== ", experiment_name, "=============================")
+        # Define output
+        if "res_" + experiment_name + ".csv" not in os.listdir(output_dir):
+            out_res = os.path.join(output_dir, "res_" + experiment_name + ".csv")
+            out_fig = os.path.join(output_dir_bootstrap, "res_" + experiment_name + ".png")
+            out_dev = os.path.join(output_dir_bootstrap, "bootstrap_" + experiment_name + ".csv")
+            inp_tuple = (inp_path, path_labels)
+            processthem(input_tuple=inp_tuple, rounds=200, test_prop=0.2, out_path_results=out_res,
+                        out_path_figure=out_fig, out_path_bootstrap=out_dev)
+        else:
+            print("Ignoring ", experiment_name, " since there is already results files in output directory")
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-i", "--input-dir", type=str, help="The directory with files containing the encoded "
+                                                            "documents in parquet format. It will iterate over all "
+                                                            "files in this directory")
+
+    parser.add_argument("-o", "--output-dir", type=str, help="Output directory to save the results of each bootstrap "
+                                                             "iteration in a csv file.")
+
+    parser.add_argument("-ob", "--output-dir-bootstrap", type=str, help="Output directory to save the boostrap "
+                                                                        "results as the misclassification "
+                                                                        "rates per document during bootstrap.")
+
+    parser.add_argument("-l", "--path-labels", type=str, help="Path to the csv containing the labels of the training "
+                                                              "(dev) set")
+
+    args = parser.parse_args()
+    run(input_dir=args.input_dir, output_dir=args.output_dir, output_dir_bootstrap=args.out_dir_bootstrap,
+        path_labels=args.path_labels)
+
+
 if __name__ == '__main__':
+    main()
 
     # 1. Define input directory and labels (could make it an argparse)
+
     inp_dir = os.path.join("data", "encoded", "fields")
     out_dir = os.path.join("data", "results", "fields")
     out_dir_bootstrap = os.path.join("data", "results", "fields", "bootstrap")
@@ -183,14 +229,4 @@ if __name__ == '__main__':
     path_labels_dev = os.path.join("data", "labels", "dev_data.csv")
 
     # 2. Run bootstrap
-    for inp_file in os.listdir(inp_dir):
-        inp_path = os.path.join(inp_dir, inp_file)
-        experiment_name = inp_file.replace("dev_", "").replace(".parquet", "")
-        print("================== ", experiment_name, "=============================")
-        # Define output
-        out_res = os.path.join(out_dir, "res_" + experiment_name + ".csv")
-        out_fig = os.path.join(out_dir_bootstrap, "res_" + experiment_name + ".png")
-        out_dev = os.path.join(out_dir_bootstrap, "bootstrap_" + experiment_name + ".csv")
-        inp_tuple = (inp_path, path_labels_dev)
-        processthem(inp_tuple=inp_tuple, rounds=200, test_prop=0.2, out_path_results=out_res, out_path_figure=out_fig,
-                    out_path_bootstrap=out_dev)
+    run(input_dir=inp_dir, output_dir=out_dir, output_dir_bootstrap=out_dir_bootstrap, path_labels=path_labels_dev)

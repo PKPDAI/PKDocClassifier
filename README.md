@@ -53,7 +53,34 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
 
 ## 3. Run
 
-1. To generate the different type of features
+### 3.1. Field analysis and ngrams
 
-The first step will be to generate the input features for each experiment before running the bootstrapping analyses. 
+1. To generate the features run (~30min):
+
+````
+python features_bow.py
+````
+
+2. Bootstrap field analysis (~3h on 12 threads, requires at least 16GB of RAM)
+
+````
+python bootstrap_bow.py \
+    --input-dir data/encoded/fields \
+    --output-dir data/results/fields \
+    --output-dir-bootstrap data/results/fields/bootstrap \
+    --path-labels data/labels/dev_data.csv
+````
+
+3. Bootstrap n-grams (~3h on 12 threads, requires at least 16GB of RAM)
+
+````
+python bootstrap_bow.py \
+    --input-dir data/encoded/ngrams \
+    --output-dir data/results/ngrams \
+    --output-dir-bootstrap data/results/ngrams/bootstrap \
+    --path-labels data/labels/dev_data.csv
+````
+
+
+
 

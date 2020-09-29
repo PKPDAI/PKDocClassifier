@@ -7,5 +7,5 @@
 /.idea
 get_ready.py
 get_stats.py
-features_field.py
+features_bow.py
 /data/encoded/*
