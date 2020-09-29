@@ -81,6 +81,20 @@ python bootstrap_bow.py \
     --path-labels data/labels/dev_data.csv
 ````
 
+4. Display results
+
+````
+python display_results.py \
+    --input-dir  data/results/fields\
+    --output-dir data/final/fields
+````
+
+````
+python display_results.py \
+    --input-dir  data/results/ngrams\
+    --output-dir data/final/ngrams
+````
+
 
 
 

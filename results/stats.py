@@ -43,9 +43,9 @@ def extract_f1(inp_text):
 def rename(inp_word):
     mapper = dict(res_title='Title', res_authors='Authors', res_journal='Journal', res_keywords='Keywords',
                   res_abstract='Title + Abstract', res_chemical='Chemicals', res_mesh='MeSH', res_pub_type='Pub. Type',
-                  res_affiliations='Affiliations', res_all='All fields', res_optimal='Unigrams',
-                  res_optimal_bigr='Bigrams', res_optimal_trigr='Trigrams', res_specter_alone='SPECTER',
-                  res_biobert_bow_mean='BioBERT mean pooling',
+                  res_affiliations='Affiliations', res_all='All fields', res_optimal='Optimal Combination',
+                  res_unigrams='Unigrams', res_bigrams='Bigrams', res_trigrams='Trigrams',
+                  res_specter_alone='SPECTER', res_biobert_bow_mean='BioBERT mean pooling',
                   res_biobert_meanmaxmin='BioBERT mean \n + min + max pooling')
     if inp_word in mapper.keys():
         return mapper[inp_word]
@@ -85,15 +85,3 @@ def get_all_results(inp_result_files, input_dir, output_dir):
     plt.close()
 
 
-if __name__ == '__main__':
-    inp_dir = os.path.join("Analyses", "FieldImportance", "outputs_ngram")
-    all_files = os.listdir(inp_dir)
-    result_files = [x for x in all_files if "res_" in x and ".csv" in x]
-
-    get_all_results(result_files)
-
-    result = result_files[0]
-    sample_df = pd.read_csv(os.path.join(inp_dir, result))
-    sample_name = result.split(".")[0]
-
-    results_table = make_results_table2(sample_df, sample_name)

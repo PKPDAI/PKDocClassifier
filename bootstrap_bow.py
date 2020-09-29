@@ -210,23 +210,9 @@ def main():
                                                               "(dev) set")
 
     args = parser.parse_args()
-    run(input_dir=args.input_dir, output_dir=args.output_dir, output_dir_bootstrap=args.out_dir_bootstrap,
+    run(input_dir=args.input_dir, output_dir=args.output_dir, output_dir_bootstrap=args.output_dir_bootstrap,
         path_labels=args.path_labels)
 
 
 if __name__ == '__main__':
     main()
-
-    # 1. Define input directory and labels (could make it an argparse)
-
-    inp_dir = os.path.join("data", "encoded", "fields")
-    out_dir = os.path.join("data", "results", "fields")
-    out_dir_bootstrap = os.path.join("data", "results", "fields", "bootstrap")
-    if not os.path.isdir(out_dir):
-        os.makedirs(out_dir, exist_ok=True)
-    if not os.path.isdir(out_dir_bootstrap):
-        os.makedirs(out_dir_bootstrap, exist_ok=True)
-    path_labels_dev = os.path.join("data", "labels", "dev_data.csv")
-
-    # 2. Run bootstrap
-    run(input_dir=inp_dir, output_dir=out_dir, output_dir_bootstrap=out_dir_bootstrap, path_labels=path_labels_dev)
