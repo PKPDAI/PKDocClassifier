@@ -142,7 +142,7 @@ This should output two files in the data directory:
 
 3.2.3
 Then to run the boostrap: 
-
+````
 python bootstrap_dist.py \
     --is-specter true \
     --input-dir data/encoded/specter \
