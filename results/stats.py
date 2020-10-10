@@ -84,4 +84,3 @@ def get_all_results(inp_result_files, input_dir, output_dir):
     plt.show()
     plt.close()
 
-

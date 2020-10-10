@@ -1,9 +1,14 @@
 # PKDocClassifier
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/fgh95/PKDocClassifier/blob/master/LICENSE)
 
-This repository contains custom pipes and models to classify scientific publications from PubMed depending on whether they report new pharmacokinetic (PK) parameters from _in vivo_ studies. The final pipeline retrieved more than 120K PK publications and runs weekly updates. All the retrieved data has been accessible at https://stage-app.pkpdai.com/. 
+[**PKDocClassifier**](#pkdocclassifier) | [**Reproduce our results**](#reproduce-our-results) | [**Make new predictions**](#make-new-predictions) | [**Citing**](#citation)
 
-# Reproducing our results
+
+
+
+This repository contains custom pipes and models to classify scientific publications from PubMed depending on whether they report new pharmacokinetic (PK) parameters from _in vivo_ studies. The final pipeline retrieved more than 120K PK publications and runs weekly updates. All the retrieved data has been accessible at https://app.pkpdai.com/
+
+# Reproduce our results
 
 ## 1. Installing dependencies 
 
@@ -53,15 +58,15 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
 
 ## 3. Run
 
-### 3.1. Field analysis and ngrams
+### 3.1. Field analysis and N-grams
 
-1. To generate the features run (~30min):
+3.1.1. To generate the features run (~30min):
 
 ````
 python features_bow.py
 ````
 
-2. Bootstrap field analysis (~3h on 12 threads, requires at least 16GB of RAM)
+3.1.2. Bootstrap field analysis (~3h on 12 threads, requires at least 16GB of RAM)
 
 ````
 python bootstrap_bow.py \
@@ -71,7 +76,7 @@ python bootstrap_bow.py \
     --path-labels data/labels/dev_data.csv
 ````
 
-3. Bootstrap n-grams (~3h on 12 threads, requires at least 16GB of RAM)
+3.1.3. Bootstrap n-grams (~3h on 12 threads, requires at least 16GB of RAM)
 
 ````
 python bootstrap_bow.py \
@@ -81,7 +86,7 @@ python bootstrap_bow.py \
     --path-labels data/labels/dev_data.csv
 ````
 
-4. Display results
+3.1.4. Display results
 
 ````
 python display_results.py \
@@ -95,6 +100,57 @@ python display_results.py \
     --output-dir data/final/ngrams
 ````
 
+### 3.2. Distributed representations
 
 
+3.2.1 Encode using [SPECTER](https://github.com/allenai/specter)
 
+To generate the features with specter you can preprocess the data running: 
+
+````
+python preprocess_specter.py
+````
+
+This will generate the following input data as .ids and .json files at `data/encoded/specter/`. Finally, 
+to generate the input features you will need to clone the [SPECTER](https://github.com/allenai/specter) repo and follow the instructions on [how to use the pretrained model](https://github.com/allenai/specter#how-to-use-the-pretrained-model). 
+After cloning and installing SPECTER dependencies we used the following command from the specter directory to encode the documents: 
+
+ ````
+python scripts/embed.py \
+--ids ../data/encoded/specter/dev_ids.ids --metadata ../data/encoded/specter/dev_meta.json \
+--model ./model.tar.gz \
+--output-file ../data/encoded/specter/dev_specter.jsonl \
+--vocab-dir data/vocab/ \
+--batch-size 16 \
+--cuda-device -1
+ ````
+
+ ````
+python scripts/embed.py \
+--ids ../data/encoded/specter/test_ids.ids --metadata ../data/encoded/specter/test_meta.json \
+--model ./model.tar.gz \
+--output-file ../data/encoded/specter/test_specter.jsonl \
+--vocab-dir data/vocab/ \
+--batch-size 16 \
+--cuda-device -1
+ ````
+
+This should output two files in the data directory: 
+`/data/encoded/specter/dev_specter.jsonl` and `data/encoded/specter/test_specter.jsonl`
+
+3.2.2 Encode with BioBERT
+
+3.2.3
+Then to run the boostrap: 
+
+python bootstrap_dist.py \
+    --is-specter true \
+    --input-dir data/encoded/specter \
+    --output-dir data/results/distributional \
+    --output-dir-bootstrap data/results/fields/bootstrap \
+    --path-labels data/labels/dev_data.csv
+````
+
+# Make new predictions
+
+# Citation

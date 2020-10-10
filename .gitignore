@@ -9,3 +9,6 @@ get_ready.py
 get_stats.py
 features_bow.py
 /data/encoded/*
+/data/results/ngrams/bootstrap/
+/data/results/fields/bootstrap/
+/specter/
