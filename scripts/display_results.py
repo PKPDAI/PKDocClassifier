@@ -1,4 +1,4 @@
-from results.stats import get_all_results
+from pk_classifier.stats import get_all_results
 import os
 import argparse
 

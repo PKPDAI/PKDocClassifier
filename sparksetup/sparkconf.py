@@ -6,7 +6,6 @@ import findspark
 os.environ['JAVA_HOME'] = '/usr/lib/jvm/java-8-openjdk-amd64'
 findspark.init(spark_home="/opt/spark-2.4.4/")
 
-
 conf = SparkConf(). \
     setAppName('main'). \
     setMaster('local[*]'). \

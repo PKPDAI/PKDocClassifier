@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 import xgboost as xgb
 import matplotlib.pyplot as plt
 from tqdm import tqdm
-from encoders.bootstrap import Tokenizer, TextSelector
+from pk_classifier.bootstrap import Tokenizer, TextSelector
 import argparse
 
 

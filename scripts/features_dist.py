@@ -1,9 +1,8 @@
-from features_bow import run as run_bow
 import os
 import pandas as pd
 from tqdm import tqdm
 from sklearn.pipeline import Pipeline, FeatureUnion
-from encoders.utils import make_pipeline, Embedder, ConcatenizerEmb
+from pk_classifier.utils import make_pipeline, Embedder, ConcatenizerEmb
 
 
 def pre_process(inp_path, out_path, field_list, ngrams, maxmin):
