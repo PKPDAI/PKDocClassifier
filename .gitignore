@@ -5,9 +5,9 @@
 /data/labels/swapthem.py
 /data/labels/toswap.csv
 /.idea
-get_ready.py
-get_stats.py
-features_bow.py
+scripts/get_ready.py
+scripts/get_stats.py
+scripts/features_bow.py
 /data/encoded/*
 /data/results/ngrams/bootstrap/
 /data/results/fields/bootstrap/

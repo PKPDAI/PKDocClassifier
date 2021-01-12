@@ -14,4 +14,11 @@ numpy==1.19.2
 matplotlib==3.3.2
 xgboost == 0.90
 scipy==1.5.2
+requests==2.24.0
+regex==2020.9.27
+ujson==4.0.1
+torch==1.6.0
+six==1.15.0
+Unidecode==1.1.1
 setuptools==49.6.0
+transformers==3.3.1

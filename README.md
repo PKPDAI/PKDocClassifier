@@ -5,7 +5,6 @@
 
 
 
-
 This repository contains custom pipes and models to classify scientific publications from PubMed depending on whether they report new pharmacokinetic (PK) parameters from _in vivo_ studies. The final pipeline retrieved more than 120K PK publications and runs weekly updates. All the retrieved data has been accessible at https://app.pkpdai.com/
 
 # Reproduce our results
@@ -138,13 +137,17 @@ python scripts/embed.py \
 This should output two files in the data directory: 
 `/data/encoded/specter/dev_specter.jsonl` and `data/encoded/specter/test_specter.jsonl`
 
-3.2.2 Encode with BioBERT
+3.2.2 Run the following:
+
+````
+python features_dist.py
+````
 
 3.2.3
-Then to run the boostrap: 
+Then to run the boostrap for specter: 
 ````
 python bootstrap_dist.py \
-    --is-specter true \
+    --is-specter True \
     --input-dir data/encoded/specter \
     --output-dir data/results/distributional \
     --output-dir-bootstrap data/results/fields/bootstrap \
