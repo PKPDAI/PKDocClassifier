@@ -12,3 +12,4 @@ scripts/features_bow.py
 /data/results/ngrams/bootstrap/
 /data/results/fields/bootstrap/
 /specter/
+/pk_classifier.egg-info/
