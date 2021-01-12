@@ -1,0 +1,13 @@
+# This file may be used to create an environment using:
+# $ conda env create --name <env> --file <this file>
+# platform: linux-64
+name: fgh95
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.7
+
+  - pip:
+    - -r file:requirements.txt
