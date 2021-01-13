@@ -38,14 +38,17 @@ def run(list_dict, input_file, output_dir):
 
 
 if __name__ == '__main__':
-    # 1. Input paths and output dirs specter
+
     path_dev = os.path.join("data", "subsets", "dev_subset.parquet")
+
+    # 1. Process data for specter
+
     out_dir_specter = os.path.join("data", "encoded", "specter")
 
     to_process = [dict(name="specter", field=["mesh_terms", "publication_types"], ngram=1)]
     # TODO:careful    run_bow(to_process, path_dev, out_dir_specter)
 
-    # 2. Input paths and output dirs BioBERT
+    # 2. Process data for BioBERT
 
     out_dir_biobert = os.path.join("data", "encoded", "biobert")
     to_process2 = [dict(name="biobert_avg", field=["mesh_terms", "publication_types"], ngram=1, maxmin=False),

@@ -56,7 +56,7 @@ class BoWPreproc(BaseEstimator, TransformerMixin):
         # 2. Load spacy NER model for drugs:
         nlp = spacy.load("en_ner_bc5cdr_md")
         # 3. Apply model to all strings:
-        docs = list(nlp.pipe(all_str))
+        docs = nlp.pipe(all_str)
         # 4. Preprocess text:
         all_ready = [preprocess(spacy_obj=doc, ident=self.identifier, unifier=self.unifier, ngram=self.ngram,
                                 masking=self.mask_drugs) for doc in docs]
@@ -317,11 +317,14 @@ def tokens_emb(sentence, inp_tokenizer, inp_model):
 
 def sentence_emb(inp_token_embeddings, n=4):
     """
-    Adds the last 4 layers of each token and stacks all the input token representations
+    Adds the last 4 layers of each token and stacks all the input token representations except the first and last ones.
+    It considers that the first and last tokens are special BERT tokens (CLS and SEP) and it drops them within the
+    function
     :param inp_token_embeddings: torch tensor with all the token embeddings in each layer
     :param n: number of layers to add up
     :return: torch representation of all tokens stacked
     """
+    inp_token_embeddings = inp_token_embeddings[1:-1]
     token_vecs_sum = torch.stack(
         [torch.sum(token[-n:], dim=0) for token in inp_token_embeddings])  # sum across last 4 layers
     return token_vecs_sum

@@ -6,13 +6,13 @@
 
 
 
-This repository contains custom pipes and models to classify scientific publications from PubMed depending on whether they report new pharmacokinetic (PK) parameters from _in vivo_ studies. The final pipeline retrieved more than 120K PK publications and runs weekly updates. All the retrieved data has been accessible at https://app.pkpdai.com/
+This repository contains custom pipes and models to classify scientific publications from PubMed depending on whether they estimate pharmacokinetic (PK) parameters from _in vivo_ studies. The final pipeline retrieved more than 120K PK publications and runs weekly updates. All the retrieved data has been accessible at https://app.pkpdai.com/
 
 # Reproduce our results
 
 ## 1. Installing dependencies 
 
-You will need and environment with **Python 3.7 or greater**. We strongly recommend that you use an isolated Python environment (such as virtualenv or conda) to install the packages related to this project. Our default option will be to create a virtual environment with conda:
+You will need an environment with **Python 3.7+**. We strongly recommend that you use an isolated Python environment (such as virtualenv or conda) to install the packages related to this project. Our default option will be to create a virtual environment with conda:
     
 1. If you don't have anaconda installed follow the instructions [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html?highlight=conda#regular-installation)
 
@@ -59,13 +59,13 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
 1. To generate the features run (~30min):
 
    ````
-   python features_bow.py
+   python scripts/features_bow.py
    ````
 
 2. Bootstrap field analysis (~3h on 12 threads, requires at least 16GB of RAM)
 
    ````
-   python bootstrap_bow.py \
+   python scripts/bootstrap_bow.py \
        --input-dir data/encoded/fields \
        --output-dir data/results/fields \
        --output-dir-bootstrap data/results/fields/bootstrap \
@@ -75,7 +75,7 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
 3. Bootstrap n-grams (~3h on 12 threads, requires at least 16GB of RAM)
 
    ````
-   python bootstrap_bow.py \
+   python scripts/bootstrap_bow.py \
        --input-dir data/encoded/ngrams \
        --output-dir data/results/ngrams \
        --output-dir-bootstrap data/results/ngrams/bootstrap \
@@ -85,13 +85,13 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
 4. Display results
 
    ````
-   python display_results.py \
+   python scripts/display_results.py \
        --input-dir  data/results/fields\
        --output-dir data/final/fields
    ````
 
    ````
-   python display_results.py \
+   python scripts/display_results.py \
        --input-dir  data/results/ngrams\
        --output-dir data/final/ngrams
    ````
@@ -107,7 +107,7 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
 
    This will generate the following input data as .ids and .json files at `data/encoded/specter/`. Finally, 
    to generate the input features you will need to clone the [SPECTER](https://github.com/allenai/specter) repo and follow the instructions on [how to use the pretrained model](https://github.com/allenai/specter#how-to-use-the-pretrained-model). 
-   After cloning and installing SPECTER dependencies we used the following command from the specter directory to encode the documents: 
+   After cloning and installing SPECTER dependencies we ran the following command from the specter directory to encode the documents: 
 
    ````
    python scripts/embed.py \
@@ -136,12 +136,12 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
 2. Generate BioBERT representations:
 
    ````
-   python features_dist.py
+   python scripts/features_dist.py
    ````
 
 3. Run bootstrap iterations for distributed representations:
    ````
-   python bootstrap_dist.py \
+   python scripts/bootstrap_dist.py \
        --is-specter True \
        --input-dir data/encoded/specter \
        --output-dir data/results/distributional \

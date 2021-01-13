@@ -15,23 +15,22 @@ def processthem(inp_path):
     return ids_ready, meta_ready
 
 
-def save_ids(inp_list, out_dir, out_file):
-    if not os.path.isdir(out_dir):
-        os.makedirs(out_dir, exist_ok=True)
+def save_ids(inp_list, output_dir, out_file):
+    if not os.path.isdir(output_dir):
+        os.makedirs(output_dir, exist_ok=True)
 
-    out_name = os.path.join(out_dir, out_file)
+    out_name = os.path.join(output_dir, out_file)
 
     with open(out_name, 'w') as f:
         for temp_item in inp_list:
             f.write('%i\n' % temp_item)
 
 
-def save_json(inp_dict, out_dir, out_file):
+def save_json(inp_dict, output_dir, out_file):
+    if not os.path.isdir(output_dir):
+        os.makedirs(output_dir, exist_ok=True)
 
-    if not os.path.isdir(out_dir):
-        os.makedirs(out_dir, exist_ok=True)
-
-    out_name = os.path.join(out_dir, out_file)
+    out_name = os.path.join(output_dir, out_file)
 
     with open(out_name, 'w', encoding='utf-8') as f:
         json.dump(inp_dict, f, ensure_ascii=False)
@@ -46,8 +45,8 @@ if __name__ == '__main__':
     dev_ids, dev_meta = processthem(path_dev)
     test_ids, test_meta = processthem(path_test)
 
-    save_ids(dev_ids, out_dir, "dev_ids.ids")
-    save_ids(test_ids, out_dir, "test_ids.ids")
+    save_ids(inp_list=dev_ids, output_dir=out_dir, out_file="dev_ids.ids")
+    save_ids(inp_list=test_ids, output_dir=out_dir, out_file="test_ids.ids")
 
-    save_json(dev_meta, out_dir, "dev_meta.json")
-    save_json(test_meta, out_dir, "test_meta.json")
+    save_json(inp_dict=dev_meta, output_dir=out_dir, out_file="dev_meta.json")
+    save_json(inp_dict=test_meta, output_dir=out_dir, out_file="test_meta.json")
