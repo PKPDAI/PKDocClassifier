@@ -1,5 +1,5 @@
 # PKDocClassifier
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/fgh95/PKDocClassifier/blob/master/LICENSE) ![version](https://img.shields.io/badge/version-0.0.1-blue) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://app.pkpdai.com/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/fgh95/PKDocClassifier/blob/master/LICENSE) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://app.pkpdai.com/) ![version](https://img.shields.io/badge/version-0.1.0-blue) 
 
 
 [**PKDocClassifier**](#pkdocclassifier) | [**Reproduce our results**](#reproduce-our-results) | [**Make new predictions**](#make-new-predictions) | [**Citing**](#citation)
@@ -99,57 +99,55 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
 ### 3.2. Distributed representations
 
 
-3.2.1 Encode using [SPECTER](https://github.com/allenai/specter)
+1. Encode using [SPECTER](https://github.com/allenai/specter). To generate the features with specter you can preprocess the data running: 
 
-To generate the features with specter you can preprocess the data running: 
+   ````
+   python preprocess_specter.py
+   ````
 
-````
-python preprocess_specter.py
-````
+   This will generate the following input data as .ids and .json files at `data/encoded/specter/`. Finally, 
+   to generate the input features you will need to clone the [SPECTER](https://github.com/allenai/specter) repo and follow the instructions on [how to use the pretrained model](https://github.com/allenai/specter#how-to-use-the-pretrained-model). 
+   After cloning and installing SPECTER dependencies we used the following command from the specter directory to encode the documents: 
 
-This will generate the following input data as .ids and .json files at `data/encoded/specter/`. Finally, 
-to generate the input features you will need to clone the [SPECTER](https://github.com/allenai/specter) repo and follow the instructions on [how to use the pretrained model](https://github.com/allenai/specter#how-to-use-the-pretrained-model). 
-After cloning and installing SPECTER dependencies we used the following command from the specter directory to encode the documents: 
+   ````
+   python scripts/embed.py \
+   --ids ../data/encoded/specter/dev_ids.ids --metadata ../data/encoded/specter/dev_meta.json \
+   --model ./model.tar.gz \
+   --output-file ../data/encoded/specter/dev_specter.jsonl \
+   --vocab-dir data/vocab/ \
+   --batch-size 16 \
+   --cuda-device -1
+   ````
 
- ````
-python scripts/embed.py \
---ids ../data/encoded/specter/dev_ids.ids --metadata ../data/encoded/specter/dev_meta.json \
---model ./model.tar.gz \
---output-file ../data/encoded/specter/dev_specter.jsonl \
---vocab-dir data/vocab/ \
---batch-size 16 \
---cuda-device -1
- ````
+   ````
+   python scripts/embed.py \
+   --ids ../data/encoded/specter/test_ids.ids --metadata ../data/encoded/specter/test_meta.json \
+   --model ./model.tar.gz \
+   --output-file ../data/encoded/specter/test_specter.jsonl \
+   --vocab-dir data/vocab/ \
+   --batch-size 16 \
+   --cuda-device -1
+   ````
 
- ````
-python scripts/embed.py \
---ids ../data/encoded/specter/test_ids.ids --metadata ../data/encoded/specter/test_meta.json \
---model ./model.tar.gz \
---output-file ../data/encoded/specter/test_specter.jsonl \
---vocab-dir data/vocab/ \
---batch-size 16 \
---cuda-device -1
- ````
+   This should output two files in the data directory: 
+   `/data/encoded/specter/dev_specter.jsonl` and `data/encoded/specter/test_specter.jsonl`
 
-This should output two files in the data directory: 
-`/data/encoded/specter/dev_specter.jsonl` and `data/encoded/specter/test_specter.jsonl`
 
-3.2.2 Run the following:
+2. Generate BioBERT representations:
 
-````
-python features_dist.py
-````
+   ````
+   python features_dist.py
+   ````
 
-3.2.3
-Then to run the boostrap for specter: 
-````
-python bootstrap_dist.py \
-    --is-specter True \
-    --input-dir data/encoded/specter \
-    --output-dir data/results/distributional \
-    --output-dir-bootstrap data/results/fields/bootstrap \
-    --path-labels data/labels/dev_data.csv
-````
+3. Run bootstrap iterations for distributed representations:
+   ````
+   python bootstrap_dist.py \
+       --is-specter True \
+       --input-dir data/encoded/specter \
+       --output-dir data/results/distributional \
+       --output-dir-bootstrap data/results/fields/bootstrap \
+       --path-labels data/labels/dev_data.csv
+   ````
 
 # Make new predictions
 
