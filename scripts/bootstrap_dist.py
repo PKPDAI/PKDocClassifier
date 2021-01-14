@@ -3,55 +3,18 @@ import numpy as np
 import os
 from sklearn.pipeline import Pipeline, FeatureUnion
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-from sklearn.metrics import f1_score, precision_recall_fscore_support
+from sklearn.metrics import precision_recall_fscore_support
 from sklearn.model_selection import train_test_split
 import xgboost as xgb
-import matplotlib.pyplot as plt
 from tqdm import tqdm
-from pk_classifier.bootstrap import Tokenizer, TextSelector
 import argparse
 import warnings
-from pk_classifier.utils import read_jsonl
+from pk_classifier.bootstrap import Tokenizer, TextSelector, plot_it, f1_eval, update, read_in_distributional
 
 
-def f1_eval(y_pred, dtrain):
-    y_true = dtrain.get_label()
-    err = 1 - f1_score(y_true, np.round(y_pred), pos_label=1.)
-    return 'f1_err', err
-
-
-def read_in(path_preproc, path_labels, is_specter):
-    """Gets features and labels paths, reads in and checks that PMIDs correspond between files and that there are
-    only 2 labels. Returns data as 2 pandas dataframes"""
-    if is_specter:
-        emb_features = read_jsonl(path_preproc)
-        emb_features = pd.DataFrame([(int(entry['paper_id']), entry['embedding']) for entry in emb_features],
-                                    columns=['pmid', 'embedding']).sort_values(by=['pmid']).reset_index(drop=True)
-
-        emb_features['BoW_Ready'] = pd.read_parquet(path_preproc.replace("jsonl", "parquet")). \
-            sort_values(by=['pmid']).reset_index(drop=True)['BoW_Ready']
-        features = emb_features
-
-    else:
-        features = pd.read_parquet(path_preproc).sort_values(by=['pmid']).reset_index(drop=True)
-
-    labs = pd.read_csv(path_labels).sort_values(by=['pmid']).reset_index(drop=True)
-    assert all(features['pmid'] == labs['pmid'])
-    assert len(labs['label'].unique()) == 2
-    return features, labs
-
-
-def update(entry, main_data):
-    result = entry['Result']
-    pmid = entry['pmid']
-    position_main_data = int(np.where(main_data['pmid'] == pmid)[0])
-    main_data.at[position_main_data, 'times_correct'] = main_data.iloc[position_main_data]['times_correct'] + result
-    main_data.at[position_main_data, 'times_test'] = main_data.iloc[position_main_data]['times_test'] + 1
-    return main_data
-
-
-def processthem(input_tuple, rounds, test_prop, out_path_results, out_path_figure, out_path_bootstrap, is_specter):
-    all_features, all_labs = read_in(input_tuple[0], input_tuple[1], is_specter)
+def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figure, out_path_bootstrap, is_specter,
+                 use_bow, path_optimal_bow):
+    all_features, all_labs = read_in_distributional(input_tuple[0], input_tuple[1], is_specter, path_optimal_bow)
 
     all_metrics_test = []
     ids_per_test = pd.DataFrame(all_labs['pmid'], columns=['pmid'])
@@ -102,27 +65,36 @@ def processthem(input_tuple, rounds, test_prop, out_path_results, out_path_figur
                                     max_depth=4, learning_rate=0.1, colsample_bytree=1.,
                                     scale_pos_weight=balancing_factor, nthread=-1)
 
-        # Define encoding pipeline
-        EncPip = Pipeline([
-            ('encoder', FeatureUnion(transformer_list=[
-                ('bow', Pipeline([
-                    ('selector', TextSelector('BoW_Ready', emb=False)),
-                    ('vect', encoder),
-                    ('norm', normalizer)
-                ])
-                 ),
-                ('abs', Pipeline([
-                    ('selector', TextSelector('embedding', emb=True))
+        if use_bow:
+            # Define encoding pipeline
+            EncPip = Pipeline([
+                ('encoder', FeatureUnion(transformer_list=[
+                    ('bow', Pipeline([
+                        ('selector', TextSelector('BoW_Ready', emb=False)),
+                        ('vect', encoder),
+                        ('norm', normalizer)
+                    ])
+                     ),
+                    ('abs', Pipeline([
+                        ('selector', TextSelector('embedding', emb=True))
+                    ]))
                 ]))
+            ])
 
-            ]))
-        ])
+        else:
+            EncPip = Pipeline([
+                ('encoder', FeatureUnion(transformer_list=[
+                    ('abs', Pipeline([
+                        ('selector', TextSelector('embedding', emb=True))
+                    ]))
+                ]))
+            ])
 
         x_train_features = EncPip.fit_transform(x_train)
         x_val_features = EncPip.transform(x_val)
         if a == 0:
             print("Using: ", x_train_features.shape[1], "features")
-            a = 1
+
         eval_set = [(x_train_features, y_train), (x_val_features, y_val)]
 
         decoder.fit(x_train_features, y_train, eval_set=eval_set, verbose=False,
@@ -173,22 +145,8 @@ def processthem(input_tuple, rounds, test_prop, out_path_results, out_path_figur
     ids_per_val.to_csv(out_path_bootstrap)
 
 
-def plot_it(df_results, out_path=None):
-    f1s = df_results['F1-score'].values
-    plt.figure(figsize=(10, 10))
-    plt.hist(f1s, bins='auto')  # arguments are passed to np.histogram
-    plt.title("F1-distribution")
-    plt.ylabel('Absolute frequency')
-    plt.xlabel('F1-score')
-    if out_path:
-        plt.savefig(out_path)
-        plt.close()
-    else:
-        plt.show()
-        plt.close()
-
-
-def run(is_specter: str, input_dir: str, output_dir: str, output_dir_bootstrap: str, path_labels: str):
+def run(is_specter: bool, use_bow: bool, input_dir: str, output_dir: str, output_dir_bootstrap: str, path_labels: str,
+        path_optimal_bow: str):
     if not os.path.isdir(output_dir):
         os.makedirs(output_dir, exist_ok=True)
     if not os.path.isdir(output_dir_bootstrap):
@@ -211,8 +169,9 @@ def run(is_specter: str, input_dir: str, output_dir: str, output_dir_bootstrap: 
             out_fig = os.path.join(output_dir_bootstrap, "res_" + experiment_name + ".png")
             out_dev = os.path.join(output_dir_bootstrap, "bootstrap_" + experiment_name + ".csv")
             inp_tuple = (inp_path, path_labels)
-            processthem(input_tuple=inp_tuple, rounds=200, test_prop=0.2, out_path_results=out_res,
-                        out_path_figure=out_fig, out_path_bootstrap=out_dev, is_specter=is_specter)
+            process_them(input_tuple=inp_tuple, rounds=200, test_prop=0.2, out_path_results=out_res,
+                         out_path_figure=out_fig, out_path_bootstrap=out_dev, is_specter=is_specter, use_bow=use_bow,
+                         path_optimal_bow=path_optimal_bow)
         else:
             message = "Ignoring " + experiment_name + " since there is already results files in output directory."
             warnings.warn(message)
@@ -220,25 +179,38 @@ def run(is_specter: str, input_dir: str, output_dir: str, output_dir_bootstrap: 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-s", "--is-specter", type=bool, choices=[True, False],
-                        help="Determine whether the input to process is from SPECTER")
+    parser.add_argument("--is-specter", type=bool, choices=[True, False],
+                        help="Determine whether the input to process is from SPECTER",
+                        default=False)
 
-    parser.add_argument("-i", "--input-dir", type=str, help="The directory with files containing the encoded "
-                                                            "documents in jsonl or .parquet format.")
+    parser.add_argument("--use-bow", type=bool, choices=[True, False],
+                        help="Whether to use BoW feature representations concatenated to the BERT ones",
+                        default=False)
 
-    parser.add_argument("-o", "--output-dir", type=str, help="Output directory to save the results of each bootstrap "
-                                                             "iteration in a csv file.")
+    parser.add_argument("--input-dir", type=str, help="The directory with files containing the encoded "
+                                                      "documents in jsonl or .parquet format.",
+                        default="../data/encoded/biobert")
 
-    parser.add_argument("-ob", "--output-dir-bootstrap", type=str, help="Output directory to save the boostrap "
-                                                                        "results as the misclassification "
-                                                                        "rates per document during bootstrap.")
+    parser.add_argument("--output-dir", type=str, help="Output directory to save the results of each bootstrap "
+                                                       "iteration in a csv file.",
+                        default="../data/results/distributional")
 
-    parser.add_argument("-l", "--path-labels", type=str, help="Path to the csv containing the labels of the training "
-                                                              "(dev) and test set")
+    parser.add_argument("--output-dir-bootstrap", type=str, help="Output directory to save the boostrap "
+                                                                 "results as the misclassification "
+                                                                 "rates per document during bootstrap.",
+                        default="../data/results/distributional/bootstrap")
+
+    parser.add_argument("--path-labels", type=str, help="Path to the csv containing the labels of the training "
+                                                        "(dev) and test set",
+                        default="../data/labels/dev_data.csv")
+
+    parser.add_argument("--path-optimal-bow", type=str, help="Path to the parquet file with the optimal BoW features",
+                        default="../data/encoded/ngrams/dev_unigrams.parquet")
 
     args = parser.parse_args()
-    run(is_specter=args.is_specter, input_dir=args.input_dir, output_dir=args.output_dir,
-        output_dir_bootstrap=args.output_dir_bootstrap, path_labels=args.path_labels)
+    run(is_specter=args.is_specter, use_bow=args.use_bow, input_dir=args.input_dir, output_dir=args.output_dir,
+        output_dir_bootstrap=args.output_dir_bootstrap, path_labels=args.path_labels,
+        path_optimal_bow=args.path_optimal_bow)
 
 
 if __name__ == '__main__':

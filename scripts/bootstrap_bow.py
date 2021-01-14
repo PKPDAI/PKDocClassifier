@@ -3,42 +3,16 @@ import numpy as np
 import os
 from sklearn.pipeline import Pipeline, FeatureUnion
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-from sklearn.metrics import f1_score, precision_recall_fscore_support
+from sklearn.metrics import precision_recall_fscore_support
 from sklearn.model_selection import train_test_split
 import xgboost as xgb
-import matplotlib.pyplot as plt
 from tqdm import tqdm
-from pk_classifier.bootstrap import Tokenizer, TextSelector
 import argparse
+from pk_classifier.bootstrap import Tokenizer, TextSelector, f1_eval, plot_it, update, read_in_bow
 
 
-def f1_eval(y_pred, dtrain):
-    y_true = dtrain.get_label()
-    err = 1 - f1_score(y_true, np.round(y_pred), pos_label=1.)
-    return 'f1_err', err
-
-
-def read_in(path_preproc, path_labels):
-    """Gets features and labels paths, reads in and checks that PMIDs correspond between files and that there are
-    only 2 labels. Returns data as 2 pandas dataframes"""
-    features = pd.read_parquet(path_preproc).sort_values(by=['pmid']).reset_index(drop=True)
-    labs = pd.read_csv(path_labels).sort_values(by=['pmid']).reset_index(drop=True)
-    assert all(labs['pmid'] == features['pmid'])
-    assert len(labs['label'].unique()) == 2
-    return features, labs
-
-
-def update(entry, main_data):
-    result = entry['Result']
-    pmid = entry['pmid']
-    position_main_data = int(np.where(main_data['pmid'] == pmid)[0])
-    main_data.at[position_main_data, 'times_correct'] = main_data.iloc[position_main_data]['times_correct'] + result
-    main_data.at[position_main_data, 'times_test'] = main_data.iloc[position_main_data]['times_test'] + 1
-    return main_data
-
-
-def processthem(input_tuple, rounds, test_prop, out_path_results, out_path_figure, out_path_bootstrap):
-    all_features, all_labs = read_in(input_tuple[0], input_tuple[1])
+def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figure, out_path_bootstrap):
+    all_features, all_labs = read_in_bow(input_tuple[0], input_tuple[1])
 
     all_metrics_test = []
     ids_per_test = pd.DataFrame(all_labs['pmid'], columns=['pmid'])
@@ -156,21 +130,6 @@ def processthem(input_tuple, rounds, test_prop, out_path_results, out_path_figur
     ids_per_val.to_csv(out_path_bootstrap)
 
 
-def plot_it(df_results, out_path=None):
-    f1s = df_results['F1-score'].values
-    plt.figure(figsize=(10, 10))
-    plt.hist(f1s, bins='auto')  # arguments are passed to np.histogram
-    plt.title("F1-distribution")
-    plt.ylabel('Absolute frequency')
-    plt.xlabel('F1-score')
-    if out_path:
-        plt.savefig(out_path)
-        plt.close()
-    else:
-        plt.show()
-        plt.close()
-
-
 def run(input_dir: str, output_dir: str, output_dir_bootstrap: str, path_labels: str):
     if not os.path.isdir(output_dir):
         os.makedirs(output_dir, exist_ok=True)
@@ -187,8 +146,8 @@ def run(input_dir: str, output_dir: str, output_dir_bootstrap: str, path_labels:
             out_fig = os.path.join(output_dir_bootstrap, "res_" + experiment_name + ".png")
             out_dev = os.path.join(output_dir_bootstrap, "bootstrap_" + experiment_name + ".csv")
             inp_tuple = (inp_path, path_labels)
-            processthem(input_tuple=inp_tuple, rounds=200, test_prop=0.2, out_path_results=out_res,
-                        out_path_figure=out_fig, out_path_bootstrap=out_dev)
+            process_them(input_tuple=inp_tuple, rounds=200, test_prop=0.2, out_path_results=out_res,
+                         out_path_figure=out_fig, out_path_bootstrap=out_dev)
         else:
             print("Ignoring ", experiment_name, " since there is already results files in output directory")
 

@@ -143,11 +143,34 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
    ````
    python scripts/bootstrap_dist.py \
        --is-specter True \
+       --use-bow False \
        --input-dir data/encoded/specter \
        --output-dir data/results/distributional \
-       --output-dir-bootstrap data/results/fields/bootstrap \
-       --path-labels data/labels/dev_data.csv
+       --output-dir-bootstrap data/results/distributional/bootstrap \
+       --path-labels data/labels/dev_data.csv \
+       --path-optimal-bow data/encoded/ngrams/dev_unigrams.parquet
    ````
+   
+   ````
+   python scripts/bootstrap_dist.py \
+       --is-specter False \
+       --use-bow False \
+       --input-dir data/encoded/biobert \
+       --output-dir data/results/distributional \
+       --output-dir-bootstrap data/results/distributional/bootstrap \
+       --path-labels data/labels/dev_data.csv \
+       --path-optimal-bow data/encoded/ngrams/dev_unigrams.parquet
+   ````
+
+   
+4. Display results
+
+   ````
+   python scripts/display_results.py \
+       --input-dir  data/results/distributional\
+       --output-dir data/final/distributional
+   ````
+
 
 # Make new predictions
 

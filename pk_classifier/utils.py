@@ -391,9 +391,12 @@ class Embedder(BaseEstimator, TransformerMixin):
 
         abs_docs_clean_s = pd.Series(abs_docs_cl)
         titles_docs_clean_s = pd.Series(titles_docs_cl)
-        embedded_combied_df = pd.concat([X[self.fields[2]], abs_docs_clean_s, titles_docs_clean_s],
-                                        axis=1)
-        embedded_combied_df.columns = ['BoW_Ready', 'abstracts_embedded', 'titles_embedded']
+        if 'BoW_Ready' in self.fields:
+            embedded_combied_df = pd.concat([X[self.fields[2]], abs_docs_clean_s, titles_docs_clean_s],
+                                            axis=1)
+            embedded_combied_df.columns = ['BoW_Ready', 'abstracts_embedded', 'titles_embedded']
+        else:
+            embedded_combied_df = pd.concat([abs_docs_clean_s, titles_docs_clean_s], axis=1)
+            embedded_combied_df.columns = ['abstracts_embedded', 'titles_embedded']
 
         return embedded_combied_df
-
