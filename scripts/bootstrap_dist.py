@@ -9,7 +9,7 @@ import xgboost as xgb
 from tqdm import tqdm
 import argparse
 import warnings
-from pk_classifier.bootstrap import Tokenizer, TextSelector, plot_it, f1_eval, update, read_in_distributional
+from pk_classifier.bootstrap import Tokenizer, TextSelector, plot_it, f1_eval, update, read_in_distributional, str2bool
 
 
 def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figure, out_path_bootstrap, is_specter,
@@ -147,21 +147,27 @@ def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figu
 
 def run(is_specter: bool, use_bow: bool, input_dir: str, output_dir: str, output_dir_bootstrap: str, path_labels: str,
         path_optimal_bow: str):
+    print('hi')
     if not os.path.isdir(output_dir):
         os.makedirs(output_dir, exist_ok=True)
     if not os.path.isdir(output_dir_bootstrap):
         os.makedirs(output_dir_bootstrap, exist_ok=True)
-
+    print('ho')
+    print(is_specter)
+    print(output_dir)
     if is_specter:
         inp_files = [x for x in os.listdir(input_dir) if "dev_specter.jsonl" == x]
         repl = ".jsonl"
     else:
         inp_files = os.listdir(input_dir)
         repl = ".parquet"
+        print(inp_files)
 
     for inp_file in inp_files:
         inp_path = os.path.join(input_dir, inp_file)
         experiment_name = inp_file.replace("dev_", "").replace(repl, "")
+        if use_bow:
+            experiment_name = experiment_name + "_bow"
         print("================== ", experiment_name, "=============================")
         # Define output
         if "res_" + experiment_name + ".csv" not in os.listdir(output_dir):
@@ -179,13 +185,15 @@ def run(is_specter: bool, use_bow: bool, input_dir: str, output_dir: str, output
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--is-specter", type=bool, choices=[True, False],
+    parser.add_argument("--is-specter", type=str2bool, nargs='?',
                         help="Determine whether the input to process is from SPECTER",
+                        const=True,
                         default=False)
 
-    parser.add_argument("--use-bow", type=bool, choices=[True, False],
+    parser.add_argument("--use-bow", type=str2bool, nargs='?',
                         help="Whether to use BoW feature representations concatenated to the BERT ones",
-                        default=False)
+                        const=True,
+                        default=True)
 
     parser.add_argument("--input-dir", type=str, help="The directory with files containing the encoded "
                                                       "documents in jsonl or .parquet format.",

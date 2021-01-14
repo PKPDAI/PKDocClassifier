@@ -1,3 +1,5 @@
+import argparse
+
 from sklearn.base import BaseEstimator, TransformerMixin
 from scipy.sparse import csr_matrix
 import matplotlib.pyplot as plt
@@ -93,3 +95,17 @@ def read_in_bow(path_preproc, path_labels):
     assert features['pmid'].equals(labs['pmid'])
     assert len(labs['label'].unique()) == 2
     return features, labs
+
+
+def str2bool(v):
+    """
+    Taken from https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
+    """
+    if isinstance(v, bool):
+        return v
+    if v.lower() in ('yes', 'true', 't', 'y', '1'):
+        return True
+    elif v.lower() in ('no', 'false', 'f', 'n', '0'):
+        return False
+    else:
+        raise argparse.ArgumentTypeError('Boolean value expected.')
