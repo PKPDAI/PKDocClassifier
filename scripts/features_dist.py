@@ -34,29 +34,34 @@ def mini_preprocess(inp_path, out_path):
     old_df.to_parquet(out_path)
 
 
-def run(list_dict, input_file, output_dir):
+def run(list_dict, input_file, output_dir, is_test):
     if not os.path.isdir(output_dir):
         os.makedirs(output_dir, exist_ok=True)
     for inp_dict in tqdm(list_dict):
         maxmin = inp_dict["maxmin"]
-        if "dev_" + inp_dict["name"] + ".parquet" not in os.listdir(output_dir):
-            path_out_dev = os.path.join(output_dir, "dev_" + inp_dict["name"] + ".parquet")
-            if inp_dict["name"] == "biobert_avg" and "dev_biobert_all.parquet" in os.listdir(output_dir):
-                mini_preprocess(inp_path=os.path.join(output_dir, "dev_biobert_all.parquet"), out_path=path_out_dev)
-            else:
-                pre_process(inp_path=input_file, out_path=path_out_dev, maxmin=maxmin)
-                #   field_list=inp_dict["field"],
-                # ngrams=inp_dict["ngram"], maxmin=maxmin)
+        if not is_test:
+            if "dev_" + inp_dict["name"] + ".parquet" not in os.listdir(output_dir):
+                path_out_dev = os.path.join(output_dir, "dev_" + inp_dict["name"] + ".parquet")
+                if inp_dict["name"] == "biobert_avg" and "dev_biobert_all.parquet" in os.listdir(output_dir):
+                    mini_preprocess(inp_path=os.path.join(output_dir, "dev_biobert_all.parquet"), out_path=path_out_dev)
+                else:
+                    pre_process(inp_path=input_file, out_path=path_out_dev, maxmin=maxmin)
+        else:
+            if "test_" + inp_dict["name"] + ".parquet" not in os.listdir(output_dir):
+                path_out_test = os.path.join(output_dir, "test_" + inp_dict["name"] + ".parquet")
+                pre_process(inp_path=input_file, out_path=path_out_test, maxmin=maxmin)
 
 
 if __name__ == '__main__':
     path_dev = os.path.join("data", "subsets", "dev_subset.parquet")
+    path_test = os.path.join("data", "subsets", "test_subset.parquet")
 
     # 2. Process data for BioBERT
-
     out_dir_biobert = os.path.join("data", "encoded", "biobert")
-    to_process2 = [dict(name="biobert_all", maxmin=True),
-                   dict(name="biobert_avg", maxmin=False)
-                   ]
+    to_process = [dict(name="biobert_all", maxmin=True),
+                  dict(name="biobert_avg", maxmin=False)
+                  ]
+    to_process_test = [dict(name="biobert_avg", maxmin=False)]
 
-    run(list_dict=to_process2, input_file=path_dev, output_dir=out_dir_biobert)
+    run(list_dict=to_process, input_file=path_dev, output_dir=out_dir_biobert, is_test=False)
+    run(list_dict=to_process_test, input_file=path_test, output_dir=out_dir_biobert, is_test=True)

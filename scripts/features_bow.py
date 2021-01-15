@@ -3,7 +3,7 @@
 import pandas as pd
 import os
 from sklearn.pipeline import Pipeline, FeatureUnion
-from pk_classifier.utils import Concatenizer, make_pipeline
+from pk_classifier.utils import Concatenizer, make_preprocessing_pipeline
 from tqdm import tqdm
 
 
@@ -18,7 +18,7 @@ def pre_process(inp_path, out_path, field_list, ngrams):
     """
     data_df = pd.read_parquet(inp_path)
     encoding_pipeline = Pipeline([
-        ('tokens', FeatureUnion(transformer_list=make_pipeline(field_list, ngrams), n_jobs=-1)),
+        ('tokens', FeatureUnion(transformer_list=make_preprocessing_pipeline(field_list, ngrams), n_jobs=-1)),
         ('tokens_conc', Concatenizer(" ;; "))
     ])
     preprocessed_df = encoding_pipeline.fit_transform(data_df)
@@ -26,19 +26,28 @@ def pre_process(inp_path, out_path, field_list, ngrams):
     preprocessed_df.to_parquet(out_path)
 
 
-def run(list_dict, input_file, output_dir):
+def run(list_dict, input_file, output_dir, is_test):
     if not os.path.isdir(output_dir):
         os.makedirs(output_dir, exist_ok=True)
     for inp_dict in tqdm(list_dict):
-        if "dev_" + inp_dict["name"] + ".parquet" not in os.listdir(output_dir):
-            path_out_dev = os.path.join(output_dir, "dev_" + inp_dict["name"] + ".parquet")
-            pre_process(inp_path=input_file, out_path=path_out_dev, field_list=inp_dict["field"],
-                        ngrams=inp_dict["ngram"])
+        if not is_test:
+            if "dev_" + inp_dict["name"] + ".parquet" not in os.listdir(output_dir):
+                print("Generating features for {} in the development data".format(inp_dict["name"]))
+                path_out_dev = os.path.join(output_dir, "dev_" + inp_dict["name"] + ".parquet")
+                pre_process(inp_path=input_file, out_path=path_out_dev, field_list=inp_dict["field"],
+                            ngrams=inp_dict["ngram"])
+        else:
+            if "test_" + inp_dict["name"] + ".parquet" not in os.listdir(output_dir):
+                print("Generating features for {} in the test data".format(inp_dict["name"]))
+                path_out_test = os.path.join(output_dir, "test_" + inp_dict["name"] + ".parquet")
+                pre_process(inp_path=input_file, out_path=path_out_test, field_list=inp_dict["field"],
+                            ngrams=inp_dict["ngram"])
 
 
 if __name__ == '__main__':
     # 1. Input paths and output dirs
     path_dev = os.path.join("data", "subsets", "dev_subset.parquet")
+    path_test = os.path.join("data", "subsets", "test_subset.parquet")
     out_dir = os.path.join("data", "encoded", "fields")
     out_dir_ngrams = os.path.join("data", "encoded", "ngrams")
 
@@ -61,6 +70,10 @@ if __name__ == '__main__':
     to_process_ngrams = [dict(name="unigrams", field=["title", "abstract", "mesh_terms", "publication_types"], ngram=1),
                          dict(name="bigrams", field=["title", "abstract", "mesh_terms", "publication_types"], ngram=2),
                          dict(name="trigrams", field=["title", "abstract", "mesh_terms", "publication_types"], ngram=3)]
+
+    to_process_test = [dict(name="unigrams", field=["title", "abstract", "mesh_terms", "publication_types"], ngram=1)]
+
     # 3. Run encodings and save into output directory
-    run(to_process, path_dev, out_dir)
-    run(to_process_ngrams, path_dev, out_dir_ngrams)
+    run(list_dict=to_process, input_file=path_dev, output_dir=out_dir, is_test=False)
+    run(list_dict=to_process_ngrams, input_file=path_dev, output_dir=out_dir_ngrams, is_test=False)
+    run(list_dict=to_process_test, input_file=path_test, output_dir=out_dir_ngrams, is_test=True)

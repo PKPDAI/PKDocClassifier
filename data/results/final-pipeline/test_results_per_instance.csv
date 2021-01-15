@@ -1,0 +1,801 @@
+,Result,pmid,Correct label
+0,True,21670,Not Relevant
+1,True,26531,Not Relevant
+2,True,30090,Not Relevant
+3,True,33246,Relevant
+4,True,43222,Relevant
+5,True,87060,Not Relevant
+6,True,102133,Not Relevant
+7,True,148241,Not Relevant
+8,True,294954,Not Relevant
+9,True,363052,Relevant
+10,False,398415,Not Relevant
+11,False,421849,Relevant
+12,True,489203,Relevant
+13,True,529044,Not Relevant
+14,True,579981,Not Relevant
+15,True,632422,Not Relevant
+16,True,660734,Not Relevant
+17,True,682125,Relevant
+18,False,690034,Relevant
+19,True,700916,Not Relevant
+20,True,748535,Not Relevant
+21,True,787911,Not Relevant
+22,True,789085,Relevant
+23,True,836831,Not Relevant
+24,True,883876,Not Relevant
+25,True,911310,Not Relevant
+26,True,922589,Not Relevant
+27,True,925144,Not Relevant
+28,True,926593,Not Relevant
+29,True,978570,Not Relevant
+30,True,991370,Relevant
+31,True,1035624,Not Relevant
+32,True,1036945,Not Relevant
+33,True,1139130,Not Relevant
+34,True,1230028,Not Relevant
+35,False,1244748,Not Relevant
+36,True,1310230,Not Relevant
+37,True,1319370,Not Relevant
+38,True,1324510,Not Relevant
+39,True,1350360,Not Relevant
+40,True,1363493,Not Relevant
+41,True,1366389,Not Relevant
+42,True,1375058,Not Relevant
+43,True,1378134,Relevant
+44,True,1392225,Not Relevant
+45,True,1416280,Not Relevant
+46,True,1535593,Relevant
+47,True,1609411,Not Relevant
+48,True,1609942,Not Relevant
+49,True,1662392,Not Relevant
+50,True,1663300,Not Relevant
+51,True,1670918,Not Relevant
+52,True,1691613,Not Relevant
+53,True,1705552,Not Relevant
+54,True,1718179,Not Relevant
+55,True,1730144,Not Relevant
+56,False,1744941,Relevant
+57,True,1781986,Not Relevant
+58,True,1852482,Not Relevant
+59,True,1874515,Not Relevant
+60,True,1924146,Not Relevant
+61,True,1969785,Not Relevant
+62,True,1981714,Not Relevant
+63,True,2020610,Not Relevant
+64,True,2037712,Relevant
+65,True,2053487,Not Relevant
+66,True,2066764,Relevant
+67,True,2104537,Relevant
+68,False,2109665,Relevant
+69,True,2116703,Relevant
+70,True,2156686,Not Relevant
+71,False,2196260,Not Relevant
+72,True,2245178,Relevant
+73,True,2280480,Not Relevant
+74,True,2290020,Not Relevant
+75,True,2293545,Not Relevant
+76,False,2296582,Relevant
+77,True,2322293,Not Relevant
+78,True,2328308,Relevant
+79,True,2329498,Relevant
+80,True,2339670,Not Relevant
+81,True,2364675,Not Relevant
+82,False,2395501,Not Relevant
+83,True,2409851,Not Relevant
+84,True,2425531,Not Relevant
+85,True,2426425,Not Relevant
+86,True,2435501,Not Relevant
+87,True,2442558,Relevant
+88,True,2498438,Not Relevant
+89,True,2501460,Not Relevant
+90,False,2515041,Not Relevant
+91,True,2591691,Not Relevant
+92,True,2692292,Not Relevant
+93,True,2701569,Not Relevant
+94,True,2720667,Not Relevant
+95,True,2805810,Not Relevant
+96,True,2835183,Not Relevant
+97,True,2879891,Not Relevant
+98,False,2893706,Not Relevant
+99,True,2970673,Not Relevant
+100,True,3027821,Relevant
+101,True,3054055,Not Relevant
+102,True,3058606,Not Relevant
+103,False,3092618,Not Relevant
+104,True,3097094,Relevant
+105,True,3106786,Not Relevant
+106,False,3168149,Relevant
+107,True,3220963,Not Relevant
+108,True,3223979,Not Relevant
+109,True,3247291,Not Relevant
+110,True,3251907,Not Relevant
+111,True,3338441,Not Relevant
+112,True,3441239,Not Relevant
+113,True,3500958,Not Relevant
+114,True,3522142,Not Relevant
+115,True,3527499,Not Relevant
+116,True,3566313,Not Relevant
+117,True,3569589,Not Relevant
+118,True,3580238,Relevant
+119,True,3580515,Relevant
+120,True,3609287,Relevant
+121,True,3697811,Relevant
+122,False,3705069,Relevant
+123,True,3709879,Not Relevant
+124,False,3737270,Relevant
+125,True,3772750,Not Relevant
+126,True,3786948,Relevant
+127,False,3838479,Relevant
+128,True,3850847,Not Relevant
+129,True,3880050,Not Relevant
+130,True,3903651,Not Relevant
+131,True,3923347,Not Relevant
+132,True,3954800,Not Relevant
+133,True,3954817,Not Relevant
+134,True,3955196,Relevant
+135,False,3994922,Relevant
+136,True,4029216,Relevant
+137,True,4094802,Not Relevant
+138,True,4174189,Not Relevant
+139,True,4257801,Not Relevant
+140,True,4340850,Not Relevant
+141,True,4382186,Not Relevant
+142,True,4402313,Not Relevant
+143,True,4438415,Not Relevant
+144,True,4465780,Not Relevant
+145,True,4555122,Not Relevant
+146,True,4619748,Relevant
+147,True,4700437,Not Relevant
+148,True,4777608,Not Relevant
+149,True,5069813,Not Relevant
+150,True,5155153,Not Relevant
+151,True,5300832,Not Relevant
+152,True,5503527,Not Relevant
+153,True,5513812,Not Relevant
+154,True,5653800,Not Relevant
+155,True,5790082,Not Relevant
+156,False,5824321,Relevant
+157,True,5965594,Not Relevant
+158,True,5994680,Not Relevant
+159,True,6031874,Not Relevant
+160,True,6061744,Not Relevant
+161,True,6105062,Relevant
+162,True,6117616,Not Relevant
+163,False,6118950,Not Relevant
+164,True,6131013,Not Relevant
+165,True,6142717,Relevant
+166,True,6187258,Not Relevant
+167,True,6214998,Relevant
+168,True,6243377,Not Relevant
+169,True,6267927,Not Relevant
+170,True,6272977,Not Relevant
+171,False,6295711,Relevant
+172,True,6295996,Not Relevant
+173,True,6311786,Relevant
+174,True,6340904,Not Relevant
+175,True,6362975,Not Relevant
+176,True,6372265,Not Relevant
+177,True,6398364,Relevant
+178,True,6401237,Not Relevant
+179,True,6430640,Relevant
+180,True,6460685,Not Relevant
+181,True,6480542,Relevant
+182,True,6499514,Relevant
+183,True,6616021,Not Relevant
+184,True,6634844,Not Relevant
+185,True,6693323,Not Relevant
+186,True,6697877,Relevant
+187,True,6704506,Relevant
+188,True,6706946,Not Relevant
+189,True,6740733,Relevant
+190,True,6745704,Not Relevant
+191,True,6797055,Not Relevant
+192,True,6825714,Not Relevant
+193,True,6841107,Not Relevant
+194,True,6864477,Not Relevant
+195,True,6979616,Not Relevant
+196,True,7067043,Not Relevant
+197,True,7097474,Relevant
+198,True,7141752,Relevant
+199,True,7146628,Not Relevant
+200,True,7197967,Not Relevant
+201,True,7217832,Relevant
+202,True,7319929,Not Relevant
+203,True,7397055,Not Relevant
+204,True,7510180,Not Relevant
+205,True,7583953,Not Relevant
+206,True,7609931,Not Relevant
+207,True,7736998,Not Relevant
+208,True,7757956,Not Relevant
+209,True,7820792,Not Relevant
+210,True,7824963,Relevant
+211,False,7832148,Relevant
+212,True,7889539,Not Relevant
+213,True,7889839,Not Relevant
+214,True,7899953,Relevant
+215,True,7903118,Not Relevant
+216,True,7945939,Not Relevant
+217,True,8012169,Relevant
+218,True,8032493,Not Relevant
+219,True,8058428,Not Relevant
+220,True,8097990,Not Relevant
+221,True,8104119,Relevant
+222,True,8115311,Relevant
+223,True,8196089,Relevant
+224,True,8221648,Not Relevant
+225,True,8241609,Not Relevant
+226,True,8248410,Not Relevant
+227,True,8261595,Not Relevant
+228,True,8292744,Not Relevant
+229,True,8306567,Not Relevant
+230,True,8379600,Relevant
+231,True,8417153,Not Relevant
+232,True,8421222,Not Relevant
+233,True,8429338,Not Relevant
+234,True,8447375,Not Relevant
+235,True,8452195,Not Relevant
+236,True,8471158,Not Relevant
+237,True,8479598,Not Relevant
+238,True,8486329,Not Relevant
+239,True,8509348,Not Relevant
+240,True,8517711,Not Relevant
+241,True,8566920,Not Relevant
+242,True,8569068,Not Relevant
+243,True,8582119,Not Relevant
+244,True,8608817,Not Relevant
+245,True,8634768,Not Relevant
+246,True,8642484,Not Relevant
+247,True,8651042,Not Relevant
+248,True,8686330,Not Relevant
+249,True,8693265,Not Relevant
+250,True,8711465,Not Relevant
+251,True,8746100,Not Relevant
+252,True,8784647,Not Relevant
+253,True,8799511,Not Relevant
+254,True,8858691,Not Relevant
+255,True,8861659,Not Relevant
+256,True,8896358,Not Relevant
+257,True,8907172,Not Relevant
+258,True,8932908,Not Relevant
+259,True,8948068,Relevant
+260,True,8964827,Not Relevant
+261,True,8983408,Not Relevant
+262,True,8983942,Not Relevant
+263,True,8983963,Not Relevant
+264,True,9011028,Not Relevant
+265,True,9033549,Not Relevant
+266,True,9044242,Relevant
+267,True,9073316,Not Relevant
+268,True,9100558,Not Relevant
+269,True,9110360,Not Relevant
+270,True,9147866,Not Relevant
+271,True,9202739,Not Relevant
+272,True,9209244,Relevant
+273,True,9221295,Not Relevant
+274,True,9248780,Not Relevant
+275,True,9290070,Not Relevant
+276,True,9316714,Not Relevant
+277,True,9342447,Relevant
+278,True,9392603,Not Relevant
+279,True,9399974,Not Relevant
+280,True,9422989,Not Relevant
+281,True,9492931,Not Relevant
+282,True,9532520,Not Relevant
+283,True,9552325,Not Relevant
+284,True,9561111,Not Relevant
+285,True,9576765,Not Relevant
+286,True,9609361,Not Relevant
+287,True,9660303,Not Relevant
+288,True,9701366,Not Relevant
+289,True,9757153,Relevant
+290,True,9892226,Not Relevant
+291,True,10206449,Not Relevant
+292,False,10215956,Not Relevant
+293,True,10221039,Not Relevant
+294,True,10234663,Not Relevant
+295,True,10352034,Not Relevant
+296,True,10369612,Relevant
+297,True,10378128,Not Relevant
+298,True,10398516,Not Relevant
+299,True,10465889,Not Relevant
+300,True,10490905,Relevant
+301,True,10499632,Not Relevant
+302,True,10514019,Not Relevant
+303,True,10568165,Not Relevant
+304,True,10595955,Not Relevant
+305,True,10606317,Not Relevant
+306,True,10609871,Not Relevant
+307,True,10675619,Not Relevant
+308,True,10676427,Not Relevant
+309,True,10702596,Not Relevant
+310,True,10713469,Not Relevant
+311,True,10719615,Relevant
+312,True,10721932,Not Relevant
+313,True,10761167,Relevant
+314,True,10834256,Not Relevant
+315,True,10841312,Not Relevant
+316,True,10848053,Not Relevant
+317,True,10852648,Not Relevant
+318,True,10854239,Not Relevant
+319,True,10893696,Not Relevant
+320,True,10915395,Not Relevant
+321,True,10942906,Not Relevant
+322,True,10971048,Not Relevant
+323,True,11023654,Not Relevant
+324,True,11051588,Not Relevant
+325,True,11074266,Not Relevant
+326,True,11083108,Not Relevant
+327,True,11083497,Not Relevant
+328,True,11110060,Not Relevant
+329,True,11141592,Not Relevant
+330,True,11231078,Not Relevant
+331,True,11266414,Relevant
+332,True,11269503,Not Relevant
+333,True,11274702,Relevant
+334,True,11297393,Not Relevant
+335,True,11361823,Not Relevant
+336,True,11378523,Relevant
+337,True,11432125,Not Relevant
+338,True,11440906,Not Relevant
+339,True,11472281,Not Relevant
+340,True,11472825,Not Relevant
+341,True,11482658,Not Relevant
+342,True,11495017,Not Relevant
+343,True,11510139,Not Relevant
+344,True,11511387,Not Relevant
+345,True,11574199,Not Relevant
+346,True,11576175,Not Relevant
+347,True,11683258,Not Relevant
+348,True,11696083,Relevant
+349,True,11711129,Not Relevant
+350,True,11716441,Not Relevant
+351,True,11779791,Not Relevant
+352,True,11806464,Not Relevant
+353,True,11808830,Relevant
+354,True,11855724,Not Relevant
+355,False,11856782,Relevant
+356,True,11861442,Relevant
+357,True,11870164,Relevant
+358,True,11978157,Not Relevant
+359,True,11988682,Not Relevant
+360,True,11991811,Not Relevant
+361,True,11992244,Not Relevant
+362,True,12003195,Relevant
+363,True,12007987,Not Relevant
+364,True,12014962,Not Relevant
+365,True,12017343,Relevant
+366,True,12031512,Not Relevant
+367,True,12069288,Not Relevant
+368,True,12085694,Not Relevant
+369,True,12113870,Not Relevant
+370,True,12118029,Relevant
+371,True,12147170,Not Relevant
+372,True,12173407,Not Relevant
+373,True,12176257,Not Relevant
+374,True,12212548,Not Relevant
+375,True,12223207,Not Relevant
+376,True,12237835,Relevant
+377,True,12270605,Not Relevant
+378,True,12355562,Relevant
+379,True,12475773,Relevant
+380,False,12518338,Relevant
+381,True,12562865,Not Relevant
+382,True,12579768,Relevant
+383,True,12743672,Relevant
+384,True,12801385,Not Relevant
+385,True,12842138,Not Relevant
+386,True,12851879,Not Relevant
+387,True,12915868,Not Relevant
+388,True,13678656,Not Relevant
+389,True,13679426,Not Relevant
+390,True,13694670,Not Relevant
+391,True,13835597,Not Relevant
+392,True,14202032,Not Relevant
+393,True,14251008,Not Relevant
+394,False,14510745,Not Relevant
+395,True,14526923,Not Relevant
+396,True,14565544,Not Relevant
+397,True,14567594,Not Relevant
+398,True,14614705,Not Relevant
+399,True,14617693,Relevant
+400,False,14630135,Relevant
+401,True,14999221,Relevant
+402,True,15066466,Not Relevant
+403,True,15109631,Not Relevant
+404,False,15113533,Not Relevant
+405,True,15183289,Not Relevant
+406,True,15235069,Not Relevant
+407,True,15238367,Relevant
+408,True,15252988,Not Relevant
+409,True,15312718,Not Relevant
+410,True,15361638,Not Relevant
+411,False,15378990,Relevant
+412,True,15447927,Not Relevant
+413,True,15468253,Not Relevant
+414,True,15552132,Not Relevant
+415,True,15579780,Not Relevant
+416,False,15591164,Relevant
+417,True,15610674,Not Relevant
+418,True,15626585,Not Relevant
+419,True,15634614,Not Relevant
+420,True,15647811,Not Relevant
+421,True,15713722,Relevant
+422,True,15791932,Not Relevant
+423,True,15841106,Not Relevant
+424,True,15846539,Not Relevant
+425,True,15847115,Not Relevant
+426,True,15900263,Not Relevant
+427,False,15901797,Relevant
+428,True,15964387,Not Relevant
+429,True,15979197,Not Relevant
+430,True,16037643,Not Relevant
+431,True,16048029,Not Relevant
+432,True,16078140,Not Relevant
+433,True,16111871,Not Relevant
+434,False,16144926,Relevant
+435,True,16177401,Not Relevant
+436,True,16263322,Not Relevant
+437,True,16279349,Not Relevant
+438,True,16284992,Not Relevant
+439,True,16307706,Not Relevant
+440,False,16312508,Not Relevant
+441,True,16381472,Relevant
+442,True,16387324,Relevant
+443,True,16451757,Not Relevant
+444,True,16470113,Not Relevant
+445,True,16513433,Not Relevant
+446,True,16564400,Not Relevant
+447,True,16617238,Not Relevant
+448,True,16632820,Not Relevant
+449,True,16682639,Not Relevant
+450,False,16697206,Not Relevant
+451,True,16778712,Relevant
+452,True,16790523,Not Relevant
+453,True,16912218,Not Relevant
+454,True,16918320,Not Relevant
+455,True,16954030,Not Relevant
+456,True,16956313,Not Relevant
+457,True,17002024,Not Relevant
+458,True,17009079,Not Relevant
+459,True,17016486,Not Relevant
+460,True,17052680,Not Relevant
+461,True,17064199,Relevant
+462,True,17180493,Not Relevant
+463,True,17226855,Not Relevant
+464,True,17267079,Not Relevant
+465,True,17291226,Not Relevant
+466,True,17360134,Relevant
+467,True,17365999,Not Relevant
+468,True,17408303,Not Relevant
+469,True,17455637,Not Relevant
+470,True,17475604,Relevant
+471,True,17475971,Not Relevant
+472,True,17484386,Not Relevant
+473,True,17493590,Not Relevant
+474,True,17549475,Relevant
+475,True,17559351,Not Relevant
+476,True,17627674,Not Relevant
+477,True,17628157,Not Relevant
+478,True,17628465,Not Relevant
+479,True,17631545,Relevant
+480,False,17635557,Not Relevant
+481,True,17641292,Not Relevant
+482,False,17646137,Not Relevant
+483,True,17894481,Relevant
+484,True,17907248,Not Relevant
+485,True,17921371,Not Relevant
+486,True,17973649,Not Relevant
+487,True,18033636,Not Relevant
+488,True,18090744,Not Relevant
+489,True,18167095,Relevant
+490,True,18186148,Not Relevant
+491,True,18203091,Not Relevant
+492,True,18246775,Not Relevant
+493,True,18330026,Not Relevant
+494,True,18339019,Relevant
+495,False,18450593,Not Relevant
+496,True,18511602,Not Relevant
+497,True,18540407,Not Relevant
+498,True,18584966,Relevant
+499,True,18618305,Not Relevant
+500,True,18666374,Not Relevant
+501,True,18784280,Relevant
+502,True,18797857,Not Relevant
+503,True,18801587,Not Relevant
+504,True,18833870,Not Relevant
+505,True,18843481,Relevant
+506,True,18991927,Not Relevant
+507,True,19037761,Not Relevant
+508,True,19065992,Not Relevant
+509,True,19074586,Not Relevant
+510,True,19146767,Not Relevant
+511,True,19167688,Relevant
+512,True,19193410,Not Relevant
+513,True,19195422,Not Relevant
+514,True,19203907,Not Relevant
+515,True,19320279,Relevant
+516,True,19401345,Not Relevant
+517,True,19435855,Not Relevant
+518,True,19447295,Not Relevant
+519,True,19464884,Not Relevant
+520,True,19481929,Not Relevant
+521,True,19508462,Not Relevant
+522,True,19514965,Not Relevant
+523,True,19551948,Not Relevant
+524,True,19581705,Not Relevant
+525,True,19581711,Not Relevant
+526,True,19629383,Not Relevant
+527,True,19654533,Not Relevant
+528,True,19655809,Not Relevant
+529,True,19695487,Not Relevant
+530,True,19706501,Not Relevant
+531,False,19717751,Relevant
+532,False,19718794,Not Relevant
+533,True,19751795,Not Relevant
+534,True,19764432,Not Relevant
+535,False,19773162,Not Relevant
+536,True,19865523,Not Relevant
+537,True,19877643,Not Relevant
+538,True,19889282,Not Relevant
+539,True,19939799,Not Relevant
+540,True,20068374,Not Relevant
+541,True,20100032,Relevant
+542,True,20125728,Not Relevant
+543,True,20185786,Not Relevant
+544,True,20350135,Not Relevant
+545,False,20358306,Not Relevant
+546,True,20364565,Not Relevant
+547,True,20384881,Not Relevant
+548,True,20460991,Relevant
+549,True,20480242,Not Relevant
+550,True,20543107,Not Relevant
+551,True,20551083,Not Relevant
+552,True,20553859,Not Relevant
+553,True,20608724,Not Relevant
+554,True,20691066,Not Relevant
+555,True,20715796,Not Relevant
+556,True,20732958,Not Relevant
+557,True,20944432,Not Relevant
+558,True,20972350,Not Relevant
+559,True,21049519,Relevant
+560,True,21110709,Not Relevant
+561,False,21140258,Not Relevant
+562,True,21185921,Relevant
+563,True,21205947,Not Relevant
+564,True,21216979,Not Relevant
+565,True,21292469,Relevant
+566,False,21324753,Not Relevant
+567,True,21361034,Not Relevant
+568,True,21417031,Not Relevant
+569,True,21464717,Not Relevant
+570,True,21493601,Not Relevant
+571,True,21495881,Not Relevant
+572,True,21612646,Not Relevant
+573,True,21641838,Not Relevant
+574,True,21671592,Not Relevant
+575,True,21682397,Not Relevant
+576,True,21685343,Not Relevant
+577,True,21690471,Relevant
+578,True,21743375,Not Relevant
+579,True,21743914,Not Relevant
+580,True,21757343,Not Relevant
+581,False,21779538,Not Relevant
+582,True,21872414,Not Relevant
+583,True,21930108,Not Relevant
+584,False,22118098,Not Relevant
+585,True,22118221,Not Relevant
+586,True,22124983,Relevant
+587,True,22125963,Not Relevant
+588,True,22217906,Not Relevant
+589,True,22257897,Not Relevant
+590,True,22261404,Not Relevant
+591,True,22276398,Not Relevant
+592,True,22330195,Not Relevant
+593,True,22367428,Not Relevant
+594,False,22409491,Not Relevant
+595,True,22577234,Not Relevant
+596,True,22629771,Not Relevant
+597,True,22669131,Not Relevant
+598,True,22677067,Not Relevant
+599,True,22679004,Not Relevant
+600,True,22811412,Not Relevant
+601,True,22917181,Not Relevant
+602,True,22917888,Not Relevant
+603,False,22922480,Not Relevant
+604,True,22946228,Not Relevant
+605,True,22960522,Not Relevant
+606,True,22968355,Not Relevant
+607,True,22984473,Not Relevant
+608,False,23020519,Relevant
+609,True,23032949,Not Relevant
+610,True,23084636,Not Relevant
+611,True,23100496,Not Relevant
+612,True,23175667,Not Relevant
+613,True,23187875,Not Relevant
+614,True,23189085,Not Relevant
+615,True,23272653,Not Relevant
+616,True,23305536,Relevant
+617,True,23336105,Not Relevant
+618,True,23386312,Not Relevant
+619,False,23407048,Not Relevant
+620,True,23528446,Not Relevant
+621,True,23542081,Not Relevant
+622,True,23554130,Not Relevant
+623,True,23584079,Relevant
+624,True,23613096,Not Relevant
+625,True,23618178,Not Relevant
+626,False,23670590,Not Relevant
+627,True,23749495,Relevant
+628,True,23797213,Not Relevant
+629,True,23828842,Not Relevant
+630,True,23964133,Not Relevant
+631,True,23999699,Not Relevant
+632,True,24050973,Relevant
+633,True,24079630,Not Relevant
+634,True,24102315,Not Relevant
+635,True,24159570,Not Relevant
+636,True,24185126,Not Relevant
+637,True,24247022,Not Relevant
+638,False,24263088,Relevant
+639,True,24286215,Not Relevant
+640,True,24346633,Not Relevant
+641,True,24439335,Not Relevant
+642,True,24461133,Not Relevant
+643,True,24521261,Not Relevant
+644,True,24577419,Not Relevant
+645,True,24619893,Not Relevant
+646,True,24657144,Relevant
+647,True,24697182,Not Relevant
+648,True,24704542,Not Relevant
+649,True,24849382,Relevant
+650,False,24852095,Not Relevant
+651,True,24853950,Not Relevant
+652,True,24859811,Not Relevant
+653,True,24988438,Relevant
+654,True,25157280,Not Relevant
+655,True,25272857,Relevant
+656,True,25299177,Not Relevant
+657,True,25404690,Not Relevant
+658,True,25440196,Not Relevant
+659,True,25457984,Not Relevant
+660,True,25498100,Relevant
+661,True,25523045,Not Relevant
+662,True,25542142,Not Relevant
+663,True,25615880,Not Relevant
+664,True,25671403,Not Relevant
+665,True,25715979,Not Relevant
+666,True,25807813,Relevant
+667,True,25843430,Not Relevant
+668,True,25844668,Not Relevant
+669,True,25898832,Not Relevant
+670,True,25925797,Not Relevant
+671,True,25938514,Relevant
+672,True,25959930,Not Relevant
+673,True,26020924,Not Relevant
+674,True,26051541,Not Relevant
+675,True,26079717,Not Relevant
+676,True,26210188,Not Relevant
+677,True,26231525,Not Relevant
+678,True,26373416,Not Relevant
+679,True,26383152,Not Relevant
+680,True,26406291,Not Relevant
+681,True,26412429,Not Relevant
+682,True,26457718,Not Relevant
+683,True,26555458,Not Relevant
+684,True,26586379,Not Relevant
+685,True,26635230,Not Relevant
+686,True,26687572,Not Relevant
+687,True,26695429,Not Relevant
+688,True,26766632,Not Relevant
+689,True,26815590,Relevant
+690,True,26863889,Not Relevant
+691,True,26887651,Relevant
+692,True,26897367,Not Relevant
+693,True,27002938,Relevant
+694,True,27006179,Relevant
+695,True,27025982,Not Relevant
+696,True,27056178,Relevant
+697,True,27061522,Not Relevant
+698,True,27062515,Not Relevant
+699,True,27093907,Not Relevant
+700,True,27131093,Not Relevant
+701,True,27160418,Not Relevant
+702,True,27249385,Relevant
+703,True,27287134,Not Relevant
+704,True,27430970,Not Relevant
+705,True,27444983,Not Relevant
+706,True,27530933,Not Relevant
+707,False,27567539,Relevant
+708,True,27761948,Not Relevant
+709,True,27803477,Not Relevant
+710,True,27819766,Relevant
+711,True,27839733,Not Relevant
+712,True,27867020,Relevant
+713,True,27897087,Not Relevant
+714,True,27904095,Not Relevant
+715,True,27919190,Relevant
+716,True,27992787,Relevant
+717,False,28012684,Relevant
+718,True,28019675,Not Relevant
+719,True,28062259,Not Relevant
+720,True,28074334,Relevant
+721,True,28119212,Not Relevant
+722,True,28214935,Not Relevant
+723,False,28215471,Relevant
+724,True,28238915,Not Relevant
+725,True,28250701,Not Relevant
+726,True,28257748,Not Relevant
+727,True,28333183,Not Relevant
+728,True,28368215,Not Relevant
+729,True,28374908,Not Relevant
+730,True,28462920,Relevant
+731,True,28502496,Relevant
+732,False,28526868,Not Relevant
+733,True,28567705,Not Relevant
+734,False,28569994,Not Relevant
+735,False,28629814,Relevant
+736,True,28693525,Not Relevant
+737,True,28710635,Not Relevant
+738,True,28799107,Not Relevant
+739,True,28871815,Not Relevant
+740,True,28892871,Relevant
+741,True,29063458,Not Relevant
+742,True,29064853,Not Relevant
+743,False,29074254,Relevant
+744,True,29104982,Not Relevant
+745,True,29124781,Not Relevant
+746,True,29178081,Not Relevant
+747,True,29180039,Not Relevant
+748,True,29183843,Not Relevant
+749,True,29248731,Relevant
+750,True,29317615,Not Relevant
+751,True,29324347,Relevant
+752,True,29344301,Not Relevant
+753,True,29353321,Not Relevant
+754,True,29407178,Not Relevant
+755,True,29457324,Not Relevant
+756,True,29495021,Not Relevant
+757,False,29691238,Relevant
+758,True,29729638,Not Relevant
+759,True,29737265,Not Relevant
+760,False,29746294,Not Relevant
+761,True,29788884,Not Relevant
+762,True,29795752,Not Relevant
+763,True,29807674,Not Relevant
+764,True,29859812,Not Relevant
+765,True,29912996,Not Relevant
+766,False,29913220,Not Relevant
+767,True,29920312,Not Relevant
+768,True,29948795,Relevant
+769,True,29953382,Not Relevant
+770,True,30028351,Relevant
+771,True,30058499,Not Relevant
+772,True,30086658,Not Relevant
+773,False,30117738,Not Relevant
+774,True,30154685,Not Relevant
+775,True,30168909,Not Relevant
+776,True,30235484,Relevant
+777,True,30264342,Not Relevant
+778,True,30272435,Not Relevant
+779,True,30274177,Not Relevant
+780,True,30299160,Not Relevant
+781,True,30343607,Not Relevant
+782,True,30376295,Not Relevant
+783,True,30445625,Not Relevant
+784,True,30452993,Not Relevant
+785,True,30466778,Not Relevant
+786,True,30535822,Not Relevant
+787,True,30590313,Relevant
+788,True,30720734,Not Relevant
+789,True,30779339,Relevant
+790,False,30785963,Relevant
+791,True,30791055,Not Relevant
+792,True,30832656,Not Relevant
+793,True,30919089,Not Relevant
+794,True,31126485,Not Relevant
+795,True,31152982,Not Relevant
+796,True,31323882,Not Relevant
+797,True,31402708,Not Relevant
+798,True,31405856,Relevant
+799,True,31509357,Not Relevant

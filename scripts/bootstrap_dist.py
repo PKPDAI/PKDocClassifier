@@ -147,21 +147,16 @@ def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figu
 
 def run(is_specter: bool, use_bow: bool, input_dir: str, output_dir: str, output_dir_bootstrap: str, path_labels: str,
         path_optimal_bow: str):
-    print('hi')
     if not os.path.isdir(output_dir):
         os.makedirs(output_dir, exist_ok=True)
     if not os.path.isdir(output_dir_bootstrap):
         os.makedirs(output_dir_bootstrap, exist_ok=True)
-    print('ho')
-    print(is_specter)
-    print(output_dir)
     if is_specter:
         inp_files = [x for x in os.listdir(input_dir) if "dev_specter.jsonl" == x]
         repl = ".jsonl"
     else:
         inp_files = os.listdir(input_dir)
         repl = ".parquet"
-        print(inp_files)
 
     for inp_file in inp_files:
         inp_path = os.path.join(input_dir, inp_file)

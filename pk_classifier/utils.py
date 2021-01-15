@@ -11,9 +11,11 @@ from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.pipeline import Pipeline
 import torch
 from transformers import BertTokenizer, BertModel
+import joblib
+import os
 
 
-def make_pipeline(field_list, ngram):
+def make_preprocessing_pipeline(field_list, ngram):
     """
     Generates a pipeline as a list of sklearn transformers
     :param field_list: list of fields to include
@@ -303,9 +305,12 @@ def tokens_emb(sentence, inp_tokenizer, inp_model):
     """
     assert isinstance(sentence, str)
     inp_raw_tokens = inp_tokenizer.tokenize("[CLS]" + sentence + "[SEP]")
-    tokens_tensor = torch.tensor(inp_tokenizer.encode(sentence)).unsqueeze(0)
+    tokens_tensor = torch.tensor(inp_tokenizer.encode(sentence, max_length=512, truncation=True)).unsqueeze(0)
     segments_ids = [1] * tokens_tensor.shape[1]
     segments_tensors = torch.tensor([segments_ids])
+
+    assert tokens_tensor.shape[1] == segments_tensors.shape[1]
+
     with torch.no_grad():
         outputs = inp_model(tokens_tensor, segments_tensors)
         hidden_states = outputs[2]
@@ -317,8 +322,8 @@ def tokens_emb(sentence, inp_tokenizer, inp_model):
 
 def sentence_emb(inp_token_embeddings, n=4):
     """
-    Adds the last 4 layers of each token and stacks all the input token representations except the first and last ones.
-    It considers that the first and last tokens are special BERT tokens (CLS and SEP) and it drops them within the
+    Adds the last n layers of each token and stacks all the input token representations except the first and last ones.
+    It considers that the first and last tokens are special BERT tokens ([CLS] and [SEP]) and it drops them within the
     function
     :param inp_token_embeddings: torch tensor with all the token embeddings in each layer
     :param n: number of layers to add up
@@ -361,6 +366,24 @@ class ConcatenizerEmb(BaseEstimator, TransformerMixin):
         return new_df
 
 
+class EmbeddingsJoiner(BaseEstimator, TransformerMixin):
+    def __init__(self, out_colname):
+        self.out_colname = out_colname
+
+    def fit(self, X, y=None):
+        return self
+
+    def transform(self, X):
+        X['abstracts_embedded'] = X.abstracts_embedded.apply(lambda x: x.tolist())
+        X['titles_embedded'] = X.titles_embedded.apply(lambda x: x.tolist())
+        X[self.out_colname] = X['abstracts_embedded'] + X['titles_embedded']
+        out_df = X.drop(['abstracts_embedded', 'titles_embedded'], axis=1)
+        assert 'BoW_Ready'
+        for out_col in ['BoW_Ready', self.out_colname]:
+            assert out_col in out_df.columns
+        return out_df
+
+
 class Embedder(BaseEstimator, TransformerMixin):
     def __init__(self, fields, maxmin):
         self.fields = fields
@@ -400,3 +423,14 @@ class Embedder(BaseEstimator, TransformerMixin):
             embedded_combied_df.columns = ['abstracts_embedded', 'titles_embedded']
 
         return embedded_combied_df
+
+
+def read_crossval(cv_dir: str):
+    cv_results = None
+    cv_pipe = None
+    for cv_file in os.listdir(cv_dir):
+        if "cv_results.pkl" == cv_file:
+            cv_results = joblib.load(os.path.join(cv_dir, cv_file))
+        if "cv_optimal_pipeline.pkl" == cv_file:
+            cv_pipe = joblib.load(os.path.join(cv_dir, cv_file))
+    return cv_results, cv_pipe
