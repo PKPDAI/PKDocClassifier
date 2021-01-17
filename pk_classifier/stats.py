@@ -23,12 +23,12 @@ def make_results_table2(df_results, pipeline_name):
     df_results = df_results[["Precision", "Recall", "F1-score"]]
     percentiles = np.transpose(np.quantile(df_results, q=[0.025, 0.5, 0.975], axis=0))
     percentiles = np.round(percentiles, 4) * 100
-    precision = "{0}({1},{2})".format(str(np.round(percentiles[0][1], 2)), str(np.round(percentiles[0][0], 2)),
-                                      str(np.round(percentiles[0][2], 2)))
-    recall = "{0}({1},{2})".format(str(np.round(percentiles[1][1], 2)), str(np.round(percentiles[1][0], 2)),
-                                   str(np.round(percentiles[1][2], 2)))
-    f1 = "{0}({1},{2})".format(str(np.round(percentiles[2][1], 2)), str(np.round(percentiles[2][0], 2)),
-                               str(np.round(percentiles[2][2], 2)))
+    precision = "{0} ({1},{2})".format(str(np.round(percentiles[0][1], 2)), str(np.round(percentiles[0][0], 2)),
+                                       str(np.round(percentiles[0][2], 2)))
+    recall = "{0} ({1},{2})".format(str(np.round(percentiles[1][1], 2)), str(np.round(percentiles[1][0], 2)),
+                                    str(np.round(percentiles[1][2], 2)))
+    f1 = "{0} ({1},{2})".format(str(np.round(percentiles[2][1], 2)), str(np.round(percentiles[2][0], 2)),
+                                str(np.round(percentiles[2][2], 2)))
 
     iqv = np.round(percentiles[2][2], 2) - np.round(percentiles[2][0], 2)
     data = [[pipeline_name, precision, recall, f1, iqv]]
@@ -42,8 +42,8 @@ def extract_f1(inp_text):
 
 def rename(inp_word):
     mapper = dict(res_title='Title', res_authors='Authors', res_journal='Journal', res_keywords='Keywords',
-                  res_abstract='Title + Abstract', res_chemical='Chemicals', res_mesh='MeSH', res_pub_type='Pub. Type',
-                  res_affiliations='Affiliations', res_all='All fields', res_optimal='Optimal Combination',
+                  res_abstract='Abstract', res_chemical='Chemicals', res_mesh='MeSH', res_pub_type='Pub. Type',
+                  res_affiliations='Affiliations', res_all='All fields', res_optimal='Opt. Fields',
                   res_unigrams='Unigrams', res_bigrams='Bigrams', res_trigrams='Trigrams',
                   res_specter_alone='SPECTER', res_biobert_bow_mean='BioBERT mean pooling',
                   res_biobert_meanmaxmin='BioBERT mean \n + min + max pooling')
@@ -53,7 +53,7 @@ def rename(inp_word):
         return inp_word
 
 
-def get_all_results(inp_result_files, input_dir, output_dir):
+def get_all_results(inp_result_files, input_dir, output_dir, convert_latex):
     all_results = []
     all_for_boxplot = []
     all_for_boxplot_names = []
@@ -69,18 +69,20 @@ def get_all_results(inp_result_files, input_dir, output_dir):
     all_results_ready['F1'] = all_results_ready['F1-score'].apply(extract_f1)
     all_results_ready = all_results_ready.sort_values(by="F1-score", ascending=False)
     print(all_results_ready)
+    if convert_latex:
+        print(all_results_ready.to_latex(index=False))
     all_results_ready.to_csv(os.path.join(output_dir, "all_results.csv"))
 
     idx_medians_sorted = np.asarray([np.median(x) for x in all_for_boxplot]).argsort()
     all_for_boxplot = [all_for_boxplot[i] * 100 for i in idx_medians_sorted]
     all_for_boxplot_names = [rename(all_for_boxplot_names[i]) for i in idx_medians_sorted]
     fig7, ax7 = plt.subplots()
-    fig7.set_figheight(15)
-    fig7.set_figwidth(15)
+    fig7.set_figheight(25)
+    fig7.set_figwidth(10)
+    plt.ylim(55, 90)
     ax7.boxplot(all_for_boxplot, labels=all_for_boxplot_names, whis=[2.5, 97.5])
-    plt.ylabel('F-1 score (%)', fontsize=25)
-    plt.xticks(rotation=75, fontsize=20)
-    plt.yticks(fontsize=20)
+    plt.ylabel('F1-score (%)', fontsize=16)
+    plt.xticks(rotation=65, fontsize=12)
+    plt.yticks(fontsize=12)
     plt.show()
     plt.close()
-

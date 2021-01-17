@@ -17,7 +17,7 @@
 15,True,632422,Not Relevant
 16,True,660734,Not Relevant
 17,True,682125,Relevant
-18,False,690034,Relevant
+18,True,690034,Not Relevant
 19,True,700916,Not Relevant
 20,True,748535,Not Relevant
 21,True,787911,Not Relevant
@@ -81,7 +81,7 @@
 79,True,2329498,Relevant
 80,True,2339670,Not Relevant
 81,True,2364675,Not Relevant
-82,False,2395501,Not Relevant
+82,True,2395501,Relevant
 83,True,2409851,Not Relevant
 84,True,2425531,Not Relevant
 85,True,2426425,Not Relevant
@@ -89,7 +89,7 @@
 87,True,2442558,Relevant
 88,True,2498438,Not Relevant
 89,True,2501460,Not Relevant
-90,False,2515041,Not Relevant
+90,True,2515041,Relevant
 91,True,2591691,Not Relevant
 92,True,2692292,Not Relevant
 93,True,2701569,Not Relevant
@@ -97,7 +97,7 @@
 95,True,2805810,Not Relevant
 96,True,2835183,Not Relevant
 97,True,2879891,Not Relevant
-98,False,2893706,Not Relevant
+98,True,2893706,Relevant
 99,True,2970673,Not Relevant
 100,True,3027821,Relevant
 101,True,3054055,Not Relevant
@@ -291,7 +291,7 @@
 289,True,9757153,Relevant
 290,True,9892226,Not Relevant
 291,True,10206449,Not Relevant
-292,False,10215956,Not Relevant
+292,True,10215956,Relevant
 293,True,10221039,Not Relevant
 294,True,10234663,Not Relevant
 295,True,10352034,Not Relevant
@@ -439,7 +439,7 @@
 437,True,16279349,Not Relevant
 438,True,16284992,Not Relevant
 439,True,16307706,Not Relevant
-440,False,16312508,Not Relevant
+440,True,16312508,Relevant
 441,True,16381472,Relevant
 442,True,16387324,Relevant
 443,True,16451757,Not Relevant
@@ -449,7 +449,7 @@
 447,True,16617238,Not Relevant
 448,True,16632820,Not Relevant
 449,True,16682639,Not Relevant
-450,False,16697206,Not Relevant
+450,True,16697206,Relevant
 451,True,16778712,Relevant
 452,True,16790523,Not Relevant
 453,True,16912218,Not Relevant
@@ -494,7 +494,7 @@
 492,True,18246775,Not Relevant
 493,True,18330026,Not Relevant
 494,True,18339019,Relevant
-495,False,18450593,Not Relevant
+495,True,18450593,Relevant
 496,True,18511602,Not Relevant
 497,True,18540407,Not Relevant
 498,True,18584966,Relevant
@@ -765,7 +765,7 @@
 763,True,29807674,Not Relevant
 764,True,29859812,Not Relevant
 765,True,29912996,Not Relevant
-766,False,29913220,Not Relevant
+766,True,29913220,Relevant
 767,True,29920312,Not Relevant
 768,True,29948795,Relevant
 769,True,29953382,Not Relevant

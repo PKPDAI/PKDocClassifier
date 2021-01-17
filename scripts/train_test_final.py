@@ -78,17 +78,18 @@ def train_final_pipeline(train_data: pd.DataFrame, train_labels: pd.DataFrame, b
 def predict_on_test(test_data: pd.DataFrame, test_labels: pd.DataFrame, optimal_pipeline: Pipeline) -> pd.DataFrame:
     assert test_data.pmid.to_list() == test_labels.pmid.to_list()
     test_labels = test_labels['label']
-    print("Predicting test instances...")
+    print("Predicting test instances, this might take a few minutes...")
     pred_test = optimal_pipeline.predict(test_data)
 
     test_results = pd.DataFrame(pred_test == test_labels.values, columns=['Result'])
+    accuracy = sum(test_results['Result'].values) / len(test_results)
     test_results['pmid'] = test_data['pmid']
     test_results['Correct label'] = test_labels
-    precision_test, recall_test, f1_test = precision_recall_fscore_support(test_labels, pred_test,
-                                                                           average='binary',
-                                                                           pos_label="Relevant")
+    precision_test, recall_test, f1_test, _ = precision_recall_fscore_support(test_labels, pred_test,
+                                                                              average='binary',
+                                                                              pos_label="Relevant")
     print("===== Final results on the test set ==== ")
-    print("Precision: {}\nRecall: {}\n F1: {}\n".format(precision_test, recall_test, f1_test))
+    print("Precision: {}\nRecall: {}\nF1: {}\nAccuracy: {}".format(precision_test, recall_test, f1_test, accuracy))
     test_results.sort_values(by=['Result'])
     return test_results
 
