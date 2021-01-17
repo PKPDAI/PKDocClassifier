@@ -187,7 +187,16 @@ Run the cross-validation analyses:
 
 Train the final pipeline (preprocessing, encoding, decoding) from scratch with optimal hyperparameters and apply it to the test set:
 
-
+   ````
+   python scripts/train_test_final.py \
+       --path-train  data/subsets/dev_subset.parquet \
+       --train-labels  data/labels/dev_data.csv \
+       --path-test  data/subsets/test_subset.parquet \
+       --test-labels  data/labels/test_data.csv \
+       --cv-dir  data/results/final-pipeline \
+       --output-dir  data/results/final-pipeline \
+       --train-pipeline  False 
+   ````
 
 # Make new predictions
 
