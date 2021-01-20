@@ -148,7 +148,7 @@ def main():
     parser.add_argument("--train-pipeline", type=str2bool, nargs='?',
                         help="Determine whether the input to process is from SPECTER",
                         const=True,
-                        default=False)
+                        default=True)
 
     args = parser.parse_args()
     run(path_train=args.path_train, train_labels=args.train_labels, path_test=args.path_test,

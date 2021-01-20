@@ -6,7 +6,7 @@
 
 
 
-This repository contains custom pipes and models to classify scientific publications from PubMed depending on whether they estimate pharmacokinetic (PK) parameters from _in vivo_ studies. The final pipeline retrieved more than 120K PK publications and runs weekly updates. All the retrieved data is at https://app.pkpdai.com/
+This repository contains custom pipes and models to classify scientific publications from PubMed depending on whether they estimate pharmacokinetic (PK) parameters from _in vivo_ studies. The final pipeline retrieved more than 120K PK publications and runs weekly updates available at https://app.pkpdai.com/.
 
 # Reproduce our results
 
@@ -167,9 +167,18 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
 
    ````
    python scripts/display_results.py \
-       --input-dir  data/results/distributional\
-       --output-dir data/final/distributional
+       --input-dir  data/results/distributional \
+       --output-dir data/final/distributional \
+       --convert-latex
    ````
+   
+   ````
+   python scripts/display_results.py \
+       --input-dir  data/results/distributional/bow_and_distributional \
+       --output-dir data/final/distributional/bow_and_distributional \
+       --convert-latex
+   ````
+
    From these plots we can see that the best-performing architecture on the training data, on average, is the one using average embeddings from BioBERT and unigram features. 
 
 
@@ -195,7 +204,7 @@ Train the final pipeline (preprocessing, encoding, decoding) from scratch with o
        --test-labels  data/labels/test_data.csv \
        --cv-dir  data/results/final-pipeline \
        --output-dir  data/results/final-pipeline \
-       --train-pipeline  False 
+       --train-pipeline  True 
    ````
 
 # Make new predictions
