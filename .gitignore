@@ -85,5 +85,6 @@ cython_debug/
 /data/encoded/*
 /data/results/ngrams/bootstrap/
 /data/results/fields/bootstrap/
+/data/results/distributional/bootstrap/
 /specter/
 /pk_classifier.egg-info/
