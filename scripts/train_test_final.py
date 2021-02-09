@@ -1,5 +1,5 @@
 """Script where the final pipeline is trained from scratch (preprocessing, encoding, decoding) with optimal
-hyperparameters and applied to the test set"""
+hyperparameters on all the training data and applied to the test set"""
 
 import argparse
 import os

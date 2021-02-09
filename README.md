@@ -213,6 +213,8 @@ Train the final pipeline (preprocessing, encoding, decoding) from scratch with o
       --train-pipeline  True 
    ````
 
+Final results on the test set should be printed on the terminal.
+
 ## Make new predictions
 
 
