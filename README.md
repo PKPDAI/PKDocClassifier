@@ -64,7 +64,7 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
    python scripts/features_bow.py
    ````
 
-2. Bootstrap field analysis (~3h on 12 threads, requires at least 16GB of RAM)
+2. Bootstrap field analysis (~3h on 12 threads, requires at least 16GB of RAM, **set overwrite to False if you want to skip this step**)
 
    ````
    python scripts/bootstrap_bow.py \
@@ -75,7 +75,7 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
       --overwrite True
    ````
 
-3. Bootstrap n-grams (~3h on 12 threads, requires at least 16GB of RAM)
+3. Bootstrap n-grams (**set overwrite to False if you want to skip this step**)
 
    ````
    python scripts/bootstrap_bow.py \
@@ -143,7 +143,7 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
    python scripts/features_dist.py
    ````
 
-3. Run bootstrap iterations for distributed representations:
+3. Run bootstrap iterations for distributed representations (**set overwrite to False if you want to skip this step**):
    ````
    python scripts/bootstrap_dist.py \
       --is-specter True \
