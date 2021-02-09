@@ -2,7 +2,7 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/fgh95/PKDocClassifier/blob/master/LICENSE) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://app.pkpdai.com/) ![version](https://img.shields.io/badge/version-0.1.0-blue) 
 
 
-[**PKDocClassifier**](#pkdocclassifier)| [**Data**](#data) | [**Reproduce our results**](#reproduce-our-results) | [**Make new predictions**](#make-new-predictions) | [**Citing**](#citation)
+[**PKDocClassifier**](#pkdocclassifier)| [**Data**](#data) | [**Reproduce our results**](#reproduce-our-results) | [**User our model**](#make-new-predictions) | [**Citing**](#citation)
 
 This repository contains custom pipes and models to classify scientific publications from PubMed depending on whether they estimate pharmacokinetic (PK) parameters from _in vivo_ studies. The final pipeline retrieved more than 121K PK publications and runs weekly updates available at https://app.pkpdai.com/.
 
@@ -215,7 +215,7 @@ Train the final pipeline (preprocessing, encoding, decoding) from scratch with o
 
 Final results on the test set should be printed on the terminal.
 
-## Make new predictions
+## User our model
 
 See a toy example of how to make new predictions [here](https://github.com/fgh95/PKDocClassifier/tree/master/scripts/NewPredictions.ipynb).
 
