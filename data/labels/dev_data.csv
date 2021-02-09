@@ -1,0 +1,3993 @@
+ID,pmid,Dataset,label
+1,1564023,training,Not Relevant
+2,1614591,training,Not Relevant
+3,1643752,training,Relevant
+4,1645579,training,Not Relevant
+5,1663791,training,Not Relevant
+6,1689904,training,Not Relevant
+7,1700441,training,Not Relevant
+8,1706262,training,Not Relevant
+9,1709343,training,Not Relevant
+10,1715264,training,Not Relevant
+11,1718950,training,Not Relevant
+12,1724176,training,Not Relevant
+13,1765042,training,Relevant
+14,1784469,training,Not Relevant
+15,1794001,training,Not Relevant
+16,1801154,training,Relevant
+17,1823862,training,Not Relevant
+18,1866694,training,Not Relevant
+19,1880724,training,Relevant
+20,1889912,training,Relevant
+21,1935820,training,Not Relevant
+22,1961925,training,Not Relevant
+23,1981546,training,Relevant
+24,1991835,training,Not Relevant
+25,2003368,training,Not Relevant
+26,2027015,training,Not Relevant
+27,2048014,training,Not Relevant
+28,2057987,training,Not Relevant
+29,2074254,training,Relevant
+30,2114465,training,Not Relevant
+31,2153524,training,Not Relevant
+32,2157527,training,Not Relevant
+33,2196250,training,Not Relevant
+34,2211452,training,Relevant
+35,2229205,training,Relevant
+36,2245168,training,Relevant
+37,2257658,training,Not Relevant
+38,2286699,training,Not Relevant
+39,2299362,training,Not Relevant
+40,2347059,training,Not Relevant
+41,2361265,training,Not Relevant
+42,2379385,training,Relevant
+43,2387499,training,Not Relevant
+44,2426259,training,Not Relevant
+45,2485469,training,Not Relevant
+46,2496951,training,Relevant
+47,2513744,training,Relevant
+48,2523878,training,Not Relevant
+49,2540502,training,Not Relevant
+50,2562802,training,Not Relevant
+51,2574239,training,Not Relevant
+52,2578501,training,Not Relevant
+53,2596683,training,Not Relevant
+54,2610509,training,Relevant
+55,2620155,training,Not Relevant
+56,2680228,training,Not Relevant
+57,2684591,training,Not Relevant
+58,2686397,training,Not Relevant
+59,2693775,training,Not Relevant
+60,2713214,training,Relevant
+61,2716073,training,Not Relevant
+62,2727431,training,Not Relevant
+63,2756518,training,Not Relevant
+64,2761263,training,Relevant
+65,2789320,training,Not Relevant
+66,2805658,training,Not Relevant
+67,2819032,training,Not Relevant
+68,2852947,training,Relevant
+69,2896563,training,Not Relevant
+70,2900879,training,Not Relevant
+71,2906097,training,Not Relevant
+72,2960342,training,Relevant
+73,2976351,training,Not Relevant
+74,3011359,training,Not Relevant
+75,3043944,training,Not Relevant
+76,3054222,training,Not Relevant
+77,3069425,training,Not Relevant
+78,3076784,training,Not Relevant
+79,3126724,training,Not Relevant
+80,3150571,training,Not Relevant
+81,3185099,training,Relevant
+82,3225491,training,Relevant
+83,3249344,training,Relevant
+84,3258298,training,Not Relevant
+85,3264120,training,Relevant
+86,3276321,training,Not Relevant
+87,3276508,training,Not Relevant
+88,3284092,training,Not Relevant
+89,3372646,training,Not Relevant
+90,3383542,training,Not Relevant
+91,3429067,training,Relevant
+92,3437104,training,Not Relevant
+93,3439792,training,Relevant
+94,3481836,training,Relevant
+95,3493905,training,Relevant
+96,3530584,training,Not Relevant
+97,3555061,training,Relevant
+98,3567508,training,Not Relevant
+99,3590224,training,Not Relevant
+100,3604530,training,Relevant
+101,3610317,training,Not Relevant
+102,3628194,training,Not Relevant
+103,3629140,training,Relevant
+104,3680576,training,Not Relevant
+105,3742867,training,Not Relevant
+106,3768791,training,Not Relevant
+107,3775801,training,Not Relevant
+108,3834082,training,Relevant
+109,3881456,training,Not Relevant
+110,3899777,training,Not Relevant
+111,3908480,training,Not Relevant
+112,3942558,training,Not Relevant
+113,3948297,training,Relevant
+114,3957664,training,Not Relevant
+115,4032998,training,Not Relevant
+116,4051955,training,Not Relevant
+117,4053638,training,Not Relevant
+118,4218184,training,Not Relevant
+119,4225304,training,Not Relevant
+120,4264433,training,Not Relevant
+121,4374942,training,Not Relevant
+122,4454486,training,Not Relevant
+123,4459031,training,Not Relevant
+124,4464801,training,Not Relevant
+125,4556633,training,Not Relevant
+126,4575719,training,Not Relevant
+127,4656179,training,Not Relevant
+128,4694690,training,Relevant
+129,4780659,training,Not Relevant
+130,4797550,training,Not Relevant
+131,4824906,training,Not Relevant
+132,4842138,training,Not Relevant
+133,4878890,training,Not Relevant
+134,4950232,training,Not Relevant
+135,5423102,training,Not Relevant
+136,5424261,training,Not Relevant
+137,5430002,training,Not Relevant
+138,5446743,training,Not Relevant
+139,5451685,training,Not Relevant
+140,5488769,training,Not Relevant
+141,5514162,training,Not Relevant
+142,5535185,training,Relevant
+143,5618585,training,Not Relevant
+144,5675849,training,Not Relevant
+145,5783568,training,Not Relevant
+146,5822248,training,Not Relevant
+147,5881338,training,Not Relevant
+148,5995194,training,Not Relevant
+149,6085263,training,Not Relevant
+150,6086693,training,Not Relevant
+151,6110742,training,Not Relevant
+152,6120218,training,Not Relevant
+153,6124402,training,Not Relevant
+154,6204966,training,Not Relevant
+155,6210187,training,Not Relevant
+156,6234265,training,Not Relevant
+157,6331150,training,Not Relevant
+158,6371930,training,Not Relevant
+159,6402672,training,Not Relevant
+160,6415082,training,Not Relevant
+161,6462111,training,Not Relevant
+162,6505289,training,Not Relevant
+163,6513967,training,Not Relevant
+164,6539198,training,Not Relevant
+165,6613163,training,Not Relevant
+166,6629664,training,Not Relevant
+167,6636167,training,Not Relevant
+168,6662978,training,Relevant
+169,6687852,training,Not Relevant
+170,6704556,training,Not Relevant
+171,6733008,training,Relevant
+172,6751129,training,Not Relevant
+173,6752084,training,Not Relevant
+174,6764164,training,Not Relevant
+175,6764387,training,Not Relevant
+176,6772607,training,Not Relevant
+177,6777691,training,Not Relevant
+178,6810768,training,Not Relevant
+179,6820912,training,Not Relevant
+180,6844336,training,Not Relevant
+181,6894697,training,Relevant
+182,6909512,training,Not Relevant
+183,6990755,training,Not Relevant
+184,7022206,training,Not Relevant
+185,7028663,training,Not Relevant
+186,7032560,training,Relevant
+187,7042172,training,Not Relevant
+188,7060462,training,Not Relevant
+189,7080033,training,Not Relevant
+190,7120117,training,Relevant
+191,7127389,training,Relevant
+192,7198444,training,Not Relevant
+193,7203002,training,Not Relevant
+194,7211006,training,Not Relevant
+195,7215362,training,Not Relevant
+196,7223286,training,Not Relevant
+197,7264629,training,Not Relevant
+198,7274056,training,Relevant
+199,7284028,training,Not Relevant
+200,7284624,training,Not Relevant
+201,7285987,training,Not Relevant
+202,7302947,training,Not Relevant
+203,7406042,training,Not Relevant
+204,7412556,training,Not Relevant
+205,7413726,training,Not Relevant
+206,7415217,training,Not Relevant
+207,7415484,training,Not Relevant
+208,7430614,training,Not Relevant
+209,7462691,training,Relevant
+210,7479551,training,Not Relevant
+211,7489992,training,Not Relevant
+212,7491272,training,Not Relevant
+213,7506426,training,Not Relevant
+214,7539062,training,Not Relevant
+215,7543657,training,Not Relevant
+216,7550137,training,Not Relevant
+217,7551175,training,Not Relevant
+218,7553336,training,Not Relevant
+219,7578645,training,Not Relevant
+220,7581552,training,Not Relevant
+221,7591582,training,Not Relevant
+222,7597909,training,Relevant
+223,7611820,training,Not Relevant
+224,7622812,training,Not Relevant
+225,7627246,training,Relevant
+226,7630844,training,Not Relevant
+227,7662598,training,Relevant
+228,7674566,training,Relevant
+229,7720515,training,Relevant
+230,7747269,training,Relevant
+231,7830253,training,Not Relevant
+232,7889861,training,Not Relevant
+233,7907873,training,Relevant
+234,7927862,training,Not Relevant
+235,7936261,training,Not Relevant
+236,7937523,training,Relevant
+237,7945705,training,Relevant
+238,7970444,training,Relevant
+239,7971714,training,Not Relevant
+240,7996320,training,Not Relevant
+241,8004155,training,Not Relevant
+242,8030508,training,Not Relevant
+243,8068500,training,Relevant
+244,8073537,training,Not Relevant
+245,8217358,training,Relevant
+246,8225127,training,Relevant
+247,8233233,training,Not Relevant
+248,8237055,training,Not Relevant
+249,8241014,training,Not Relevant
+250,8249080,training,Relevant
+251,8277372,training,Not Relevant
+252,8317646,training,Not Relevant
+253,8321842,training,Relevant
+254,8327652,training,Not Relevant
+255,8337895,training,Not Relevant
+256,8377589,training,Not Relevant
+257,8396097,training,Relevant
+258,8408401,training,Relevant
+259,8445036,training,Not Relevant
+260,8448274,training,Not Relevant
+261,8458882,training,Relevant
+262,8489718,training,Not Relevant
+263,8491239,training,Relevant
+264,8573639,training,Not Relevant
+265,8573686,training,Relevant
+266,8600613,training,Not Relevant
+267,8638848,training,Not Relevant
+268,8640342,training,Not Relevant
+269,8646995,training,Not Relevant
+270,8702478,training,Not Relevant
+271,8737123,training,Not Relevant
+272,8778386,training,Not Relevant
+273,8801066,training,Relevant
+274,8808777,training,Not Relevant
+275,8868029,training,Relevant
+276,8877292,training,Not Relevant
+277,8884882,training,Not Relevant
+278,8897139,training,Not Relevant
+279,8946952,training,Not Relevant
+280,8950046,training,Not Relevant
+281,8997494,training,Not Relevant
+282,9020502,training,Not Relevant
+283,9079289,training,Not Relevant
+284,9121813,training,Not Relevant
+285,9128021,training,Not Relevant
+286,9144737,training,Not Relevant
+287,9147125,training,Not Relevant
+288,9184195,training,Not Relevant
+289,9202078,training,Not Relevant
+290,9214677,training,Not Relevant
+291,9233505,training,Not Relevant
+292,9290071,training,Not Relevant
+293,9353142,training,Not Relevant
+294,9372622,training,Relevant
+295,9402309,training,Relevant
+296,9406691,training,Not Relevant
+297,9408226,training,Not Relevant
+298,9435990,training,Not Relevant
+299,9450176,training,Not Relevant
+300,9532603,training,Not Relevant
+301,9537667,training,Not Relevant
+302,9544547,training,Not Relevant
+303,9549636,training,Relevant
+304,9575559,training,Not Relevant
+305,9600719,training,Not Relevant
+306,9608824,training,Relevant
+307,9626921,training,Relevant
+308,9672759,training,Not Relevant
+309,9676823,training,Not Relevant
+310,9729342,training,Not Relevant
+311,9753206,training,Relevant
+312,9764334,training,Relevant
+313,9806994,training,Not Relevant
+314,9811504,training,Not Relevant
+315,9840344,training,Relevant
+316,9855315,training,Not Relevant
+317,9875639,training,Not Relevant
+318,9885296,training,Not Relevant
+319,9950880,training,Not Relevant
+320,10101855,training,Not Relevant
+321,10149779,training,Not Relevant
+322,10217338,training,Not Relevant
+323,10346420,training,Not Relevant
+324,10395298,training,Not Relevant
+325,10476380,training,Not Relevant
+326,10510150,training,Relevant
+327,10534818,training,Not Relevant
+328,10552083,training,Not Relevant
+329,10564155,training,Not Relevant
+330,10567556,training,Not Relevant
+331,10584271,training,Not Relevant
+332,10590192,training,Not Relevant
+333,10613925,training,Relevant
+334,10641221,training,Not Relevant
+335,10654114,training,Not Relevant
+336,10667393,training,Not Relevant
+337,10680168,training,Not Relevant
+338,10688207,training,Not Relevant
+339,10690162,training,Not Relevant
+340,10698008,training,Not Relevant
+341,10706091,training,Relevant
+342,10709801,training,Not Relevant
+343,10750293,training,Not Relevant
+344,10754274,training,Not Relevant
+345,10777574,training,Not Relevant
+346,10840686,training,Not Relevant
+347,10846013,training,Not Relevant
+348,10856681,training,Relevant
+349,10891870,training,Not Relevant
+350,10898086,training,Not Relevant
+351,10908295,training,Not Relevant
+352,10945163,training,Not Relevant
+353,10960139,training,Not Relevant
+354,10968205,training,Not Relevant
+355,10976514,training,Not Relevant
+356,10985229,training,Not Relevant
+357,10990202,training,Not Relevant
+358,10993198,training,Relevant
+359,11069616,training,Not Relevant
+360,11103749,training,Relevant
+361,11144234,training,Not Relevant
+362,11169171,training,Relevant
+363,11181353,training,Not Relevant
+364,11201249,training,Not Relevant
+365,11237772,training,Not Relevant
+366,11248761,training,Not Relevant
+367,11248990,training,Not Relevant
+368,11272106,training,Not Relevant
+369,11288130,training,Not Relevant
+370,11330555,training,Not Relevant
+371,11336649,training,Not Relevant
+372,11350783,training,Not Relevant
+373,11372879,training,Relevant
+374,11373759,training,Not Relevant
+375,11395020,training,Not Relevant
+376,11415461,training,Not Relevant
+377,11418938,training,Not Relevant
+378,11437465,training,Not Relevant
+379,11451042,training,Not Relevant
+380,11467079,training,Not Relevant
+381,11467747,training,Not Relevant
+382,11477331,training,Not Relevant
+383,11487658,training,Not Relevant
+384,11496065,training,Not Relevant
+385,11505369,training,Not Relevant
+386,11543780,training,Not Relevant
+387,11549049,training,Relevant
+388,11563419,training,Not Relevant
+389,11564429,training,Not Relevant
+390,11733088,training,Not Relevant
+391,11739594,training,Not Relevant
+392,11745752,training,Not Relevant
+393,11764179,training,Not Relevant
+394,11796742,training,Not Relevant
+395,11817313,training,Relevant
+396,11829671,training,Not Relevant
+397,11842079,training,Not Relevant
+398,11843744,training,Not Relevant
+399,11850287,training,Not Relevant
+400,11857704,training,Not Relevant
+401,11866441,training,Not Relevant
+402,11875716,training,Not Relevant
+403,11891467,training,Not Relevant
+404,11891565,training,Not Relevant
+405,11933029,training,Relevant
+406,11934243,training,Not Relevant
+407,11948003,training,Relevant
+408,11951941,training,Not Relevant
+409,11951988,training,Not Relevant
+410,11956161,training,Not Relevant
+411,11967728,training,Not Relevant
+412,11990780,training,Not Relevant
+413,11992685,training,Not Relevant
+414,12009421,training,Not Relevant
+415,12183439,training,Not Relevant
+416,12215889,training,Not Relevant
+417,12386131,training,Relevant
+418,12393599,training,Not Relevant
+419,12396867,training,Not Relevant
+420,12411841,training,Not Relevant
+421,12426237,training,Not Relevant
+422,12434199,training,Not Relevant
+423,12445561,training,Not Relevant
+424,12469829,training,Not Relevant
+425,12488482,training,Relevant
+426,12568766,training,Not Relevant
+427,12576410,training,Not Relevant
+428,12579765,training,Relevant
+429,12591350,training,Not Relevant
+430,12611323,training,Not Relevant
+431,12627859,training,Relevant
+432,12670758,training,Not Relevant
+433,12677874,training,Not Relevant
+434,12694866,training,Not Relevant
+435,12706048,training,Not Relevant
+436,12720413,training,Relevant
+437,12725443,training,Not Relevant
+438,12736110,training,Relevant
+439,12744364,training,Not Relevant
+440,12746875,training,Not Relevant
+441,12759895,training,Relevant
+442,12796032,training,Relevant
+443,12797496,training,Not Relevant
+444,12798758,training,Not Relevant
+445,12798972,training,Not Relevant
+446,12814476,training,Not Relevant
+447,12824645,training,Not Relevant
+448,12843216,training,Not Relevant
+449,12855021,training,Not Relevant
+450,12881198,training,Not Relevant
+451,12884333,training,Not Relevant
+452,12897252,training,Not Relevant
+453,12900817,training,Relevant
+454,12908848,training,Not Relevant
+455,12934674,training,Not Relevant
+456,12975333,training,Not Relevant
+457,13747637,training,Not Relevant
+458,13968220,training,Not Relevant
+459,14509713,training,Not Relevant
+460,14526937,training,Not Relevant
+461,14527832,training,Not Relevant
+462,14529538,training,Not Relevant
+463,14551375,training,Relevant
+464,14635181,training,Not Relevant
+465,14651035,training,Not Relevant
+466,14655189,training,Not Relevant
+467,14686717,training,Not Relevant
+468,14703949,training,Not Relevant
+469,14726131,training,Relevant
+470,15005300,training,Not Relevant
+471,15015879,training,Not Relevant
+472,15064917,training,Not Relevant
+473,15113584,training,Relevant
+474,15118262,training,Not Relevant
+475,15128505,training,Not Relevant
+476,15149182,training,Not Relevant
+477,15163205,training,Not Relevant
+478,15181141,training,Not Relevant
+479,15195102,training,Not Relevant
+480,15224411,training,Not Relevant
+481,15252046,training,Not Relevant
+482,15253652,training,Not Relevant
+483,15254833,training,Not Relevant
+484,15292049,training,Not Relevant
+485,15315767,training,Not Relevant
+486,15356235,training,Not Relevant
+487,15369761,training,Not Relevant
+488,15388441,training,Relevant
+489,15479952,training,Not Relevant
+490,15499498,training,Not Relevant
+491,15511563,training,Not Relevant
+492,15541439,training,Not Relevant
+493,15567978,training,Not Relevant
+494,15575621,training,Not Relevant
+495,15618198,training,Not Relevant
+496,15625935,training,Not Relevant
+497,15666041,training,Not Relevant
+498,15695787,training,Not Relevant
+499,15707981,training,Not Relevant
+500,15747152,training,Not Relevant
+501,15768513,training,Not Relevant
+502,15799627,training,Not Relevant
+503,15802882,training,Not Relevant
+504,15852681,training,Not Relevant
+505,15878229,training,Not Relevant
+506,15901744,training,Relevant
+507,15912525,training,Not Relevant
+508,15973685,training,Not Relevant
+509,15979830,training,Not Relevant
+510,16036859,training,Not Relevant
+511,16100236,training,Relevant
+512,16105610,training,Not Relevant
+513,16124404,training,Not Relevant
+514,16141604,training,Relevant
+515,16154040,training,Not Relevant
+516,16180789,training,Not Relevant
+517,16193536,training,Not Relevant
+518,16199684,training,Not Relevant
+519,16201532,training,Not Relevant
+520,16222443,training,Relevant
+521,16251124,training,Not Relevant
+522,16270632,training,Not Relevant
+523,16359479,training,Not Relevant
+524,16365311,training,Not Relevant
+525,16374585,training,Not Relevant
+526,16396841,training,Not Relevant
+527,16428497,training,Relevant
+528,16436328,training,Not Relevant
+529,16470118,training,Not Relevant
+530,16483871,training,Not Relevant
+531,16485454,training,Not Relevant
+532,16533506,training,Not Relevant
+533,16580642,training,Not Relevant
+534,16601807,training,Not Relevant
+535,16612035,training,Not Relevant
+536,16622675,training,Not Relevant
+537,16625029,training,Not Relevant
+538,16650391,training,Not Relevant
+539,16682327,training,Not Relevant
+540,16684712,training,Relevant
+541,16725243,training,Not Relevant
+542,16737587,training,Not Relevant
+543,16755128,training,Not Relevant
+544,16759110,training,Not Relevant
+545,16763718,training,Not Relevant
+546,16778212,training,Not Relevant
+547,16798105,training,Not Relevant
+548,16809800,training,Relevant
+549,16848275,training,Not Relevant
+550,16863462,training,Not Relevant
+551,16871060,training,Not Relevant
+552,16883559,training,Relevant
+553,16891160,training,Relevant
+554,16896303,training,Not Relevant
+555,16965146,training,Not Relevant
+556,16990504,training,Not Relevant
+557,17021761,training,Not Relevant
+558,17025353,training,Not Relevant
+559,17090396,training,Relevant
+560,17093398,training,Not Relevant
+561,17130974,training,Not Relevant
+562,17133275,training,Not Relevant
+563,17163266,training,Relevant
+564,17164373,training,Relevant
+565,17192501,training,Relevant
+566,17204409,training,Not Relevant
+567,17269457,training,Not Relevant
+568,17337085,training,Not Relevant
+569,17339873,training,Not Relevant
+570,17386978,training,Not Relevant
+571,17418900,training,Not Relevant
+572,17488782,training,Relevant
+573,17518507,training,Not Relevant
+574,17562144,training,Not Relevant
+575,17576826,training,Relevant
+576,17596650,training,Not Relevant
+577,17631423,training,Not Relevant
+578,17661678,training,Not Relevant
+579,17709251,training,Not Relevant
+580,17721779,training,Not Relevant
+581,17875190,training,Relevant
+582,17877438,training,Not Relevant
+583,17885736,training,Relevant
+584,17900948,training,Relevant
+585,17954177,training,Not Relevant
+586,17977676,training,Not Relevant
+587,17988777,training,Not Relevant
+588,18002320,training,Not Relevant
+589,18044180,training,Not Relevant
+590,18071957,training,Not Relevant
+591,18178333,training,Not Relevant
+592,18242914,training,Not Relevant
+593,18279106,training,Relevant
+594,18289614,training,Not Relevant
+595,18307502,training,Relevant
+596,18319188,training,Not Relevant
+597,18332796,training,Not Relevant
+598,18367789,training,Not Relevant
+599,18372722,training,Relevant
+600,18416470,training,Relevant
+601,18430202,training,Relevant
+602,18435628,training,Not Relevant
+603,18451780,training,Not Relevant
+604,18463625,training,Not Relevant
+605,18467078,training,Relevant
+606,18483382,training,Relevant
+607,18504956,training,Not Relevant
+608,18605671,training,Not Relevant
+609,18632811,training,Not Relevant
+610,18644198,training,Not Relevant
+611,18713511,training,Relevant
+612,18754478,training,Not Relevant
+613,18773122,training,Not Relevant
+614,18939578,training,Not Relevant
+615,18958401,training,Not Relevant
+616,18976844,training,Not Relevant
+617,18990146,training,Not Relevant
+618,19011858,training,Relevant
+619,19032726,training,Relevant
+620,19051337,training,Not Relevant
+621,19053985,training,Not Relevant
+622,19058832,training,Not Relevant
+623,19075501,training,Not Relevant
+624,19115313,training,Not Relevant
+625,19154107,training,Not Relevant
+626,19156669,training,Relevant
+627,19157514,training,Not Relevant
+628,19209525,training,Not Relevant
+629,19229380,training,Relevant
+630,19235379,training,Not Relevant
+631,19366879,training,Not Relevant
+632,19371619,training,Not Relevant
+633,19374511,training,Not Relevant
+634,19418271,training,Relevant
+635,19421041,training,Not Relevant
+636,19428348,training,Not Relevant
+637,19449194,training,Relevant
+638,19462966,training,Not Relevant
+639,19549303,training,Not Relevant
+640,19610038,training,Not Relevant
+641,19637952,training,Not Relevant
+642,19639240,training,Not Relevant
+643,19672409,training,Not Relevant
+644,19694745,training,Not Relevant
+645,19707043,training,Not Relevant
+646,19771879,training,Not Relevant
+647,19819623,training,Not Relevant
+648,19821348,training,Not Relevant
+649,19825011,training,Relevant
+650,19854080,training,Relevant
+651,19934030,training,Not Relevant
+652,19949929,training,Not Relevant
+653,19951733,training,Not Relevant
+654,19995926,training,Relevant
+655,20065597,training,Not Relevant
+656,20125740,training,Not Relevant
+657,20165896,training,Not Relevant
+658,20199131,training,Not Relevant
+659,20207056,training,Not Relevant
+660,20214592,training,Not Relevant
+661,20232903,training,Not Relevant
+662,20381112,training,Not Relevant
+663,20406307,training,Not Relevant
+664,20408309,training,Not Relevant
+665,20471831,training,Not Relevant
+666,20555328,training,Not Relevant
+667,20605296,training,Not Relevant
+668,20632009,training,Not Relevant
+669,20705615,training,Relevant
+670,20708933,training,Not Relevant
+671,20807961,training,Not Relevant
+672,20837299,training,Relevant
+673,20850524,training,Not Relevant
+674,20947070,training,Not Relevant
+675,21042038,training,Relevant
+676,21056810,training,Not Relevant
+677,21062740,training,Not Relevant
+678,21083005,training,Not Relevant
+679,21118722,training,Not Relevant
+680,21169406,training,Not Relevant
+681,21185160,training,Not Relevant
+682,21254453,training,Not Relevant
+683,21269291,training,Relevant
+684,21276131,training,Not Relevant
+685,21300760,training,Relevant
+686,21393427,training,Relevant
+687,21473839,training,Not Relevant
+688,21473915,training,Not Relevant
+689,21504318,training,Not Relevant
+690,21519214,training,Not Relevant
+691,21601538,training,Relevant
+692,21613232,training,Relevant
+693,21629963,training,Not Relevant
+694,21640175,training,Not Relevant
+695,21647791,training,Not Relevant
+696,21660618,training,Relevant
+697,21793674,training,Not Relevant
+698,21835019,training,Not Relevant
+699,21864403,training,Not Relevant
+700,21870836,training,Not Relevant
+701,21890174,training,Not Relevant
+702,21976976,training,Not Relevant
+703,21993434,training,Not Relevant
+704,22008148,training,Relevant
+705,22076108,training,Not Relevant
+706,22098224,training,Relevant
+707,22105588,training,Relevant
+708,22137964,training,Not Relevant
+709,22152281,training,Not Relevant
+710,22165231,training,Not Relevant
+711,22242687,training,Relevant
+712,22275232,training,Relevant
+713,22286919,training,Relevant
+714,22322899,training,Not Relevant
+715,22351681,training,Not Relevant
+716,22369198,training,Relevant
+717,22374220,training,Not Relevant
+718,22384452,training,Not Relevant
+719,22471142,training,Not Relevant
+720,22472987,training,Not Relevant
+721,22515556,training,Relevant
+722,22517604,training,Not Relevant
+723,22525722,training,Not Relevant
+724,22564835,training,Relevant
+725,22612142,training,Not Relevant
+726,22627223,training,Not Relevant
+727,22634072,training,Relevant
+728,22644862,training,Relevant
+729,22689635,training,Not Relevant
+730,22691291,training,Not Relevant
+731,22719975,training,Not Relevant
+732,22735367,training,Not Relevant
+733,22757747,training,Relevant
+734,22777686,training,Relevant
+735,22809244,training,Not Relevant
+736,22825127,training,Not Relevant
+737,22846044,training,Not Relevant
+738,22851017,training,Not Relevant
+739,22928893,training,Not Relevant
+740,22967225,training,Not Relevant
+741,22967673,training,Not Relevant
+742,22976316,training,Relevant
+743,22991010,training,Not Relevant
+744,23067100,training,Relevant
+745,23083550,training,Not Relevant
+746,23136718,training,Not Relevant
+747,23151050,training,Not Relevant
+748,23176177,training,Not Relevant
+749,23194237,training,Not Relevant
+750,23234150,training,Relevant
+751,23264808,training,Not Relevant
+752,23286178,training,Not Relevant
+753,23303328,training,Not Relevant
+754,23345165,training,Not Relevant
+755,23364264,training,Not Relevant
+756,23420517,training,Relevant
+757,23436680,training,Not Relevant
+758,23461861,training,Relevant
+759,23462389,training,Not Relevant
+760,23477032,training,Not Relevant
+761,23551201,training,Not Relevant
+762,23627705,training,Not Relevant
+763,23675922,training,Not Relevant
+764,23709417,training,Not Relevant
+765,23793696,training,Relevant
+766,23798336,training,Not Relevant
+767,23806607,training,Not Relevant
+768,23807084,training,Relevant
+769,23817346,training,Relevant
+770,23841569,training,Not Relevant
+771,23890237,training,Not Relevant
+772,23994015,training,Not Relevant
+773,24026769,training,Not Relevant
+774,24038512,training,Not Relevant
+775,24051388,training,Not Relevant
+776,24166457,training,Not Relevant
+777,24176185,training,Not Relevant
+778,24202174,training,Not Relevant
+779,24218906,training,Not Relevant
+780,24227626,training,Not Relevant
+781,24229567,training,Not Relevant
+782,24266509,training,Not Relevant
+783,24267726,training,Not Relevant
+784,24301684,training,Not Relevant
+785,24387603,training,Not Relevant
+786,24440429,training,Not Relevant
+787,24443292,training,Not Relevant
+788,24517989,training,Not Relevant
+789,24522565,training,Not Relevant
+790,24547403,training,Not Relevant
+791,24556757,training,Not Relevant
+792,24574331,training,Not Relevant
+793,24598005,training,Not Relevant
+794,24605425,training,Relevant
+795,24616265,training,Relevant
+796,24670100,training,Not Relevant
+797,24691872,training,Not Relevant
+798,24698009,training,Relevant
+799,24707870,training,Relevant
+800,24799699,training,Not Relevant
+801,24825764,training,Not Relevant
+802,24866515,training,Not Relevant
+803,24870363,training,Not Relevant
+804,24880085,training,Not Relevant
+805,24917580,training,Relevant
+806,24932357,training,Not Relevant
+807,24956867,training,Not Relevant
+808,24977292,training,Relevant
+809,24984690,training,Not Relevant
+810,25008056,training,Not Relevant
+811,25011215,training,Not Relevant
+812,25015887,training,Not Relevant
+813,25036017,training,Not Relevant
+814,25036018,training,Not Relevant
+815,25051056,training,Not Relevant
+816,25066628,training,Relevant
+817,25113226,training,Not Relevant
+818,25117078,training,Not Relevant
+819,25118088,training,Not Relevant
+820,25123454,training,Not Relevant
+821,25148065,training,Not Relevant
+822,25159818,training,Not Relevant
+823,25265308,training,Not Relevant
+824,25271172,training,Relevant
+825,25325240,training,Not Relevant
+826,25339160,training,Not Relevant
+827,25380542,training,Not Relevant
+828,25402233,training,Relevant
+829,25408310,training,Relevant
+830,25412253,training,Not Relevant
+831,25416718,training,Not Relevant
+832,25425114,training,Not Relevant
+833,25462312,training,Not Relevant
+834,25477145,training,Not Relevant
+835,25560290,training,Not Relevant
+836,25619919,training,Not Relevant
+837,25655423,training,Not Relevant
+838,25655506,training,Relevant
+839,25673154,training,Not Relevant
+840,25697809,training,Not Relevant
+841,25711339,training,Not Relevant
+842,25726757,training,Not Relevant
+843,25743677,training,Not Relevant
+844,25746014,training,Not Relevant
+845,25774580,training,Not Relevant
+846,25824561,training,Not Relevant
+847,25891783,training,Not Relevant
+848,25948873,training,Not Relevant
+849,25963997,training,Relevant
+850,25965455,training,Not Relevant
+851,25971726,training,Not Relevant
+852,25997662,training,Not Relevant
+853,26021325,training,Not Relevant
+854,26081853,training,Not Relevant
+855,26134060,training,Not Relevant
+856,26222220,training,Not Relevant
+857,26237308,training,Not Relevant
+858,26296292,training,Not Relevant
+859,26304171,training,Relevant
+860,26304335,training,Not Relevant
+861,26304930,training,Not Relevant
+862,26349224,training,Not Relevant
+863,26361143,training,Not Relevant
+864,26377413,training,Not Relevant
+865,26440598,training,Relevant
+866,26450460,training,Not Relevant
+867,26473552,training,Not Relevant
+868,26513505,training,Relevant
+869,26517139,training,Not Relevant
+870,26543366,training,Relevant
+871,26547309,training,Not Relevant
+872,26551921,training,Relevant
+873,26626946,training,Not Relevant
+874,26658763,training,Not Relevant
+875,26678615,training,Not Relevant
+876,26689795,training,Not Relevant
+877,26736268,training,Not Relevant
+878,26753602,training,Not Relevant
+879,26762283,training,Not Relevant
+880,26792373,training,Relevant
+881,26796886,training,Not Relevant
+882,26803007,training,Not Relevant
+883,26873366,training,Not Relevant
+884,26873495,training,Not Relevant
+885,26915709,training,Not Relevant
+886,27028535,training,Not Relevant
+887,27046157,training,Not Relevant
+888,27072431,training,Relevant
+889,27088191,training,Not Relevant
+890,27111148,training,Not Relevant
+891,27114047,training,Not Relevant
+892,27128837,training,Relevant
+893,27132188,training,Not Relevant
+894,27133481,training,Relevant
+895,27135819,training,Not Relevant
+896,27185808,training,Relevant
+897,27186083,training,Not Relevant
+898,27203278,training,Not Relevant
+899,27209494,training,Not Relevant
+900,27217747,training,Not Relevant
+901,27270281,training,Relevant
+902,27302626,training,Not Relevant
+903,27382330,training,Not Relevant
+904,27472892,training,Not Relevant
+905,27513688,training,Relevant
+906,27549778,training,Not Relevant
+907,27550480,training,Not Relevant
+908,27567102,training,Not Relevant
+909,27569695,training,Not Relevant
+910,27580073,training,Not Relevant
+911,27606793,training,Not Relevant
+912,27629123,training,Not Relevant
+913,27693856,training,Not Relevant
+914,27709289,training,Not Relevant
+915,27761779,training,Not Relevant
+916,27767204,training,Not Relevant
+917,27816003,training,Not Relevant
+918,27861439,training,Not Relevant
+919,27937081,training,Relevant
+920,27941394,training,Relevant
+921,28004575,training,Not Relevant
+922,28017769,training,Not Relevant
+923,28028770,training,Not Relevant
+924,28032446,training,Not Relevant
+925,28074473,training,Not Relevant
+926,28079236,training,Not Relevant
+927,28101657,training,Relevant
+928,28211134,training,Not Relevant
+929,28218440,training,Not Relevant
+930,28282291,training,Not Relevant
+931,28301098,training,Relevant
+932,28363098,training,Relevant
+933,28366660,training,Relevant
+934,28388512,training,Not Relevant
+935,28414026,training,Not Relevant
+936,28431349,training,Not Relevant
+937,28431776,training,Not Relevant
+938,28456943,training,Not Relevant
+939,28579029,training,Relevant
+940,28590445,training,Not Relevant
+941,28610955,training,Not Relevant
+942,28637741,training,Not Relevant
+943,28653481,training,Not Relevant
+944,28668891,training,Relevant
+945,28691813,training,Not Relevant
+946,28711678,training,Relevant
+947,28722322,training,Not Relevant
+948,28752396,training,Not Relevant
+949,28798936,training,Not Relevant
+950,28810733,training,Not Relevant
+951,28978313,training,Not Relevant
+952,29049469,training,Not Relevant
+953,29059459,training,Not Relevant
+954,29144137,training,Not Relevant
+955,29164208,training,Not Relevant
+956,29212860,training,Not Relevant
+957,29228299,training,Not Relevant
+958,29273485,training,Relevant
+959,29285551,training,Not Relevant
+960,29382572,training,Not Relevant
+961,29463540,training,Relevant
+962,29506127,training,Not Relevant
+963,29521638,training,Not Relevant
+964,29527636,training,Not Relevant
+965,29551495,training,Not Relevant
+966,29574688,training,Relevant
+967,29661413,training,Relevant
+968,29667952,training,Not Relevant
+969,29673395,training,Not Relevant
+970,29674514,training,Not Relevant
+971,29675639,training,Not Relevant
+972,29679234,training,Relevant
+973,29684147,training,Relevant
+974,29731646,training,Not Relevant
+975,29758944,training,Not Relevant
+976,29764549,training,Relevant
+977,29792287,training,Relevant
+978,29914947,training,Not Relevant
+979,29917114,training,Not Relevant
+980,30027513,training,Not Relevant
+981,30033244,training,Not Relevant
+982,30033744,training,Not Relevant
+983,30056506,training,Not Relevant
+984,30063652,training,Relevant
+985,30115278,training,Not Relevant
+986,30166111,training,Not Relevant
+987,30174447,training,Not Relevant
+988,30241377,training,Relevant
+989,30254496,training,Relevant
+990,30259933,training,Not Relevant
+991,30267412,training,Not Relevant
+992,30371100,training,Not Relevant
+993,30390924,training,Not Relevant
+994,19158532,training,Not Relevant
+995,28255849,training,Relevant
+996,28164202,training,Not Relevant
+997,17090395,training,Not Relevant
+998,14575613,training,Not Relevant
+999,17538396,training,Not Relevant
+1000,3243214,training,Not Relevant
+1001,20945912,training,Not Relevant
+1002,7721697,training,Not Relevant
+1003,19277662,training,Not Relevant
+1004,6631673,training,Relevant
+1005,22436402,training,Not Relevant
+1006,29083536,training,Not Relevant
+1007,6561028,training,Not Relevant
+1008,8811291,training,Not Relevant
+1009,11721966,training,Relevant
+1010,14632096,training,Not Relevant
+1011,11046083,training,Not Relevant
+1012,1690635,training,Not Relevant
+1013,10656629,training,Not Relevant
+1014,22095958,training,Not Relevant
+1015,28137814,training,Relevant
+1016,27884077,training,Not Relevant
+1017,22512732,training,Not Relevant
+1018,3664509,training,Not Relevant
+1019,31519110,training,Not Relevant
+1020,4643299,training,Not Relevant
+1021,235501,training,Not Relevant
+1022,27015880,training,Not Relevant
+1023,15942203,training,Not Relevant
+1024,971699,training,Relevant
+1025,27353045,training,Relevant
+1026,8128245,training,Not Relevant
+1027,10454242,training,Not Relevant
+1028,4095063,training,Relevant
+1029,10751225,training,Not Relevant
+1030,10443172,training,Relevant
+1031,31084393,training,Not Relevant
+1032,11838430,training,Not Relevant
+1033,7012466,training,Not Relevant
+1034,16859799,training,Not Relevant
+1035,6769703,training,Not Relevant
+1036,17245650,training,Not Relevant
+1037,10382557,training,Not Relevant
+1038,14290157,training,Not Relevant
+1039,21540446,training,Not Relevant
+1040,9814882,training,Relevant
+1041,18350515,training,Not Relevant
+1042,28572726,training,Not Relevant
+1043,3596609,training,Relevant
+1044,1523865,training,Relevant
+1045,30959762,training,Not Relevant
+1046,18034666,training,Relevant
+1047,12791389,training,Not Relevant
+1048,29450829,training,Not Relevant
+1049,3677566,training,Not Relevant
+1050,3609113,training,Relevant
+1051,12570048,training,Not Relevant
+1052,4019347,training,Not Relevant
+1053,6487473,training,Relevant
+1054,17092838,training,Not Relevant
+1055,11511951,training,Not Relevant
+1056,8655257,training,Not Relevant
+1057,4730501,training,Not Relevant
+1058,23994763,training,Relevant
+1059,7536924,training,Not Relevant
+1060,15045047,training,Relevant
+1061,15548507,training,Relevant
+1062,24692697,training,Not Relevant
+1063,23631383,training,Not Relevant
+1064,8503872,training,Not Relevant
+1065,9820182,training,Not Relevant
+1066,26468234,training,Not Relevant
+1067,376114,training,Not Relevant
+1068,10208657,training,Not Relevant
+1069,11668058,training,Not Relevant
+1070,7071860,training,Not Relevant
+1071,27802518,training,Not Relevant
+1072,28417527,training,Relevant
+1073,27507824,training,Not Relevant
+1074,4458325,training,Not Relevant
+1075,6267235,training,Not Relevant
+1076,15782324,training,Not Relevant
+1077,3465490,training,Relevant
+1078,23932275,training,Not Relevant
+1079,2813489,training,Not Relevant
+1080,11032731,training,Not Relevant
+1081,24595134,training,Not Relevant
+1082,25197918,training,Not Relevant
+1083,11357867,training,Not Relevant
+1084,21495269,training,Relevant
+1085,24465481,training,Not Relevant
+1086,15558784,training,Not Relevant
+1087,19696237,training,Not Relevant
+1088,3656064,training,Relevant
+1089,7823718,training,Not Relevant
+1090,13129462,training,Not Relevant
+1091,2847939,training,Not Relevant
+1092,11344561,training,Not Relevant
+1093,29113803,training,Not Relevant
+1094,15869316,training,Not Relevant
+1095,7493556,training,Relevant
+1096,19152061,training,Not Relevant
+1097,3829911,training,Not Relevant
+1098,10878524,training,Not Relevant
+1099,11302238,training,Not Relevant
+1100,990648,training,Relevant
+1101,1999160,training,Not Relevant
+1102,19728561,training,Relevant
+1103,18559644,training,Relevant
+1104,2769984,training,Not Relevant
+1105,26010306,training,Not Relevant
+1106,27022852,training,Not Relevant
+1107,9466363,training,Not Relevant
+1108,5382451,training,Not Relevant
+1109,17889135,training,Relevant
+1110,1659332,training,Not Relevant
+1111,29771647,training,Not Relevant
+1112,3206304,training,Not Relevant
+1113,9374668,training,Not Relevant
+1114,8335042,training,Not Relevant
+1115,27713355,training,Not Relevant
+1116,5796447,training,Not Relevant
+1117,18763430,training,Not Relevant
+1118,10832084,training,Not Relevant
+1119,25459730,training,Not Relevant
+1120,24644233,training,Not Relevant
+1121,27439620,training,Not Relevant
+1122,23523663,training,Relevant
+1123,30953687,training,Relevant
+1124,25928348,training,Relevant
+1125,1840326,training,Relevant
+1126,25051761,training,Not Relevant
+1127,17937318,training,Not Relevant
+1128,391035,training,Not Relevant
+1129,17401092,training,Not Relevant
+1130,19758414,training,Not Relevant
+1131,7658783,training,Not Relevant
+1132,11895922,training,Not Relevant
+1133,20552706,training,Not Relevant
+1134,26296963,training,Not Relevant
+1135,25407546,training,Not Relevant
+1136,20921955,training,Not Relevant
+1137,16951619,training,Not Relevant
+1138,12408967,training,Not Relevant
+1139,15872357,training,Not Relevant
+1140,27974147,training,Not Relevant
+1141,16963242,training,Not Relevant
+1142,7122577,training,Not Relevant
+1143,11158897,training,Not Relevant
+1144,12175181,training,Not Relevant
+1145,19246289,training,Not Relevant
+1146,12811422,training,Not Relevant
+1147,3714142,training,Not Relevant
+1148,20541405,training,Relevant
+1149,63158,training,Not Relevant
+1150,28521694,training,Not Relevant
+1151,8514639,training,Relevant
+1152,6440981,training,Not Relevant
+1153,3247590,training,Not Relevant
+1154,17608948,training,Not Relevant
+1155,25495857,training,Not Relevant
+1156,26744587,training,Not Relevant
+1157,19952143,training,Not Relevant
+1158,21258724,training,Not Relevant
+1159,9305582,training,Not Relevant
+1160,12963478,training,Not Relevant
+1161,12467225,training,Not Relevant
+1162,19022677,training,Not Relevant
+1163,2003364,training,Relevant
+1164,21219433,training,Not Relevant
+1165,2568918,training,Not Relevant
+1166,21266188,training,Relevant
+1167,15562136,training,Not Relevant
+1168,9757205,training,Not Relevant
+1169,8299663,training,Not Relevant
+1170,20721467,training,Not Relevant
+1171,7202471,training,Relevant
+1172,29317432,training,Not Relevant
+1173,2378784,training,Not Relevant
+1174,21352914,training,Not Relevant
+1175,2515753,training,Not Relevant
+1176,8564580,training,Not Relevant
+1177,19429509,training,Not Relevant
+1178,30940188,training,Not Relevant
+1179,362853,training,Not Relevant
+1180,6484008,training,Not Relevant
+1181,30206729,training,Not Relevant
+1182,3828202,training,Relevant
+1183,12423248,training,Not Relevant
+1184,1753450,training,Not Relevant
+1185,28640086,training,Not Relevant
+1186,11023980,training,Not Relevant
+1187,3893143,training,Not Relevant
+1188,10644573,training,Not Relevant
+1189,8037677,training,Not Relevant
+1190,17635395,training,Not Relevant
+1191,8782837,training,Not Relevant
+1192,9220467,training,Not Relevant
+1193,9920347,training,Not Relevant
+1194,23355822,training,Not Relevant
+1195,24769252,training,Not Relevant
+1196,25848107,training,Not Relevant
+1197,17965439,training,Not Relevant
+1198,7020706,training,Not Relevant
+1199,27863186,training,Relevant
+1200,15125776,training,Not Relevant
+1201,14741166,training,Not Relevant
+1202,28399267,training,Relevant
+1203,3829018,training,Relevant
+1204,11452184,training,Not Relevant
+1205,16115037,training,Not Relevant
+1206,21780098,training,Not Relevant
+1207,12892837,training,Not Relevant
+1208,6668546,training,Relevant
+1209,6866128,training,Not Relevant
+1210,9703942,training,Not Relevant
+1211,25953735,training,Relevant
+1212,12570858,training,Not Relevant
+1213,29524770,training,Not Relevant
+1214,21801960,training,Relevant
+1215,11571567,training,Not Relevant
+1216,10669910,training,Relevant
+1217,28521250,training,Not Relevant
+1218,8490113,training,Relevant
+1219,22633764,training,Not Relevant
+1220,7587050,training,Relevant
+1221,10698233,training,Not Relevant
+1222,9620637,training,Not Relevant
+1223,29484615,training,Relevant
+1224,16078719,training,Not Relevant
+1225,16697379,training,Not Relevant
+1226,4644642,training,Not Relevant
+1227,3193494,training,Relevant
+1228,2392456,training,Not Relevant
+1229,263717,training,Not Relevant
+1230,6392305,training,Not Relevant
+1231,6750387,training,Not Relevant
+1232,15709888,training,Not Relevant
+1233,7361560,training,Not Relevant
+1234,11168910,training,Relevant
+1235,3936044,training,Relevant
+1236,8511802,training,Not Relevant
+1237,24134216,training,Relevant
+1238,20936439,training,Not Relevant
+1239,10716241,training,Not Relevant
+1240,21354450,training,Not Relevant
+1241,11397394,training,Not Relevant
+1242,3502654,training,Not Relevant
+1243,21732164,training,Not Relevant
+1244,7948187,training,Not Relevant
+1245,24487091,training,Not Relevant
+1246,2661216,training,Not Relevant
+1247,29171502,training,Not Relevant
+1248,12454556,training,Relevant
+1249,1294957,training,Not Relevant
+1250,29465117,training,Not Relevant
+1251,17689811,training,Not Relevant
+1252,28719152,training,Relevant
+1253,12210210,training,Not Relevant
+1254,2009235,training,Not Relevant
+1255,3504395,training,Relevant
+1256,20041798,training,Not Relevant
+1257,9569770,training,Not Relevant
+1258,4359739,training,Not Relevant
+1259,7037265,training,Relevant
+1260,29600640,training,Not Relevant
+1261,8837142,training,Relevant
+1262,11045998,training,Not Relevant
+1263,15313229,training,Not Relevant
+1264,29049226,training,Not Relevant
+1265,7086661,training,Relevant
+1266,18616847,training,Not Relevant
+1267,12617134,training,Not Relevant
+1268,1636703,training,Not Relevant
+1269,7529424,training,Not Relevant
+1270,7086379,training,Not Relevant
+1271,27770912,training,Not Relevant
+1272,1741953,training,Not Relevant
+1273,26355279,training,Not Relevant
+1274,23162701,training,Not Relevant
+1275,27153472,training,Not Relevant
+1276,2353751,training,Not Relevant
+1277,744564,training,Not Relevant
+1278,26895981,training,Relevant
+1279,28924948,training,Not Relevant
+1280,11065353,training,Not Relevant
+1281,1554119,training,Not Relevant
+1282,7878694,training,Relevant
+1283,25517308,training,Relevant
+1284,2468373,training,Not Relevant
+1285,24918171,training,Not Relevant
+1286,31138121,training,Not Relevant
+1287,1230153,training,Not Relevant
+1288,11022017,training,Not Relevant
+1289,28350572,training,Relevant
+1290,19854672,training,Not Relevant
+1291,15863069,training,Not Relevant
+1292,24124123,training,Not Relevant
+1293,2258013,training,Not Relevant
+1294,14657453,training,Not Relevant
+1295,28153492,training,Not Relevant
+1296,9252148,training,Not Relevant
+1297,28643902,training,Not Relevant
+1298,23499655,training,Not Relevant
+1299,11157124,training,Not Relevant
+1300,6764389,training,Not Relevant
+1301,11763270,training,Not Relevant
+1302,8788139,training,Relevant
+1303,9839145,training,Not Relevant
+1304,9662072,training,Not Relevant
+1305,12507759,training,Relevant
+1306,26039628,training,Not Relevant
+1307,24471758,training,Not Relevant
+1308,4131103,training,Not Relevant
+1309,26501141,training,Not Relevant
+1310,20150450,training,Relevant
+1311,21814853,training,Not Relevant
+1312,20133148,training,Not Relevant
+1313,8103798,training,Not Relevant
+1314,30851209,training,Relevant
+1315,17001185,training,Relevant
+1316,29425915,training,Not Relevant
+1317,19229594,training,Not Relevant
+1318,22983304,training,Relevant
+1319,30958881,training,Not Relevant
+1320,8880967,training,Not Relevant
+1321,27655494,training,Not Relevant
+1322,9035044,training,Not Relevant
+1323,8391446,training,Not Relevant
+1324,8321517,training,Relevant
+1325,9765983,training,Not Relevant
+1326,10541689,training,Not Relevant
+1327,27274011,training,Not Relevant
+1328,6725485,training,Relevant
+1329,22760642,training,Not Relevant
+1330,26080512,training,Relevant
+1331,19634181,training,Not Relevant
+1332,20197464,training,Relevant
+1333,27572805,training,Not Relevant
+1334,367208,training,Not Relevant
+1335,2390423,training,Not Relevant
+1336,709096,training,Relevant
+1337,12698988,training,Relevant
+1338,16596469,training,Relevant
+1339,9626905,training,Not Relevant
+1340,19917526,training,Not Relevant
+1341,7403404,training,Relevant
+1342,12009933,training,Relevant
+1343,28087835,training,Not Relevant
+1344,30785748,training,Relevant
+1345,8040937,training,Relevant
+1346,7887175,training,Not Relevant
+1347,11134556,training,Not Relevant
+1348,10473808,training,Not Relevant
+1349,20573569,training,Relevant
+1350,15952782,training,Not Relevant
+1351,713722,training,Not Relevant
+1352,9723828,training,Not Relevant
+1353,6820097,training,Not Relevant
+1354,12842595,training,Not Relevant
+1355,28411971,training,Not Relevant
+1356,3030965,training,Not Relevant
+1357,4729202,training,Not Relevant
+1358,27393562,training,Relevant
+1359,2882877,training,Relevant
+1360,1963279,training,Not Relevant
+1361,22954323,training,Not Relevant
+1362,7127606,training,Not Relevant
+1363,27270784,training,Relevant
+1364,20685614,training,Relevant
+1365,6546538,training,Not Relevant
+1366,6278089,training,Not Relevant
+1367,15222484,training,Not Relevant
+1368,15063340,training,Not Relevant
+1369,21288163,training,Not Relevant
+1370,30055302,training,Not Relevant
+1371,16672219,training,Not Relevant
+1372,11309548,training,Relevant
+1373,28130762,training,Not Relevant
+1374,29329497,training,Relevant
+1375,17614027,training,Not Relevant
+1376,29565327,training,Not Relevant
+1377,6475810,training,Not Relevant
+1378,6990320,training,Not Relevant
+1379,23958474,training,Not Relevant
+1380,7712755,training,Not Relevant
+1381,11293248,training,Not Relevant
+1382,24973521,training,Not Relevant
+1383,30798189,training,Not Relevant
+1384,17964070,training,Not Relevant
+1385,8207594,training,Not Relevant
+1386,10362138,training,Relevant
+1387,20332264,training,Not Relevant
+1388,3402808,training,Not Relevant
+1389,18478438,training,Not Relevant
+1390,16451744,training,Not Relevant
+1391,2810739,training,Relevant
+1392,2044387,training,Not Relevant
+1393,31071346,training,Not Relevant
+1394,24380217,training,Not Relevant
+1395,8202654,training,Not Relevant
+1396,30610747,training,Not Relevant
+1397,4440192,training,Not Relevant
+1398,18417145,training,Not Relevant
+1399,6128198,training,Not Relevant
+1400,1037278,training,Relevant
+1401,3400619,training,Not Relevant
+1402,23863292,training,Not Relevant
+1403,22385211,training,Not Relevant
+1404,2521890,training,Not Relevant
+1405,9895415,training,Relevant
+1406,21511016,training,Relevant
+1407,17804123,training,Not Relevant
+1408,20078610,training,Relevant
+1409,30802932,training,Not Relevant
+1410,12552961,training,Not Relevant
+1411,23784717,training,Not Relevant
+1412,1394121,training,Not Relevant
+1413,16022766,training,Not Relevant
+1414,8383359,training,Relevant
+1415,2818493,training,Not Relevant
+1416,9131485,training,Not Relevant
+1417,7654888,training,Not Relevant
+1418,2349609,training,Not Relevant
+1419,27956798,training,Not Relevant
+1420,28604143,training,Not Relevant
+1421,30710291,training,Not Relevant
+1422,15592839,training,Relevant
+1423,3806953,training,Relevant
+1424,22922142,training,Not Relevant
+1425,28240179,training,Not Relevant
+1426,29980324,training,Not Relevant
+1427,2260634,training,Not Relevant
+1428,23570736,training,Not Relevant
+1429,3327292,training,Not Relevant
+1430,1742606,training,Not Relevant
+1431,9871650,training,Not Relevant
+1432,12985927,training,Not Relevant
+1433,12587832,training,Not Relevant
+1434,29468921,training,Not Relevant
+1435,3393421,training,Relevant
+1436,10866046,training,Not Relevant
+1437,20333502,training,Not Relevant
+1438,10825217,training,Not Relevant
+1439,607963,training,Not Relevant
+1440,8415410,training,Not Relevant
+1441,8091379,training,Relevant
+1442,6132283,training,Not Relevant
+1443,30336808,training,Relevant
+1444,31232274,training,Relevant
+1445,17433706,training,Not Relevant
+1446,17787004,training,Not Relevant
+1447,15200428,training,Not Relevant
+1448,667825,training,Not Relevant
+1449,6897018,training,Relevant
+1450,15519454,training,Not Relevant
+1451,22307498,training,Not Relevant
+1452,30922119,training,Not Relevant
+1453,30529818,training,Not Relevant
+1454,10404321,training,Relevant
+1455,26722697,training,Not Relevant
+1456,17264391,training,Relevant
+1457,23226037,training,Not Relevant
+1458,24191854,training,Not Relevant
+1459,9228047,training,Not Relevant
+1460,30538171,training,Not Relevant
+1461,25030279,training,Not Relevant
+1462,482163,training,Relevant
+1463,9238480,training,Not Relevant
+1464,4990672,training,Not Relevant
+1465,8831821,training,Not Relevant
+1466,29728598,training,Not Relevant
+1467,26367707,training,Not Relevant
+1468,26253653,training,Not Relevant
+1469,12549473,training,Not Relevant
+1470,9169114,training,Not Relevant
+1471,8688988,training,Relevant
+1472,24349945,training,Relevant
+1473,13211667,training,Not Relevant
+1474,22349360,training,Not Relevant
+1475,12678734,training,Not Relevant
+1476,11522121,training,Not Relevant
+1477,20633025,training,Not Relevant
+1478,9428565,training,Relevant
+1479,21181152,training,Not Relevant
+1480,6988205,training,Not Relevant
+1481,20660670,training,Relevant
+1482,8049502,training,Not Relevant
+1483,5054238,training,Not Relevant
+1484,31118630,training,Relevant
+1485,3915966,training,Not Relevant
+1486,9048877,training,Not Relevant
+1487,2338163,training,Not Relevant
+1488,28771735,training,Not Relevant
+1489,14749756,training,Not Relevant
+1490,11871130,training,Not Relevant
+1491,750498,training,Not Relevant
+1492,17604192,training,Relevant
+1493,9479919,training,Not Relevant
+1494,2715911,training,Not Relevant
+1495,9421037,training,Not Relevant
+1496,1638518,training,Not Relevant
+1497,12231373,training,Relevant
+1498,22038462,training,Not Relevant
+1499,4668083,training,Not Relevant
+1500,25936773,training,Not Relevant
+1501,28274484,training,Not Relevant
+1502,9883568,training,Not Relevant
+1503,21969074,training,Not Relevant
+1504,3910326,training,Relevant
+1505,7987565,training,Not Relevant
+1506,11954901,training,Not Relevant
+1507,20407482,training,Not Relevant
+1508,8970874,training,Not Relevant
+1509,25653090,training,Not Relevant
+1510,31228872,training,Relevant
+1511,26580099,training,Relevant
+1512,4424307,training,Not Relevant
+1513,2347797,training,Not Relevant
+1514,8305630,training,Not Relevant
+1515,26260749,training,Not Relevant
+1516,19086315,training,Not Relevant
+1517,18191035,training,Not Relevant
+1518,2702888,training,Not Relevant
+1519,19360353,training,Not Relevant
+1520,9428593,training,Not Relevant
+1521,27662634,training,Relevant
+1522,17454041,training,Not Relevant
+1523,3592758,training,Not Relevant
+1524,3366110,training,Not Relevant
+1525,2672743,training,Not Relevant
+1526,22014457,training,Not Relevant
+1527,26318818,training,Not Relevant
+1528,1844750,training,Not Relevant
+1529,15359567,training,Not Relevant
+1530,22927237,training,Not Relevant
+1531,21780891,training,Not Relevant
+1532,24978402,training,Not Relevant
+1533,4433976,training,Not Relevant
+1534,17639416,training,Not Relevant
+1535,24380288,training,Not Relevant
+1536,29750396,training,Relevant
+1537,25983047,training,Relevant
+1538,20220040,training,Relevant
+1539,7621402,training,Not Relevant
+1540,3549104,training,Not Relevant
+1541,1658250,training,Not Relevant
+1542,7713998,training,Not Relevant
+1543,663674,training,Not Relevant
+1544,2374330,training,Not Relevant
+1545,2676153,training,Not Relevant
+1546,12493174,training,Not Relevant
+1547,9428878,training,Not Relevant
+1548,16421100,training,Not Relevant
+1549,15295278,training,Not Relevant
+1550,17991767,training,Relevant
+1551,14656295,training,Not Relevant
+1552,20966444,training,Not Relevant
+1553,30981181,training,Relevant
+1554,15984776,training,Not Relevant
+1555,18386838,training,Relevant
+1556,27663475,training,Not Relevant
+1557,11149105,training,Not Relevant
+1558,4082424,training,Not Relevant
+1559,25680552,training,Not Relevant
+1560,9362003,training,Not Relevant
+1561,30322458,training,Not Relevant
+1562,7895612,training,Relevant
+1563,3799198,training,Not Relevant
+1564,1435091,training,Relevant
+1565,11119892,training,Relevant
+1566,16411163,training,Not Relevant
+1567,7654491,training,Relevant
+1568,11247795,training,Not Relevant
+1569,23742293,training,Not Relevant
+1570,1490823,training,Not Relevant
+1571,3310583,training,Not Relevant
+1572,5124312,training,Relevant
+1573,8769208,training,Not Relevant
+1574,15239652,training,Relevant
+1575,20563655,training,Not Relevant
+1576,19886226,training,Not Relevant
+1577,11446697,training,Not Relevant
+1578,16266734,training,Not Relevant
+1579,23867642,training,Not Relevant
+1580,3965580,training,Not Relevant
+1581,23357766,training,Not Relevant
+1582,10432677,training,Not Relevant
+1583,5487617,training,Not Relevant
+1584,19096843,training,Not Relevant
+1585,21395360,training,Not Relevant
+1586,14644660,training,Not Relevant
+1587,10997403,training,Not Relevant
+1588,18042506,training,Relevant
+1589,6354859,training,Not Relevant
+1590,21188114,training,Not Relevant
+1591,3315123,training,Not Relevant
+1592,30474103,training,Not Relevant
+1593,22593646,training,Not Relevant
+1594,6874691,training,Not Relevant
+1595,22143528,training,Relevant
+1596,10917540,training,Not Relevant
+1597,18989608,training,Not Relevant
+1598,19344240,training,Not Relevant
+1599,11470559,training,Not Relevant
+1600,12389868,training,Not Relevant
+1601,6397750,training,Not Relevant
+1602,2217404,training,Not Relevant
+1603,18077531,training,Not Relevant
+1604,10212011,training,Not Relevant
+1605,9311449,training,Not Relevant
+1606,32381,training,Not Relevant
+1607,23770213,training,Relevant
+1608,23787673,training,Not Relevant
+1609,30075162,training,Not Relevant
+1610,26660672,training,Relevant
+1611,22706017,training,Not Relevant
+1612,30247920,training,Relevant
+1613,5764441,training,Not Relevant
+1614,15043936,training,Not Relevant
+1615,2491461,training,Relevant
+1616,11075309,training,Not Relevant
+1617,29468420,training,Not Relevant
+1618,22132770,training,Relevant
+1619,6074277,training,Not Relevant
+1620,24194513,training,Relevant
+1621,1596064,training,Not Relevant
+1622,28808314,training,Not Relevant
+1623,18097208,training,Not Relevant
+1624,24470792,training,Not Relevant
+1625,11067736,training,Not Relevant
+1626,2561652,training,Not Relevant
+1627,15022660,training,Not Relevant
+1628,7851470,training,Not Relevant
+1629,6144532,training,Not Relevant
+1630,8883524,training,Not Relevant
+1631,24903031,training,Not Relevant
+1632,2293023,training,Not Relevant
+1633,4035266,training,Not Relevant
+1634,15060509,training,Relevant
+1635,28282993,training,Not Relevant
+1636,10465680,training,Not Relevant
+1637,15033678,training,Relevant
+1638,18535877,training,Not Relevant
+1639,11013490,training,Not Relevant
+1640,12125374,training,Not Relevant
+1641,17673476,training,Relevant
+1642,14614990,training,Not Relevant
+1643,10784063,training,Not Relevant
+1644,12958868,training,Not Relevant
+1645,1696217,training,Not Relevant
+1646,23756214,training,Not Relevant
+1647,17497882,training,Not Relevant
+1648,6213369,training,Not Relevant
+1649,609864,training,Not Relevant
+1650,18786259,training,Not Relevant
+1651,15177925,training,Not Relevant
+1652,15985474,training,Not Relevant
+1653,22344880,training,Not Relevant
+1654,11897581,training,Relevant
+1655,10590278,training,Relevant
+1656,19379059,training,Not Relevant
+1657,11549207,training,Relevant
+1658,21742547,training,Not Relevant
+1659,4077440,training,Relevant
+1660,19952982,training,Not Relevant
+1661,6055916,training,Not Relevant
+1662,6287502,training,Not Relevant
+1663,17085334,training,Not Relevant
+1664,28254086,training,Not Relevant
+1665,22487447,training,Not Relevant
+1666,17117724,training,Not Relevant
+1667,29221899,training,Not Relevant
+1668,24495149,training,Relevant
+1669,22658862,training,Relevant
+1670,19904568,training,Not Relevant
+1671,17403849,training,Not Relevant
+1672,17450625,training,Relevant
+1673,27006091,training,Relevant
+1674,11557604,training,Not Relevant
+1675,28521167,training,Not Relevant
+1676,29274697,training,Not Relevant
+1677,12215243,training,Not Relevant
+1678,2561331,training,Not Relevant
+1679,25222260,training,Not Relevant
+1680,23825221,training,Not Relevant
+1681,12011660,training,Not Relevant
+1682,15765827,training,Not Relevant
+1683,3915994,training,Not Relevant
+1684,28417339,training,Not Relevant
+1685,1379782,training,Not Relevant
+1686,19940033,training,Not Relevant
+1687,24489565,training,Not Relevant
+1688,22661630,training,Not Relevant
+1689,684661,training,Relevant
+1690,7479096,training,Not Relevant
+1691,4153058,training,Not Relevant
+1692,6430097,training,Not Relevant
+1693,1536597,training,Not Relevant
+1694,12672988,training,Not Relevant
+1695,13813835,training,Not Relevant
+1696,6318337,training,Relevant
+1697,19740703,training,Not Relevant
+1698,10612108,training,Not Relevant
+1699,27343476,training,Not Relevant
+1700,6412919,training,Not Relevant
+1701,9753131,training,Not Relevant
+1702,16979934,training,Not Relevant
+1703,184998,training,Not Relevant
+1704,30276868,training,Not Relevant
+1705,25294187,training,Relevant
+1706,2102982,training,Not Relevant
+1707,7126419,training,Relevant
+1708,1457267,training,Relevant
+1709,2756531,training,Not Relevant
+1710,868305,training,Not Relevant
+1711,28945434,training,Relevant
+1712,541409,training,Relevant
+1713,26807332,training,Not Relevant
+1714,12505826,training,Not Relevant
+1715,1726670,training,Not Relevant
+1716,17461495,training,Not Relevant
+1717,14712437,training,Relevant
+1718,5157766,training,Not Relevant
+1719,29582929,training,Not Relevant
+1720,16825689,training,Not Relevant
+1721,10665963,training,Not Relevant
+1722,16852451,training,Not Relevant
+1723,7967632,training,Not Relevant
+1724,15921268,training,Not Relevant
+1725,493333,training,Not Relevant
+1726,24906357,training,Not Relevant
+1727,24243611,training,Not Relevant
+1728,12801036,training,Not Relevant
+1729,19723572,training,Not Relevant
+1730,8001260,training,Not Relevant
+1731,17392396,training,Relevant
+1732,25694060,training,Not Relevant
+1733,30412644,training,Not Relevant
+1734,9625049,training,Not Relevant
+1735,18422652,training,Not Relevant
+1736,8346158,training,Not Relevant
+1737,29423489,training,Relevant
+1738,2591138,training,Not Relevant
+1739,1510163,training,Not Relevant
+1740,3199198,training,Not Relevant
+1741,16164493,training,Relevant
+1742,1678621,training,Relevant
+1743,9892318,training,Not Relevant
+1744,8603281,training,Not Relevant
+1745,1729766,training,Not Relevant
+1746,10205463,training,Not Relevant
+1747,22674563,training,Not Relevant
+1748,2910899,training,Not Relevant
+1749,21970471,training,Relevant
+1750,2460616,training,Not Relevant
+1751,17704243,training,Not Relevant
+1752,23721584,training,Not Relevant
+1753,9200540,training,Not Relevant
+1754,30172209,training,Not Relevant
+1755,11554446,training,Not Relevant
+1756,3125448,training,Not Relevant
+1757,3949090,training,Not Relevant
+1758,2108979,training,Not Relevant
+1759,2235123,training,Not Relevant
+1760,26296069,training,Not Relevant
+1761,6788306,training,Not Relevant
+1762,25681744,training,Not Relevant
+1763,660529,training,Not Relevant
+1764,8308696,training,Not Relevant
+1765,24283396,training,Relevant
+1766,30849661,training,Relevant
+1767,25908834,training,Not Relevant
+1768,30536420,training,Relevant
+1769,11536917,training,Not Relevant
+1770,18797152,training,Not Relevant
+1771,2947935,training,Relevant
+1772,11334349,training,Not Relevant
+1773,8077690,training,Not Relevant
+1774,9648082,training,Not Relevant
+1775,11437980,training,Relevant
+1776,31131515,training,Not Relevant
+1777,9646062,training,Relevant
+1778,22525079,training,Not Relevant
+1779,8881659,training,Not Relevant
+1780,1286937,training,Relevant
+1781,4804792,training,Not Relevant
+1782,1518269,training,Not Relevant
+1783,27837664,training,Not Relevant
+1784,22665050,training,Not Relevant
+1785,2498268,training,Relevant
+1786,24283162,training,Not Relevant
+1787,11797510,training,Not Relevant
+1788,7931031,training,Not Relevant
+1789,23503988,training,Not Relevant
+1790,12583602,training,Not Relevant
+1791,18388870,training,Not Relevant
+1792,25190152,training,Relevant
+1793,7423735,training,Not Relevant
+1794,2200250,training,Not Relevant
+1795,22592987,training,Not Relevant
+1796,16836247,training,Not Relevant
+1797,20042053,training,Not Relevant
+1798,19933527,training,Not Relevant
+1799,30554015,training,Not Relevant
+1800,7578383,training,Not Relevant
+1801,28601765,training,Not Relevant
+1802,28961171,training,Relevant
+1803,2573205,training,Not Relevant
+1804,25956486,training,Not Relevant
+1805,12385714,training,Not Relevant
+1806,27501037,training,Relevant
+1807,22543452,training,Not Relevant
+1808,1933851,training,Relevant
+1809,4617567,training,Not Relevant
+1810,7570676,training,Not Relevant
+1811,10749317,training,Not Relevant
+1812,22442826,training,Relevant
+1813,27693181,training,Not Relevant
+1814,30394854,training,Not Relevant
+1815,16944127,training,Not Relevant
+1816,22994136,training,Not Relevant
+1817,14559103,training,Not Relevant
+1818,1982642,training,Not Relevant
+1819,7156868,training,Not Relevant
+1820,28040371,training,Not Relevant
+1821,18550245,training,Relevant
+1822,23466428,training,Not Relevant
+1823,25607590,training,Not Relevant
+1824,2318131,training,Not Relevant
+1825,17239426,training,Not Relevant
+1826,6954313,training,Not Relevant
+1827,15715596,training,Not Relevant
+1828,7304632,training,Relevant
+1829,27534937,training,Not Relevant
+1830,22842015,training,Not Relevant
+1831,15252778,training,Not Relevant
+1832,10611459,training,Relevant
+1833,1675048,training,Not Relevant
+1834,10828487,training,Not Relevant
+1835,2628587,training,Not Relevant
+1836,14718732,training,Not Relevant
+1837,25607708,training,Not Relevant
+1838,8363442,training,Not Relevant
+1839,620203,training,Not Relevant
+1840,20571610,training,Not Relevant
+1841,22943280,training,Not Relevant
+1842,15961594,training,Not Relevant
+1843,2715254,training,Relevant
+1844,23637119,training,Not Relevant
+1845,7486611,training,Relevant
+1846,10075954,training,Not Relevant
+1847,4456017,training,Not Relevant
+1848,7362229,training,Relevant
+1849,16730273,training,Not Relevant
+1850,12184788,training,Relevant
+1851,2652127,training,Not Relevant
+1852,12046948,training,Not Relevant
+1853,9810146,training,Not Relevant
+1854,31005745,training,Not Relevant
+1855,9766396,training,Not Relevant
+1856,22374456,training,Not Relevant
+1857,29304362,training,Not Relevant
+1858,18473296,training,Not Relevant
+1859,23354567,training,Not Relevant
+1860,7992319,training,Not Relevant
+1861,25474596,training,Not Relevant
+1862,28976319,training,Not Relevant
+1863,15123670,training,Not Relevant
+1864,2310203,training,Not Relevant
+1865,23421555,training,Not Relevant
+1866,27285778,training,Not Relevant
+1867,19088689,training,Not Relevant
+1868,18293616,training,Relevant
+1869,18609420,training,Not Relevant
+1870,19635962,training,Relevant
+1871,6684934,training,Relevant
+1872,11736878,training,Relevant
+1873,2233703,training,Not Relevant
+1874,12127523,training,Relevant
+1875,28042085,training,Not Relevant
+1876,26688135,training,Not Relevant
+1877,24089542,training,Relevant
+1878,15607718,training,Not Relevant
+1879,10564174,training,Not Relevant
+1880,1910576,training,Not Relevant
+1881,6829048,training,Not Relevant
+1882,1471769,training,Not Relevant
+1883,2139772,training,Not Relevant
+1884,29993278,training,Not Relevant
+1885,16837077,training,Not Relevant
+1886,10050082,training,Not Relevant
+1887,29880375,training,Not Relevant
+1888,10490874,training,Not Relevant
+1889,8546398,training,Not Relevant
+1890,1469617,training,Not Relevant
+1891,12822447,training,Not Relevant
+1892,23259441,training,Not Relevant
+1893,7430297,training,Relevant
+1894,25147393,training,Not Relevant
+1895,2170822,training,Not Relevant
+1896,8500773,training,Not Relevant
+1897,1682459,training,Relevant
+1898,2098643,training,Not Relevant
+1899,1595964,training,Relevant
+1900,27353701,training,Not Relevant
+1901,10375387,training,Not Relevant
+1902,9388711,training,Not Relevant
+1903,3709786,training,Relevant
+1904,3477178,training,Not Relevant
+1905,2295792,training,Not Relevant
+1906,2816721,training,Not Relevant
+1907,24346834,training,Not Relevant
+1908,6467175,training,Not Relevant
+1909,8653019,training,Not Relevant
+1910,8216669,training,Not Relevant
+1911,22437652,training,Relevant
+1912,2841320,training,Not Relevant
+1913,19181312,training,Not Relevant
+1914,2223431,training,Relevant
+1915,22471317,training,Not Relevant
+1916,24101508,training,Relevant
+1917,28385095,training,Not Relevant
+1918,5059037,training,Not Relevant
+1919,20398037,training,Relevant
+1920,4544969,training,Not Relevant
+1921,12020064,training,Not Relevant
+1922,25924917,training,Not Relevant
+1923,10965812,training,Not Relevant
+1924,21274882,training,Relevant
+1925,8891468,training,Not Relevant
+1926,1473872,training,Not Relevant
+1927,23512369,training,Not Relevant
+1928,30192754,training,Not Relevant
+1929,19147784,training,Not Relevant
+1930,25446426,training,Not Relevant
+1931,21434772,training,Not Relevant
+1932,15742553,training,Not Relevant
+1933,25231405,training,Relevant
+1934,3410156,training,Not Relevant
+1935,22268821,training,Relevant
+1936,24373858,training,Not Relevant
+1937,27117375,training,Not Relevant
+1938,8539070,training,Not Relevant
+1939,27093751,training,Not Relevant
+1940,17082877,training,Relevant
+1941,3668859,training,Not Relevant
+1942,6844647,training,Not Relevant
+1943,26936336,training,Not Relevant
+1944,129212,training,Not Relevant
+1945,26364849,training,Not Relevant
+1946,16899729,training,Not Relevant
+1947,4149919,training,Not Relevant
+1948,9241592,training,Not Relevant
+1949,11013130,training,Not Relevant
+1950,288932,training,Relevant
+1951,27832514,training,Relevant
+1952,9892089,training,Not Relevant
+1953,28472285,training,Not Relevant
+1954,19895114,training,Not Relevant
+1955,11920751,training,Not Relevant
+1956,16625581,training,Not Relevant
+1957,10601502,training,Not Relevant
+1958,19779035,training,Not Relevant
+1959,23704916,training,Not Relevant
+1960,10486308,training,Not Relevant
+1961,1512281,training,Not Relevant
+1962,20055096,training,Not Relevant
+1963,2015840,training,Not Relevant
+1964,521221,training,Not Relevant
+1965,23460034,training,Relevant
+1966,6773291,training,Relevant
+1967,28406546,training,Not Relevant
+1968,25636511,training,Not Relevant
+1969,27306849,training,Not Relevant
+1970,15763631,training,Not Relevant
+1971,14711790,training,Not Relevant
+1972,19623836,training,Not Relevant
+1973,19403950,training,Not Relevant
+1974,2444177,training,Not Relevant
+1975,18816299,training,Not Relevant
+1976,26937591,training,Not Relevant
+1977,25254638,training,Not Relevant
+1978,27499389,training,Not Relevant
+1979,8006217,training,Not Relevant
+1980,25783855,training,Relevant
+1981,18760927,training,Not Relevant
+1982,16305476,training,Not Relevant
+1983,1506072,training,Relevant
+1984,20205193,training,Not Relevant
+1985,734081,training,Not Relevant
+1986,12787127,training,Not Relevant
+1987,27161280,training,Not Relevant
+1988,3933822,training,Not Relevant
+1989,2917341,training,Not Relevant
+1990,10635598,training,Not Relevant
+1991,11243204,training,Relevant
+1992,6456008,training,Relevant
+1993,1438796,training,Not Relevant
+1994,2274630,training,Not Relevant
+1995,18840007,training,Not Relevant
+1996,2721225,training,Not Relevant
+1997,10625311,training,Not Relevant
+1998,29023867,training,Relevant
+1999,28974738,training,Not Relevant
+2000,3301901,training,Not Relevant
+2001,16417035,training,Not Relevant
+2002,8842345,training,Relevant
+2003,28074420,training,Not Relevant
+2004,8894464,training,Not Relevant
+2005,27886532,training,Relevant
+2006,10426701,training,Not Relevant
+2007,12297125,training,Not Relevant
+2008,17675256,training,Not Relevant
+2009,1820889,training,Relevant
+2010,26220913,training,Not Relevant
+2011,16412237,training,Not Relevant
+2012,26852854,training,Not Relevant
+2013,15471733,training,Not Relevant
+2014,17396619,training,Not Relevant
+2015,10751901,training,Not Relevant
+2016,25825484,training,Not Relevant
+2017,14604211,training,Not Relevant
+2018,11801808,training,Not Relevant
+2019,17298952,training,Not Relevant
+2020,8025332,training,Not Relevant
+2021,5013369,training,Not Relevant
+2022,26513528,training,Not Relevant
+2023,27821250,training,Not Relevant
+2024,27166429,training,Not Relevant
+2025,16885612,training,Not Relevant
+2026,29353821,training,Relevant
+2027,23681974,training,Not Relevant
+2028,17008586,training,Not Relevant
+2029,9510983,training,Relevant
+2030,28791550,training,Not Relevant
+2031,6791562,training,Relevant
+2032,3136948,training,Not Relevant
+2033,11428164,training,Not Relevant
+2034,42718,training,Not Relevant
+2035,430237,training,Not Relevant
+2036,4407679,training,Not Relevant
+2037,10576455,training,Not Relevant
+2038,24718918,training,Not Relevant
+2039,21543465,training,Not Relevant
+2040,11334283,training,Not Relevant
+2041,3972131,training,Not Relevant
+2042,18927314,training,Relevant
+2043,29415861,training,Not Relevant
+2044,10093920,training,Not Relevant
+2045,16391759,training,Not Relevant
+2046,12194022,training,Not Relevant
+2047,1599406,training,Not Relevant
+2048,30961123,training,Relevant
+2049,15522980,training,Not Relevant
+2050,9090709,training,Not Relevant
+2051,25570731,training,Relevant
+2052,10638392,training,Relevant
+2053,536469,training,Not Relevant
+2054,16910144,training,Not Relevant
+2055,22071000,training,Not Relevant
+2056,21473048,training,Not Relevant
+2057,10620320,training,Not Relevant
+2058,28441967,training,Not Relevant
+2059,25313022,training,Relevant
+2060,9867556,training,Not Relevant
+2061,22871975,training,Not Relevant
+2062,26026951,training,Not Relevant
+2063,26487917,training,Not Relevant
+2064,27329475,training,Not Relevant
+2065,15319802,training,Not Relevant
+2066,2752366,training,Not Relevant
+2067,10224860,training,Not Relevant
+2068,26919659,training,Not Relevant
+2069,17207854,training,Not Relevant
+2070,8437827,training,Not Relevant
+2071,25080080,training,Not Relevant
+2072,1749211,training,Not Relevant
+2073,12890006,training,Relevant
+2074,28601755,training,Relevant
+2075,6759105,training,Not Relevant
+2076,10028744,training,Not Relevant
+2077,15325918,training,Not Relevant
+2078,3738459,training,Not Relevant
+2079,25864370,training,Not Relevant
+2080,25222040,training,Not Relevant
+2081,18487659,training,Not Relevant
+2082,25737423,training,Not Relevant
+2083,3349389,training,Relevant
+2084,25536900,training,Not Relevant
+2085,18172612,training,Not Relevant
+2086,8089271,training,Not Relevant
+2087,11163983,training,Not Relevant
+2088,7988515,training,Not Relevant
+2089,19039248,training,Not Relevant
+2090,23888060,training,Not Relevant
+2091,565216,training,Not Relevant
+2092,28765600,training,Not Relevant
+2093,11150130,training,Not Relevant
+2094,23238784,training,Not Relevant
+2095,21626811,training,Not Relevant
+2096,1970777,training,Not Relevant
+2097,20811008,training,Not Relevant
+2098,31004823,training,Not Relevant
+2099,703012,training,Not Relevant
+2100,12597538,training,Not Relevant
+2101,3957489,training,Relevant
+2102,10511401,training,Not Relevant
+2103,29874005,training,Not Relevant
+2104,7480390,training,Not Relevant
+2105,98115,training,Relevant
+2106,4972215,training,Not Relevant
+2107,2658889,training,Not Relevant
+2108,7891680,training,Not Relevant
+2109,25944992,training,Not Relevant
+2110,5481998,training,Not Relevant
+2111,11456453,training,Not Relevant
+2112,9661541,training,Not Relevant
+2113,2680965,training,Not Relevant
+2114,24290851,training,Not Relevant
+2115,20424769,training,Not Relevant
+2116,24451027,training,Not Relevant
+2117,7836471,training,Not Relevant
+2118,28369613,training,Not Relevant
+2119,30218123,training,Not Relevant
+2120,24286216,training,Relevant
+2121,11433696,training,Not Relevant
+2122,26149228,training,Not Relevant
+2123,2012559,training,Not Relevant
+2124,20195579,training,Not Relevant
+2125,3237526,training,Not Relevant
+2126,23589173,training,Not Relevant
+2127,5762963,training,Not Relevant
+2128,17897801,training,Not Relevant
+2129,28989080,training,Not Relevant
+2130,12411808,training,Relevant
+2131,20957217,training,Not Relevant
+2132,16778721,training,Not Relevant
+2133,25966866,training,Not Relevant
+2134,3340084,training,Not Relevant
+2135,27349771,training,Not Relevant
+2136,22549977,training,Not Relevant
+2137,21822666,training,Not Relevant
+2138,3269608,training,Not Relevant
+2139,9112342,training,Not Relevant
+2140,12678408,training,Not Relevant
+2141,12383447,training,Not Relevant
+2142,23531079,training,Not Relevant
+2143,2360338,training,Not Relevant
+2144,17125532,training,Not Relevant
+2145,2352172,training,Not Relevant
+2146,19544367,training,Not Relevant
+2147,15104134,training,Not Relevant
+2148,28126271,training,Not Relevant
+2149,23958439,training,Not Relevant
+2150,15532067,training,Relevant
+2151,4027118,training,Relevant
+2152,9811441,training,Relevant
+2153,10025364,training,Relevant
+2154,7582656,training,Not Relevant
+2155,1319874,training,Relevant
+2156,2628212,training,Not Relevant
+2157,1783897,training,Not Relevant
+2158,28825794,training,Not Relevant
+2159,2258424,training,Not Relevant
+2160,2387751,training,Not Relevant
+2161,4020636,training,Relevant
+2162,4719397,training,Not Relevant
+2163,23079519,training,Relevant
+2164,3754100,training,Not Relevant
+2165,19911259,training,Not Relevant
+2166,23369636,training,Not Relevant
+2167,9004956,training,Not Relevant
+2168,12018005,training,Not Relevant
+2169,23035645,training,Not Relevant
+2170,6549267,training,Not Relevant
+2171,16978690,training,Not Relevant
+2172,1674889,training,Relevant
+2173,2499954,training,Not Relevant
+2174,10512526,training,Not Relevant
+2175,12069966,training,Not Relevant
+2176,26778711,training,Not Relevant
+2177,2279107,training,Not Relevant
+2178,24002097,training,Relevant
+2179,10501205,training,Not Relevant
+2180,16105568,training,Not Relevant
+2181,22377965,training,Not Relevant
+2182,17683175,training,Not Relevant
+2183,9192283,training,Not Relevant
+2184,2769308,training,Not Relevant
+2185,16125355,training,Not Relevant
+2186,379420,training,Not Relevant
+2187,29408757,training,Not Relevant
+2188,6149842,training,Not Relevant
+2189,11226143,training,Not Relevant
+2190,6000697,training,Not Relevant
+2191,8575639,training,Not Relevant
+2192,11903953,training,Not Relevant
+2193,8483800,training,Not Relevant
+2194,8911750,training,Not Relevant
+2195,6234387,training,Relevant
+2196,11390729,training,Relevant
+2197,25795051,training,Not Relevant
+2198,6206087,training,Not Relevant
+2199,24882155,training,Not Relevant
+2200,7878347,training,Not Relevant
+2201,5697814,training,Not Relevant
+2202,10604817,training,Not Relevant
+2203,3209794,training,Not Relevant
+2204,3366167,training,Relevant
+2205,11288911,training,Not Relevant
+2206,16528493,training,Not Relevant
+2207,817875,training,Not Relevant
+2208,6416625,training,Not Relevant
+2209,16344917,training,Not Relevant
+2210,10486187,training,Relevant
+2211,15893543,training,Not Relevant
+2212,23122301,training,Not Relevant
+2213,2575493,training,Relevant
+2214,6959116,training,Not Relevant
+2215,10464766,training,Relevant
+2216,27068636,training,Not Relevant
+2217,20123565,training,Not Relevant
+2218,11551116,training,Not Relevant
+2219,7105041,training,Not Relevant
+2220,25152289,training,Not Relevant
+2221,27556217,training,Not Relevant
+2222,12584249,training,Not Relevant
+2223,6906262,training,Not Relevant
+2224,22285524,training,Not Relevant
+2225,24329110,training,Not Relevant
+2226,10814712,training,Not Relevant
+2227,29693578,training,Relevant
+2228,22531233,training,Not Relevant
+2229,19203824,training,Not Relevant
+2230,3888431,training,Not Relevant
+2231,1827124,training,Not Relevant
+2232,18654207,training,Not Relevant
+2233,209739,training,Not Relevant
+2234,27734286,training,Not Relevant
+2235,9640281,training,Not Relevant
+2236,12642302,training,Not Relevant
+2237,3618775,training,Not Relevant
+2238,15591587,training,Not Relevant
+2239,26349527,training,Not Relevant
+2240,21751488,training,Not Relevant
+2241,8986061,training,Not Relevant
+2242,6768168,training,Not Relevant
+2243,23726788,training,Not Relevant
+2244,8852664,training,Not Relevant
+2245,27560019,training,Not Relevant
+2246,28350697,training,Not Relevant
+2247,28141813,training,Relevant
+2248,5832249,training,Not Relevant
+2249,4560865,training,Not Relevant
+2250,2795208,training,Relevant
+2251,1146275,training,Not Relevant
+2252,1839084,training,Not Relevant
+2253,6371583,training,Not Relevant
+2254,17311984,training,Not Relevant
+2255,19736932,training,Relevant
+2256,22116543,training,Relevant
+2257,15643550,training,Relevant
+2258,7112759,training,Not Relevant
+2259,26338001,training,Not Relevant
+2260,12738265,training,Not Relevant
+2261,6480923,training,Not Relevant
+2262,11036983,training,Not Relevant
+2263,2830204,training,Not Relevant
+2264,27736030,training,Not Relevant
+2265,15001711,training,Not Relevant
+2266,17604275,training,Not Relevant
+2267,2246677,training,Not Relevant
+2268,11817063,training,Not Relevant
+2269,6324123,training,Not Relevant
+2270,16846797,training,Not Relevant
+2271,10620470,training,Not Relevant
+2272,18370508,training,Relevant
+2273,6699200,training,Not Relevant
+2274,26474199,training,Not Relevant
+2275,26202187,training,Not Relevant
+2276,1332353,training,Not Relevant
+2277,9707499,training,Not Relevant
+2278,512321,training,Not Relevant
+2279,19855983,training,Not Relevant
+2280,18248425,training,Not Relevant
+2281,11375721,training,Not Relevant
+2282,7952097,training,Not Relevant
+2283,1130521,training,Not Relevant
+2284,7106988,training,Relevant
+2285,25695586,training,Not Relevant
+2286,14951450,training,Not Relevant
+2287,1782737,training,Not Relevant
+2288,25593342,training,Not Relevant
+2289,14760610,training,Not Relevant
+2290,5371202,training,Not Relevant
+2291,2781704,training,Not Relevant
+2292,19573733,training,Not Relevant
+2293,4378073,training,Not Relevant
+2294,10563310,training,Not Relevant
+2295,12810299,training,Not Relevant
+2296,3915154,training,Not Relevant
+2297,17537876,training,Not Relevant
+2298,24113673,training,Not Relevant
+2299,29096571,training,Not Relevant
+2300,12177769,training,Not Relevant
+2301,2329429,training,Relevant
+2302,25384117,training,Relevant
+2303,19962299,training,Not Relevant
+2304,29633270,training,Not Relevant
+2305,6283699,training,Relevant
+2306,7508204,training,Not Relevant
+2307,10512075,training,Relevant
+2308,9885302,training,Relevant
+2309,7840569,training,Not Relevant
+2310,12851049,training,Not Relevant
+2311,2892925,training,Not Relevant
+2312,26491012,training,Relevant
+2313,17719196,training,Relevant
+2314,7159316,training,Not Relevant
+2315,4151382,training,Not Relevant
+2316,2113749,training,Not Relevant
+2317,15669332,training,Not Relevant
+2318,18058046,training,Not Relevant
+2319,6421538,training,Relevant
+2320,2837834,training,Not Relevant
+2321,25073836,training,Relevant
+2322,20175526,training,Not Relevant
+2323,10667929,training,Not Relevant
+2324,12019626,training,Not Relevant
+2325,19783127,training,Not Relevant
+2326,130395,training,Not Relevant
+2327,21420284,training,Not Relevant
+2328,467631,training,Not Relevant
+2329,11711314,training,Not Relevant
+2330,1356330,training,Not Relevant
+2331,10845858,training,Not Relevant
+2332,6396052,training,Not Relevant
+2333,26992790,training,Not Relevant
+2334,30082554,training,Relevant
+2335,1826901,training,Relevant
+2336,15032249,training,Not Relevant
+2337,17374790,training,Not Relevant
+2338,23510368,training,Not Relevant
+2339,15979103,training,Relevant
+2340,20849319,training,Not Relevant
+2341,16777285,training,Not Relevant
+2342,12019874,training,Not Relevant
+2343,7207158,training,Not Relevant
+2344,11216526,training,Not Relevant
+2345,6491984,training,Relevant
+2346,21276042,training,Relevant
+2347,20351346,training,Not Relevant
+2348,18241888,training,Not Relevant
+2349,19555240,training,Not Relevant
+2350,17464745,training,Not Relevant
+2351,16713082,training,Not Relevant
+2352,30118378,training,Not Relevant
+2353,11359113,training,Not Relevant
+2354,15257305,training,Not Relevant
+2355,29281130,training,Not Relevant
+2356,8494382,training,Relevant
+2357,18848482,training,Not Relevant
+2358,1148050,training,Not Relevant
+2359,26752674,training,Not Relevant
+2360,2379173,training,Relevant
+2361,17143057,training,Not Relevant
+2362,8593490,training,Relevant
+2363,17722625,training,Not Relevant
+2364,2861054,training,Not Relevant
+2365,9815200,training,Not Relevant
+2366,10836296,training,Not Relevant
+2367,2122660,training,Not Relevant
+2368,369179,training,Not Relevant
+2369,18478192,training,Relevant
+2370,18486370,training,Relevant
+2371,7032901,training,Not Relevant
+2372,24648045,training,Not Relevant
+2373,22661887,training,Not Relevant
+2374,25533183,training,Not Relevant
+2375,17941730,training,Not Relevant
+2376,11557606,training,Not Relevant
+2377,1779667,training,Not Relevant
+2378,11420886,training,Relevant
+2379,163960,training,Not Relevant
+2380,6752461,training,Relevant
+2381,26352940,training,Not Relevant
+2382,19362776,training,Not Relevant
+2383,30627536,training,Not Relevant
+2384,1514187,training,Not Relevant
+2385,14978538,training,Not Relevant
+2386,7281778,training,Not Relevant
+2387,9816007,training,Not Relevant
+2388,18763369,training,Not Relevant
+2389,28933337,training,Relevant
+2390,19595589,training,Not Relevant
+2391,28728299,training,Not Relevant
+2392,8353099,training,Relevant
+2393,23206758,training,Not Relevant
+2394,5138435,training,Not Relevant
+2395,26184450,training,Relevant
+2396,7037118,training,Not Relevant
+2397,30908087,training,Not Relevant
+2398,10903894,training,Not Relevant
+2399,31471014,training,Relevant
+2400,17004737,training,Not Relevant
+2401,8859183,training,Relevant
+2402,8094762,training,Not Relevant
+2403,8588100,training,Not Relevant
+2404,6872137,training,Not Relevant
+2405,28093298,training,Relevant
+2406,6438979,training,Not Relevant
+2407,7004683,training,Not Relevant
+2408,19006470,training,Relevant
+2409,10097361,training,Not Relevant
+2410,12942852,training,Relevant
+2411,15739758,training,Not Relevant
+2412,16325997,training,Not Relevant
+2413,3166522,training,Not Relevant
+2414,27523997,training,Not Relevant
+2415,14749551,training,Relevant
+2416,19551499,training,Not Relevant
+2417,1678747,training,Not Relevant
+2418,29537855,training,Relevant
+2419,6380538,training,Not Relevant
+2420,8526730,training,Not Relevant
+2421,10910060,training,Not Relevant
+2422,24753234,training,Not Relevant
+2423,7712034,training,Not Relevant
+2424,4123373,training,Not Relevant
+2425,621578,training,Not Relevant
+2426,10494381,training,Not Relevant
+2427,7006804,training,Not Relevant
+2428,12902890,training,Relevant
+2429,19070269,training,Not Relevant
+2430,12750156,training,Not Relevant
+2431,28662343,training,Relevant
+2432,3384820,training,Not Relevant
+2433,2353325,training,Relevant
+2434,6382950,training,Not Relevant
+2435,17318022,training,Not Relevant
+2436,29948492,training,Not Relevant
+2437,3806601,training,Not Relevant
+2438,2098520,training,Not Relevant
+2439,9452221,training,Not Relevant
+2440,6838235,training,Not Relevant
+2441,7662501,training,Not Relevant
+2442,6436365,training,Not Relevant
+2443,30208518,training,Not Relevant
+2444,10745281,training,Not Relevant
+2445,9572913,training,Not Relevant
+2446,7093907,training,Not Relevant
+2447,1943832,training,Not Relevant
+2448,18408137,training,Not Relevant
+2449,24362330,training,Not Relevant
+2450,4423999,training,Not Relevant
+2451,28585177,training,Relevant
+2452,8546439,training,Not Relevant
+2453,8930779,training,Relevant
+2454,3359216,training,Not Relevant
+2455,16100679,training,Not Relevant
+2456,29909416,training,Not Relevant
+2457,26956592,training,Relevant
+2458,29844208,training,Not Relevant
+2459,16995327,training,Relevant
+2460,5477259,training,Relevant
+2461,9248767,training,Relevant
+2462,8032155,training,Not Relevant
+2463,5492217,training,Not Relevant
+2464,2897058,training,Not Relevant
+2465,1848349,training,Not Relevant
+2466,7390653,training,Not Relevant
+2467,8953815,training,Not Relevant
+2468,2582539,training,Not Relevant
+2469,3463410,training,Not Relevant
+2470,25152243,training,Relevant
+2471,30214302,training,Not Relevant
+2472,14703194,training,Not Relevant
+2473,23253428,training,Not Relevant
+2474,23881042,training,Not Relevant
+2475,11513124,training,Not Relevant
+2476,16443632,training,Not Relevant
+2477,28917923,training,Not Relevant
+2478,15992367,training,Not Relevant
+2479,12397367,training,Not Relevant
+2480,11050293,training,Not Relevant
+2481,22975500,training,Not Relevant
+2482,3240451,training,Not Relevant
+2483,2353935,training,Not Relevant
+2484,7623757,training,Not Relevant
+2485,3130980,training,Not Relevant
+2486,24026957,training,Not Relevant
+2487,8437106,training,Not Relevant
+2488,23243948,training,Not Relevant
+2489,30138519,training,Not Relevant
+2490,13129923,training,Not Relevant
+2491,15684491,training,Relevant
+2492,1652416,training,Relevant
+2493,6620186,training,Not Relevant
+2494,22975967,training,Not Relevant
+2495,9068940,training,Not Relevant
+2496,3367617,training,Relevant
+2497,3278442,training,Not Relevant
+2498,16824729,training,Not Relevant
+2499,1885709,training,Not Relevant
+2500,21507814,training,Not Relevant
+2501,367107,training,Not Relevant
+2502,5735621,training,Not Relevant
+2503,26546947,training,Relevant
+2504,18059051,training,Relevant
+2505,8644462,training,Not Relevant
+2506,10634921,training,Not Relevant
+2507,6178075,training,Not Relevant
+2508,17006844,training,Not Relevant
+2509,27957743,training,Relevant
+2510,28590019,training,Not Relevant
+2511,11672755,training,Relevant
+2512,18378563,training,Relevant
+2513,25871865,training,Not Relevant
+2514,14191591,training,Not Relevant
+2515,25616737,training,Not Relevant
+2516,14727972,training,Not Relevant
+2517,26306754,training,Not Relevant
+2518,24424304,training,Not Relevant
+2519,20068064,training,Not Relevant
+2520,24603244,training,Not Relevant
+2521,84852,training,Not Relevant
+2522,23380426,training,Relevant
+2523,2568405,training,Not Relevant
+2524,3578520,training,Not Relevant
+2525,24625764,training,Not Relevant
+2526,11152017,training,Not Relevant
+2527,26825378,training,Not Relevant
+2528,5658992,training,Not Relevant
+2529,12878416,training,Not Relevant
+2530,8786978,training,Relevant
+2531,7738811,training,Not Relevant
+2532,6715563,training,Relevant
+2533,3618793,training,Not Relevant
+2534,30063978,training,Not Relevant
+2535,24825249,training,Not Relevant
+2536,10359412,training,Not Relevant
+2537,3606058,training,Relevant
+2538,12113063,training,Not Relevant
+2539,17942285,training,Relevant
+2540,22537561,training,Not Relevant
+2541,6697677,training,Relevant
+2542,17101985,training,Not Relevant
+2543,3148670,training,Relevant
+2544,14762081,training,Not Relevant
+2545,8469782,training,Not Relevant
+2546,2377947,training,Not Relevant
+2547,5442215,training,Not Relevant
+2548,19084873,training,Not Relevant
+2549,21222187,training,Not Relevant
+2550,1905350,training,Not Relevant
+2551,25657337,training,Relevant
+2552,7573412,training,Not Relevant
+2553,21094153,training,Not Relevant
+2554,7599006,training,Not Relevant
+2555,5353724,training,Not Relevant
+2556,23623399,training,Not Relevant
+2557,26586461,training,Not Relevant
+2558,29325818,training,Not Relevant
+2559,30247811,training,Not Relevant
+2560,9096096,training,Not Relevant
+2561,29448183,training,Not Relevant
+2562,7452492,training,Relevant
+2563,1800465,training,Not Relevant
+2564,23370356,training,Not Relevant
+2565,24786603,training,Relevant
+2566,16890576,training,Not Relevant
+2567,20811132,training,Not Relevant
+2568,8338131,training,Not Relevant
+2569,8147566,training,Not Relevant
+2570,10820645,training,Not Relevant
+2571,8872714,training,Not Relevant
+2572,11744613,training,Relevant
+2573,28683216,training,Not Relevant
+2574,21807883,training,Relevant
+2575,27726640,training,Not Relevant
+2576,21812421,training,Not Relevant
+2577,4756882,training,Not Relevant
+2578,27126326,training,Not Relevant
+2579,5986191,training,Not Relevant
+2580,24900480,training,Relevant
+2581,2721604,training,Relevant
+2582,23451103,training,Not Relevant
+2583,27120177,training,Relevant
+2584,13970425,training,Not Relevant
+2585,20576405,training,Not Relevant
+2586,16173558,training,Not Relevant
+2587,9757014,training,Not Relevant
+2588,9751420,training,Not Relevant
+2589,26661202,training,Not Relevant
+2590,6180128,training,Not Relevant
+2591,1652031,training,Not Relevant
+2592,29254680,training,Relevant
+2593,22139691,training,Relevant
+2594,20171941,training,Not Relevant
+2595,9809677,training,Not Relevant
+2596,8306146,training,Not Relevant
+2597,27843598,training,Not Relevant
+2598,10720807,training,Not Relevant
+2599,10321671,training,Not Relevant
+2600,26249584,training,Not Relevant
+2601,1749082,training,Not Relevant
+2602,17902170,training,Not Relevant
+2603,15885459,training,Not Relevant
+2604,3131059,training,Not Relevant
+2605,29198674,training,Not Relevant
+2606,17019653,training,Not Relevant
+2607,19578302,training,Relevant
+2608,25304311,training,Not Relevant
+2609,16824935,training,Not Relevant
+2610,27256698,training,Not Relevant
+2611,8863052,training,Not Relevant
+2612,7340641,training,Not Relevant
+2613,3068900,training,Not Relevant
+2614,7093102,training,Relevant
+2615,18688908,training,Not Relevant
+2616,26361892,training,Not Relevant
+2617,732718,training,Not Relevant
+2618,16426882,training,Not Relevant
+2619,7976419,training,Not Relevant
+2620,21122820,training,Not Relevant
+2621,688238,training,Not Relevant
+2622,2209775,training,Not Relevant
+2623,10353549,training,Not Relevant
+2624,2755119,training,Not Relevant
+2625,6518091,training,Relevant
+2626,18053323,training,Not Relevant
+2627,10595316,training,Not Relevant
+2628,17579357,training,Not Relevant
+2629,30947665,training,Not Relevant
+2630,24460510,training,Not Relevant
+2631,27940270,training,Not Relevant
+2632,10756596,training,Not Relevant
+2633,20978165,training,Relevant
+2634,6896886,training,Not Relevant
+2635,2087410,training,Not Relevant
+2636,30197030,training,Not Relevant
+2637,3231892,training,Not Relevant
+2638,3973937,training,Not Relevant
+2639,21642642,training,Not Relevant
+2640,30887226,training,Relevant
+2641,12433798,training,Not Relevant
+2642,12237121,training,Not Relevant
+2643,3988644,training,Not Relevant
+2644,4985341,training,Not Relevant
+2645,30424502,training,Relevant
+2646,27020654,training,Not Relevant
+2647,14988120,training,Not Relevant
+2648,3588651,training,Relevant
+2649,932967,training,Not Relevant
+2650,19339162,training,Relevant
+2651,409096,training,Not Relevant
+2652,15085875,training,Not Relevant
+2653,4850261,training,Not Relevant
+2654,16772486,training,Not Relevant
+2655,6891599,training,Relevant
+2656,8795026,training,Not Relevant
+2657,16219448,training,Relevant
+2658,11346897,training,Not Relevant
+2659,11073803,training,Not Relevant
+2660,6496872,training,Relevant
+2661,17697065,training,Not Relevant
+2662,29967606,training,Not Relevant
+2663,19820270,training,Relevant
+2664,1446488,training,Not Relevant
+2665,23596529,training,Not Relevant
+2666,12074600,training,Not Relevant
+2667,953821,training,Not Relevant
+2668,9056582,training,Not Relevant
+2669,16552498,training,Not Relevant
+2670,7704917,training,Not Relevant
+2671,2979114,training,Not Relevant
+2672,26123277,training,Not Relevant
+2673,20498559,training,Not Relevant
+2674,28771277,training,Not Relevant
+2675,16454493,training,Not Relevant
+2676,19002364,training,Not Relevant
+2677,2928467,training,Not Relevant
+2678,17151867,training,Not Relevant
+2679,10614682,training,Not Relevant
+2680,29301023,training,Not Relevant
+2681,6402011,training,Not Relevant
+2682,9527816,training,Not Relevant
+2683,3975900,training,Not Relevant
+2684,3664929,training,Relevant
+2685,28808905,training,Relevant
+2686,24095802,training,Relevant
+2687,24422530,training,Relevant
+2688,19538672,training,Relevant
+2689,8142328,training,Not Relevant
+2690,26780157,training,Relevant
+2691,17270409,training,Relevant
+2692,2811345,training,Not Relevant
+2693,28864252,training,Not Relevant
+2694,4431661,training,Not Relevant
+2695,16640455,training,Relevant
+2696,11886006,training,Relevant
+2697,511347,training,Not Relevant
+2698,18318784,training,Relevant
+2699,10213222,training,Not Relevant
+2700,9497016,training,Relevant
+2701,21121374,training,Not Relevant
+2702,9725633,training,Not Relevant
+2703,23249839,training,Not Relevant
+2704,4038674,training,Not Relevant
+2705,10082325,training,Not Relevant
+2706,3500925,training,Not Relevant
+2707,24900608,training,Not Relevant
+2708,26418053,training,Not Relevant
+2709,467328,training,Relevant
+2710,8866038,training,Relevant
+2711,6848703,training,Not Relevant
+2712,11960317,training,Not Relevant
+2713,1777057,training,Not Relevant
+2714,4803421,training,Not Relevant
+2715,3181182,training,Not Relevant
+2716,25793001,training,Relevant
+2717,27274274,training,Not Relevant
+2718,27312540,training,Not Relevant
+2719,2898346,training,Relevant
+2720,28283500,training,Not Relevant
+2721,23356842,training,Relevant
+2722,18320937,training,Not Relevant
+2723,29479799,training,Not Relevant
+2724,583252,training,Not Relevant
+2725,24097307,training,Not Relevant
+2726,28120466,training,Not Relevant
+2727,28253084,training,Not Relevant
+2728,966152,training,Relevant
+2729,6482701,training,Not Relevant
+2730,16898676,training,Not Relevant
+2731,12138191,training,Not Relevant
+2732,6673975,training,Not Relevant
+2733,17241513,training,Not Relevant
+2734,3676163,training,Not Relevant
+2735,1690790,training,Not Relevant
+2736,27469220,training,Relevant
+2737,9112355,training,Not Relevant
+2738,29209862,training,Not Relevant
+2739,28533679,training,Relevant
+2740,15032427,training,Not Relevant
+2741,3612318,training,Not Relevant
+2742,4030889,training,Not Relevant
+2743,16198649,training,Not Relevant
+2744,4214178,training,Not Relevant
+2745,22034441,training,Not Relevant
+2746,3411938,training,Not Relevant
+2747,21515047,training,Not Relevant
+2748,21090793,training,Not Relevant
+2749,19481269,training,Not Relevant
+2750,24694600,training,Not Relevant
+2751,21110387,training,Relevant
+2752,1975759,training,Not Relevant
+2753,22044023,training,Not Relevant
+2754,16076079,training,Not Relevant
+2755,20919414,training,Relevant
+2756,26844734,training,Not Relevant
+2757,4955784,training,Not Relevant
+2758,11526485,training,Not Relevant
+2759,22690657,training,Not Relevant
+2760,30772469,training,Not Relevant
+2761,3589526,training,Relevant
+2762,1151163,training,Not Relevant
+2763,7592909,training,Not Relevant
+2764,27144541,training,Not Relevant
+2765,1321926,training,Not Relevant
+2766,9481979,training,Relevant
+2767,1030192,training,Not Relevant
+2768,9034910,training,Not Relevant
+2769,16353145,training,Not Relevant
+2770,3673381,training,Not Relevant
+2771,3725177,training,Not Relevant
+2772,3254874,training,Not Relevant
+2773,6141607,training,Not Relevant
+2774,1648524,training,Not Relevant
+2775,17635180,training,Not Relevant
+2776,29651770,training,Relevant
+2777,5653201,training,Not Relevant
+2778,15277497,training,Not Relevant
+2779,18031729,training,Not Relevant
+2780,2130592,training,Not Relevant
+2781,10077446,training,Relevant
+2782,10573172,training,Not Relevant
+2783,30179702,training,Not Relevant
+2784,11856967,training,Not Relevant
+2785,24428561,training,Not Relevant
+2786,24645580,training,Not Relevant
+2787,29685163,training,Not Relevant
+2788,3826754,training,Relevant
+2789,1653983,training,Not Relevant
+2790,8503145,training,Not Relevant
+2791,9860897,training,Not Relevant
+2792,455295,training,Not Relevant
+2793,21158450,training,Not Relevant
+2794,25030284,training,Not Relevant
+2795,12904139,training,Not Relevant
+2796,19957932,training,Not Relevant
+2797,10064316,training,Not Relevant
+2798,27143941,training,Not Relevant
+2799,527639,training,Not Relevant
+2800,3136914,training,Not Relevant
+2801,21568937,training,Not Relevant
+2802,8554363,training,Not Relevant
+2803,11712400,training,Not Relevant
+2804,24760211,training,Not Relevant
+2805,3612496,training,Relevant
+2806,4063148,training,Relevant
+2807,22975726,training,Not Relevant
+2808,26846320,training,Relevant
+2809,30722647,training,Not Relevant
+2810,4595419,training,Not Relevant
+2811,14994278,training,Not Relevant
+2812,19167080,training,Not Relevant
+2813,17722738,training,Not Relevant
+2814,9372965,training,Not Relevant
+2815,24098676,training,Not Relevant
+2816,30356077,training,Not Relevant
+2817,5123330,training,Not Relevant
+2818,6643612,training,Relevant
+2819,15545088,training,Not Relevant
+2820,7004526,training,Not Relevant
+2821,20180933,training,Relevant
+2822,2046021,training,Not Relevant
+2823,7646538,training,Not Relevant
+2824,10100598,training,Relevant
+2825,5350373,training,Not Relevant
+2826,14400044,training,Not Relevant
+2827,19834025,training,Not Relevant
+2828,23360328,training,Not Relevant
+2829,19519358,training,Not Relevant
+2830,12833978,training,Not Relevant
+2831,29453687,training,Relevant
+2832,12843865,training,Not Relevant
+2833,10077469,training,Not Relevant
+2834,21887293,training,Not Relevant
+2835,26086111,training,Relevant
+2836,12725720,training,Not Relevant
+2837,27425201,training,Not Relevant
+2838,16251637,training,Not Relevant
+2839,8066777,training,Not Relevant
+2840,12413136,training,Not Relevant
+2841,11553631,training,Not Relevant
+2842,1335926,training,Not Relevant
+2843,10498210,training,Relevant
+2844,14744740,training,Not Relevant
+2845,6765213,training,Not Relevant
+2846,15289374,training,Not Relevant
+2847,1226721,training,Not Relevant
+2848,21427012,training,Not Relevant
+2849,25757439,training,Relevant
+2850,8150320,training,Relevant
+2851,28832521,training,Not Relevant
+2852,16570923,training,Not Relevant
+2853,7576009,training,Not Relevant
+2854,9808337,training,Not Relevant
+2855,6350024,training,Not Relevant
+2856,15756276,training,Relevant
+2857,31411489,training,Relevant
+2858,17017381,training,Not Relevant
+2859,24409520,training,Relevant
+2860,30098864,training,Not Relevant
+2861,6147827,training,Not Relevant
+2862,17974267,training,Not Relevant
+2863,25142782,training,Not Relevant
+2864,23352636,training,Relevant
+2865,10919747,training,Not Relevant
+2866,2210612,training,Not Relevant
+2867,6139149,training,Not Relevant
+2868,9749441,training,Not Relevant
+2869,17250681,training,Not Relevant
+2870,8984295,training,Not Relevant
+2871,3365692,training,Not Relevant
+2872,25491630,training,Not Relevant
+2873,8230867,training,Not Relevant
+2874,19437690,training,Not Relevant
+2875,3304960,training,Not Relevant
+2876,19847627,training,Not Relevant
+2877,23775622,training,Not Relevant
+2878,15827572,training,Not Relevant
+2879,25646783,training,Not Relevant
+2880,12089382,training,Not Relevant
+2881,16086451,training,Not Relevant
+2882,11569640,training,Not Relevant
+2883,17326840,training,Not Relevant
+2884,5249534,training,Not Relevant
+2885,29439608,training,Not Relevant
+2886,19266426,training,Relevant
+2887,26263972,training,Not Relevant
+2888,18636706,training,Not Relevant
+2889,21756949,training,Not Relevant
+2890,19228383,training,Not Relevant
+2891,7916183,training,Not Relevant
+2892,3292000,training,Not Relevant
+2893,27594691,training,Not Relevant
+2894,11743120,training,Not Relevant
+2895,15465773,training,Not Relevant
+2896,8731219,training,Not Relevant
+2897,11782211,training,Not Relevant
+2898,9402467,training,Not Relevant
+2899,19660005,training,Relevant
+2900,17637187,training,Not Relevant
+2901,15809333,training,Not Relevant
+2902,3198299,training,Relevant
+2903,960284,training,Not Relevant
+2904,30651158,training,Relevant
+2905,21592549,training,Not Relevant
+2906,14734680,training,Not Relevant
+2907,10640521,training,Not Relevant
+2908,25648815,training,Not Relevant
+2909,12117349,training,Not Relevant
+2910,43538,training,Not Relevant
+2911,25953731,training,Not Relevant
+2912,25114529,training,Relevant
+2913,26067173,training,Not Relevant
+2914,5581453,training,Not Relevant
+2915,9227668,training,Not Relevant
+2916,11129101,training,Not Relevant
+2917,8385022,training,Relevant
+2918,18320185,training,Relevant
+2919,5429158,training,Not Relevant
+2920,30336192,training,Not Relevant
+2921,15902799,training,Not Relevant
+2922,7274310,training,Relevant
+2923,2539685,training,Relevant
+2924,2041162,training,Relevant
+2925,2253667,training,Relevant
+2926,29117181,training,Not Relevant
+2927,25343350,training,Not Relevant
+2928,19027760,training,Not Relevant
+2929,21999529,training,Not Relevant
+2930,15927907,training,Not Relevant
+2931,28901664,training,Not Relevant
+2932,28731675,training,Not Relevant
+2933,28723750,training,Not Relevant
+2934,24646704,training,Relevant
+2935,6989759,training,Not Relevant
+2936,13107223,training,Not Relevant
+2937,2893704,training,Relevant
+2938,17240027,training,Not Relevant
+2939,18380600,training,Not Relevant
+2940,24633923,training,Relevant
+2941,20116874,training,Not Relevant
+2942,4740245,training,Not Relevant
+2943,29098580,training,Not Relevant
+2944,11779196,training,Not Relevant
+2945,16988114,training,Not Relevant
+2946,16387443,training,Not Relevant
+2947,15650007,training,Not Relevant
+2948,21342038,training,Not Relevant
+2949,19557506,training,Not Relevant
+2950,6702600,training,Not Relevant
+2951,2701299,training,Not Relevant
+2952,23621113,training,Not Relevant
+2953,16296785,training,Not Relevant
+2954,822269,training,Not Relevant
+2955,2657617,training,Relevant
+2956,17803729,training,Not Relevant
+2957,9822912,training,Not Relevant
+2958,8324929,training,Not Relevant
+2959,28412689,training,Not Relevant
+2960,17610996,training,Not Relevant
+2961,2867153,training,Not Relevant
+2962,9247180,training,Relevant
+2963,25554071,training,Not Relevant
+2964,28689098,training,Not Relevant
+2965,18533086,training,Not Relevant
+2966,11095573,training,Not Relevant
+2967,9048587,training,Not Relevant
+2968,2115985,training,Not Relevant
+2969,31166686,training,Not Relevant
+2970,4026929,training,Relevant
+2971,18306292,training,Relevant
+2972,6143591,training,Not Relevant
+2973,2320122,training,Not Relevant
+2974,10383928,training,Relevant
+2975,28394925,training,Not Relevant
+2976,7630328,training,Not Relevant
+2977,8863473,training,Not Relevant
+2978,6773627,training,Not Relevant
+2979,23818776,training,Relevant
+2980,7885353,training,Relevant
+2981,30864085,training,Not Relevant
+2982,6144159,training,Not Relevant
+2983,17378442,training,Relevant
+2984,25082735,training,Not Relevant
+2985,29636218,training,Not Relevant
+2986,16287258,training,Not Relevant
+2987,10378362,training,Not Relevant
+2988,2641633,training,Not Relevant
+2989,26259716,training,Not Relevant
+2990,17459667,training,Not Relevant
+2991,17325899,training,Relevant
+2992,25160,training,Not Relevant
+2993,6381515,training,Not Relevant
+2994,28536023,training,Relevant
+2995,8126999,training,Not Relevant
+2996,17574990,training,Not Relevant
+2997,16460870,training,Not Relevant
+2998,853022,training,Not Relevant
+2999,11931448,training,Not Relevant
+3000,30391789,training,Not Relevant
+3001,26895507,training,Not Relevant
+3002,25041947,training,Not Relevant
+3003,22736376,training,Not Relevant
+3004,2203009,training,Not Relevant
+3005,9638308,training,Not Relevant
+3006,6519121,training,Relevant
+3007,15109145,training,Not Relevant
+3008,12785456,training,Not Relevant
+3009,22415360,training,Not Relevant
+3010,16802853,training,Relevant
+3011,16892339,training,Not Relevant
+3012,30006023,training,Not Relevant
+3013,11032923,training,Relevant
+3014,20385854,training,Relevant
+3015,11550078,training,Not Relevant
+3016,16280085,training,Not Relevant
+3017,8020535,training,Not Relevant
+3018,8698064,training,Not Relevant
+3019,25283614,training,Not Relevant
+3020,7179325,training,Relevant
+3021,8557010,training,Not Relevant
+3022,10852646,training,Not Relevant
+3023,23314933,training,Not Relevant
+3024,6782425,training,Not Relevant
+3025,9802247,training,Not Relevant
+3026,24815113,training,Not Relevant
+3027,14334019,training,Not Relevant
+3028,20942834,training,Not Relevant
+3029,29259982,training,Relevant
+3030,5030580,training,Not Relevant
+3031,21852130,training,Not Relevant
+3032,21835424,training,Not Relevant
+3033,21828909,training,Not Relevant
+3034,2312414,training,Not Relevant
+3035,10576037,training,Not Relevant
+3036,21718088,training,Relevant
+3037,24460481,training,Not Relevant
+3038,5038963,training,Not Relevant
+3039,29167066,training,Not Relevant
+3040,29017426,training,Relevant
+3041,11804276,training,Not Relevant
+3042,4376939,training,Not Relevant
+3043,8353095,training,Relevant
+3044,24814876,training,Not Relevant
+3045,16804161,training,Not Relevant
+3046,8916050,training,Not Relevant
+3047,3824710,training,Not Relevant
+3048,27238011,training,Not Relevant
+3049,24514453,training,Not Relevant
+3050,10541257,training,Not Relevant
+3051,2551541,training,Not Relevant
+3052,27735915,training,Not Relevant
+3053,9512791,training,Not Relevant
+3054,20720434,training,Not Relevant
+3055,4413732,training,Not Relevant
+3056,17645874,training,Not Relevant
+3057,8742004,training,Not Relevant
+3058,3478331,training,Not Relevant
+3059,27552090,training,Not Relevant
+3060,21719264,training,Not Relevant
+3061,18482898,training,Not Relevant
+3062,1638952,training,Not Relevant
+3063,21191392,training,Not Relevant
+3064,16048354,training,Not Relevant
+3065,12099577,training,Not Relevant
+3066,2607380,training,Not Relevant
+3067,27903648,training,Not Relevant
+3068,7325699,training,Relevant
+3069,1001486,training,Not Relevant
+3070,24489896,training,Not Relevant
+3071,21410075,training,Not Relevant
+3072,12676485,training,Not Relevant
+3073,3255121,training,Relevant
+3074,2910896,training,Not Relevant
+3075,10549850,training,Not Relevant
+3076,26956936,training,Not Relevant
+3077,28041837,training,Not Relevant
+3078,30308507,training,Not Relevant
+3079,9240371,training,Not Relevant
+3080,19630062,training,Not Relevant
+3081,9792531,training,Not Relevant
+3082,2555466,training,Relevant
+3083,8458801,training,Not Relevant
+3084,16364862,training,Not Relevant
+3085,30974173,training,Not Relevant
+3086,8070367,training,Not Relevant
+3087,11571884,training,Not Relevant
+3088,22069727,training,Not Relevant
+3089,28893246,training,Not Relevant
+3090,2643153,training,Not Relevant
+3091,11052793,training,Not Relevant
+3092,19195882,training,Not Relevant
+3093,26333809,training,Not Relevant
+3094,12033375,training,Not Relevant
+3095,12597427,training,Not Relevant
+3096,30068284,training,Not Relevant
+3097,19124281,training,Relevant
+3098,11791625,training,Not Relevant
+3099,2829267,training,Relevant
+3100,21265540,training,Not Relevant
+3101,28499633,training,Not Relevant
+3102,18627213,training,Not Relevant
+3103,1246013,training,Relevant
+3104,21075960,training,Not Relevant
+3105,15058769,training,Not Relevant
+3106,20073455,training,Not Relevant
+3107,28294333,training,Not Relevant
+3108,17478881,training,Not Relevant
+3109,22343256,training,Relevant
+3110,12499181,training,Relevant
+3111,712604,training,Relevant
+3112,25819095,training,Relevant
+3113,30864076,training,Not Relevant
+3114,25703950,training,Relevant
+3115,1950587,training,Relevant
+3116,466906,training,Not Relevant
+3117,24314992,training,Not Relevant
+3118,4330458,training,Not Relevant
+3119,20532429,training,Not Relevant
+3120,19918005,training,Not Relevant
+3121,30208119,training,Not Relevant
+3122,1511322,training,Not Relevant
+3123,1623916,training,Relevant
+3124,28785879,training,Relevant
+3125,24879978,training,Not Relevant
+3126,24555934,training,Not Relevant
+3127,9680993,training,Not Relevant
+3128,9851778,training,Not Relevant
+3129,6384253,training,Relevant
+3130,24723450,training,Not Relevant
+3131,29447084,training,Not Relevant
+3132,28803266,training,Not Relevant
+3133,29403809,training,Relevant
+3134,21881232,training,Not Relevant
+3135,27611841,training,Not Relevant
+3136,25037684,training,Relevant
+3137,25987030,training,Not Relevant
+3138,21366654,training,Relevant
+3139,9657840,training,Not Relevant
+3140,10968607,training,Not Relevant
+3141,1313380,training,Not Relevant
+3142,2181491,training,Not Relevant
+3143,29991087,training,Relevant
+3144,18288959,training,Not Relevant
+3145,17179615,training,Not Relevant
+3146,4483057,training,Not Relevant
+3147,7697757,training,Not Relevant
+3148,26226967,training,Not Relevant
+3149,15976862,training,Not Relevant
+3150,16423191,training,Not Relevant
+3151,8069770,training,Not Relevant
+3152,16998589,training,Not Relevant
+3153,20205659,training,Not Relevant
+3154,7124412,training,Not Relevant
+3155,23545225,training,Not Relevant
+3156,4082636,training,Relevant
+3157,12973420,training,Not Relevant
+3158,15041713,training,Relevant
+3159,28265983,training,Not Relevant
+3160,9162837,training,Not Relevant
+3161,21083275,training,Not Relevant
+3162,17656620,training,Relevant
+3163,6617992,training,Not Relevant
+3164,24406981,training,Not Relevant
+3165,10801224,training,Not Relevant
+3166,9932889,training,Not Relevant
+3167,11944680,training,Not Relevant
+3168,24204147,training,Not Relevant
+3169,17133402,training,Not Relevant
+3170,29454622,training,Not Relevant
+3171,25056692,training,Not Relevant
+3172,7041879,training,Not Relevant
+3173,6473318,training,Not Relevant
+3174,15312152,training,Not Relevant
+3175,8110160,training,Not Relevant
+3176,5938467,training,Not Relevant
+3177,29938900,training,Not Relevant
+3178,18641553,training,Relevant
+3179,18597006,training,Not Relevant
+3180,22229325,training,Not Relevant
+3181,6305277,training,Not Relevant
+3182,1892339,training,Not Relevant
+3183,2234506,training,Not Relevant
+3184,18592266,training,Not Relevant
+3185,9548893,training,Relevant
+3186,30833692,training,Not Relevant
+3187,2737742,training,Relevant
+3188,11923312,training,Not Relevant
+3189,26667813,training,Not Relevant
+3190,30225831,training,Not Relevant
+3191,1485175,training,Not Relevant
+3192,25070482,training,Relevant
+3193,20055704,training,Not Relevant
+3194,15280813,training,Not Relevant
+3195,4282660,training,Not Relevant
+3196,28828572,training,Not Relevant
+3197,25698306,training,Not Relevant
+3198,2089913,training,Not Relevant
+3199,8214161,training,Not Relevant
+3200,16262018,training,Not Relevant
+3201,28643076,training,Not Relevant
+3202,8762461,training,Relevant
+3203,18257815,training,Relevant
+3204,11330364,training,Not Relevant
+3205,4000241,training,Not Relevant
+3206,9270496,training,Not Relevant
+3207,29967572,training,Relevant
+3208,25853479,training,Relevant
+3209,29479139,training,Not Relevant
+3210,12818695,training,Not Relevant
+3211,21937291,training,Not Relevant
+3212,14970197,training,Not Relevant
+3213,12525458,training,Not Relevant
+3214,11323563,training,Not Relevant
+3215,18229605,training,Not Relevant
+3216,15570658,training,Not Relevant
+3217,16005693,training,Relevant
+3218,16132714,training,Not Relevant
+3219,19118083,training,Relevant
+3220,12869367,training,Relevant
+3221,7828432,training,Not Relevant
+3222,15575592,training,Not Relevant
+3223,5703766,training,Relevant
+3224,7853675,training,Not Relevant
+3225,16829051,training,Not Relevant
+3226,11439886,training,Not Relevant
+3227,21822902,training,Not Relevant
+3228,12697405,training,Not Relevant
+3229,19414517,training,Not Relevant
+3230,20958008,training,Not Relevant
+3231,17459656,training,Not Relevant
+3232,10917206,training,Relevant
+3233,2853841,training,Not Relevant
+3234,7528846,training,Relevant
+3235,7903890,training,Not Relevant
+3236,18199279,training,Not Relevant
+3237,15333728,training,Relevant
+3238,652175,training,Not Relevant
+3239,29979556,training,Not Relevant
+3240,26354352,training,Not Relevant
+3241,12637892,training,Not Relevant
+3242,15746006,training,Not Relevant
+3243,22163264,training,Not Relevant
+3244,24337137,training,Relevant
+3245,12383957,training,Not Relevant
+3246,1808599,training,Not Relevant
+3247,8842043,training,Relevant
+3248,18326322,training,Not Relevant
+3249,9344659,training,Not Relevant
+3250,1720447,training,Not Relevant
+3251,4073841,training,Not Relevant
+3252,14745439,training,Not Relevant
+3253,17159010,training,Not Relevant
+3254,18593948,training,Not Relevant
+3255,11256712,training,Not Relevant
+3256,4422762,training,Not Relevant
+3257,20838679,training,Not Relevant
+3258,3378617,training,Relevant
+3259,28785860,training,Relevant
+3260,16402385,training,Not Relevant
+3261,25686902,training,Not Relevant
+3262,1978230,training,Not Relevant
+3263,7780228,training,Relevant
+3264,1361780,training,Not Relevant
+3265,13136463,training,Not Relevant
+3266,18576904,training,Relevant
+3267,7477663,training,Not Relevant
+3268,24294969,training,Relevant
+3269,14738590,training,Not Relevant
+3270,16171731,training,Not Relevant
+3271,25545098,training,Not Relevant
+3272,5563063,training,Not Relevant
+3273,26111604,training,Not Relevant
+3274,26769860,training,Not Relevant
+3275,6356158,training,Not Relevant
+3276,21145740,training,Not Relevant
+3277,3481917,training,Not Relevant
+3278,2090444,training,Not Relevant
+3279,9171994,training,Not Relevant
+3280,542955,training,Not Relevant
+3281,3246569,training,Relevant
+3282,3680596,training,Not Relevant
+3283,9795989,training,Not Relevant
+3284,22927759,training,Not Relevant
+3285,19558233,training,Not Relevant
+3286,9177783,training,Not Relevant
+3287,20356808,training,Not Relevant
+3288,16873536,training,Not Relevant
+3289,28483858,training,Relevant
+3290,16651305,training,Relevant
+3291,17356543,training,Not Relevant
+3292,16206086,training,Not Relevant
+3293,23103351,training,Not Relevant
+3294,12105984,training,Not Relevant
+3295,20938175,training,Not Relevant
+3296,11536320,training,Not Relevant
+3297,12921250,training,Relevant
+3298,13011198,training,Not Relevant
+3299,1330991,training,Not Relevant
+3300,7763596,training,Not Relevant
+3301,7198289,training,Not Relevant
+3302,20073555,training,Not Relevant
+3303,5972439,training,Not Relevant
+3304,3576654,training,Relevant
+3305,19050768,training,Not Relevant
+3306,23471276,training,Not Relevant
+3307,3523515,training,Not Relevant
+3308,19447205,training,Not Relevant
+3309,9647999,training,Not Relevant
+3310,26873038,training,Not Relevant
+3311,30094711,training,Not Relevant
+3312,19936599,training,Not Relevant
+3313,19081254,training,Not Relevant
+3314,30335259,training,Not Relevant
+3315,9395249,training,Relevant
+3316,5369834,training,Not Relevant
+3317,23776118,training,Not Relevant
+3318,19609714,training,Not Relevant
+3319,8721098,training,Not Relevant
+3320,17090977,training,Not Relevant
+3321,20129794,training,Not Relevant
+3322,6391783,training,Not Relevant
+3323,21553164,training,Not Relevant
+3324,9849279,training,Not Relevant
+3325,8625850,training,Not Relevant
+3326,9358548,training,Not Relevant
+3327,1923552,training,Not Relevant
+3328,9812653,training,Relevant
+3329,24063809,training,Not Relevant
+3330,4041329,training,Relevant
+3331,25032886,training,Not Relevant
+3332,24566323,training,Not Relevant
+3333,15982776,training,Not Relevant
+3334,21037444,training,Not Relevant
+3335,18329195,training,Not Relevant
+3336,16904229,training,Not Relevant
+3337,14201404,training,Not Relevant
+3338,28125921,training,Not Relevant
+3339,8612306,training,Not Relevant
+3340,20637790,training,Not Relevant
+3341,28646117,training,Not Relevant
+3342,22398970,training,Relevant
+3343,17931239,training,Not Relevant
+3344,16609041,training,Relevant
+3345,2051334,training,Relevant
+3346,2108810,training,Not Relevant
+3347,12026221,training,Relevant
+3348,3123584,training,Not Relevant
+3349,3214100,training,Not Relevant
+3350,25991737,training,Not Relevant
+3351,23562926,training,Not Relevant
+3352,21121359,training,Not Relevant
+3353,10148131,training,Not Relevant
+3354,23188183,training,Not Relevant
+3355,25650135,training,Relevant
+3356,30039238,training,Not Relevant
+3357,1291520,training,Not Relevant
+3358,8990384,training,Not Relevant
+3359,18686040,training,Not Relevant
+3360,22189656,training,Not Relevant
+3361,27672116,training,Not Relevant
+3362,6796278,training,Not Relevant
+3363,17960402,training,Not Relevant
+3364,31055990,training,Not Relevant
+3365,23757386,training,Not Relevant
+3366,24211708,training,Not Relevant
+3367,9602582,training,Not Relevant
+3368,20669331,training,Not Relevant
+3369,1469954,training,Relevant
+3370,7846192,training,Not Relevant
+3371,7524350,training,Not Relevant
+3372,20078709,training,Not Relevant
+3373,8941747,training,Not Relevant
+3374,22764584,training,Not Relevant
+3375,11553913,training,Not Relevant
+3376,7603557,training,Not Relevant
+3377,14768142,training,Not Relevant
+3378,4817257,training,Not Relevant
+3379,19400191,training,Not Relevant
+3380,15748744,training,Not Relevant
+3381,14602781,training,Relevant
+3382,17454060,training,Not Relevant
+3383,15842552,training,Relevant
+3384,24312573,training,Not Relevant
+3385,15500948,training,Not Relevant
+3386,15764283,training,Not Relevant
+3387,25091699,training,Not Relevant
+3388,19472387,training,Not Relevant
+3389,23038001,training,Relevant
+3390,2746498,training,Relevant
+3391,17392732,training,Not Relevant
+3392,23210843,training,Not Relevant
+3393,29411152,training,Not Relevant
+3394,3736386,training,Relevant
+3395,7974917,training,Not Relevant
+3396,19496709,training,Not Relevant
+3397,1472557,training,Not Relevant
+3398,1914381,training,Not Relevant
+3399,12107263,training,Not Relevant
+3400,398632,training,Not Relevant
+3401,8499894,training,Not Relevant
+3402,24907585,training,Not Relevant
+3403,29475458,training,Not Relevant
+3404,14763995,training,Not Relevant
+3405,12117101,training,Not Relevant
+3406,1341981,training,Not Relevant
+3407,27385762,training,Not Relevant
+3408,27451018,training,Relevant
+3409,19325254,training,Not Relevant
+3410,490323,training,Not Relevant
+3411,31238009,training,Not Relevant
+3412,30981373,training,Not Relevant
+3413,11815587,training,Not Relevant
+3414,29115333,training,Not Relevant
+3415,15907391,training,Not Relevant
+3416,25423195,training,Relevant
+3417,23386075,training,Not Relevant
+3418,19838155,training,Not Relevant
+3419,26142947,training,Not Relevant
+3420,20858701,training,Not Relevant
+3421,29216348,training,Not Relevant
+3422,15763515,training,Not Relevant
+3423,2328706,training,Not Relevant
+3424,26806573,training,Relevant
+3425,7955769,training,Not Relevant
+3426,29534286,training,Not Relevant
+3427,30060204,training,Not Relevant
+3428,30620988,training,Not Relevant
+3429,20650915,training,Not Relevant
+3430,12118899,training,Relevant
+3431,14984061,training,Not Relevant
+3432,11438680,training,Not Relevant
+3433,4703576,training,Not Relevant
+3434,1672049,training,Relevant
+3435,7796154,training,Relevant
+3436,6789900,training,Not Relevant
+3437,29590676,training,Not Relevant
+3438,21046203,training,Not Relevant
+3439,22314995,training,Not Relevant
+3440,6725063,training,Not Relevant
+3441,25578387,training,Not Relevant
+3442,31257628,training,Not Relevant
+3443,29110389,training,Not Relevant
+3444,7185768,training,Relevant
+3445,28290483,training,Not Relevant
+3446,12396175,training,Not Relevant
+3447,21546217,training,Not Relevant
+3448,16436292,training,Not Relevant
+3449,15749465,training,Not Relevant
+3450,15163278,training,Not Relevant
+3451,2019340,training,Not Relevant
+3452,28167538,training,Not Relevant
+3453,15786025,training,Not Relevant
+3454,12150361,training,Not Relevant
+3455,16378695,training,Not Relevant
+3456,31286321,training,Not Relevant
+3457,10048739,training,Not Relevant
+3458,21865578,training,Not Relevant
+3459,535528,training,Not Relevant
+3460,15993021,training,Not Relevant
+3461,30478168,training,Relevant
+3462,8390259,training,Not Relevant
+3463,14624492,training,Not Relevant
+3464,8035789,training,Not Relevant
+3465,7882176,training,Relevant
+3466,26652353,training,Not Relevant
+3467,11304654,training,Not Relevant
+3468,22438887,training,Not Relevant
+3469,20936483,training,Not Relevant
+3470,7931489,training,Relevant
+3471,6414694,training,Not Relevant
+3472,20492294,training,Not Relevant
+3473,2554502,training,Not Relevant
+3474,7173898,training,Not Relevant
+3475,18095849,training,Not Relevant
+3476,10344748,training,Not Relevant
+3477,2975286,training,Not Relevant
+3478,6546296,training,Not Relevant
+3479,9025299,training,Not Relevant
+3480,26189915,training,Not Relevant
+3481,1588637,training,Not Relevant
+3482,21125318,training,Relevant
+3483,3554156,training,Not Relevant
+3484,20123197,training,Relevant
+3485,30746557,training,Not Relevant
+3486,11822754,training,Relevant
+3487,3370627,training,Not Relevant
+3488,31223456,training,Relevant
+3489,6380283,training,Not Relevant
+3490,4987300,training,Not Relevant
+3491,11105057,training,Not Relevant
+3492,27789338,training,Not Relevant
+3493,10627642,training,Relevant
+3494,1211899,training,Relevant
+3495,12228068,training,Not Relevant
+3496,18442227,training,Not Relevant
+3497,10879186,training,Not Relevant
+3498,16113458,training,Not Relevant
+3499,20965901,training,Not Relevant
+3500,15627307,training,Not Relevant
+3501,12900776,training,Relevant
+3502,23769277,training,Not Relevant
+3503,1507403,training,Relevant
+3504,8151467,training,Not Relevant
+3505,14508280,training,Not Relevant
+3506,27104671,training,Not Relevant
+3507,21340042,training,Not Relevant
+3508,16098742,training,Not Relevant
+3509,9762959,training,Not Relevant
+3510,7682118,training,Not Relevant
+3511,16832611,training,Relevant
+3512,10085183,training,Not Relevant
+3513,6531791,training,Relevant
+3514,4790663,training,Not Relevant
+3515,28111103,training,Relevant
+3516,10234667,training,Not Relevant
+3517,3523230,training,Not Relevant
+3518,28705021,training,Not Relevant
+3519,1396345,training,Not Relevant
+3520,29923314,training,Not Relevant
+3521,2659322,training,Relevant
+3522,30963393,training,Not Relevant
+3523,3364885,training,Not Relevant
+3524,6394312,training,Not Relevant
+3525,4774728,training,Not Relevant
+3526,27299749,training,Relevant
+3527,10501222,training,Not Relevant
+3528,21813169,training,Not Relevant
+3529,20298768,training,Not Relevant
+3530,12540404,training,Not Relevant
+3531,2516617,training,Not Relevant
+3532,30536638,training,Relevant
+3533,25178252,training,Not Relevant
+3534,16958828,training,Not Relevant
+3535,21792921,training,Not Relevant
+3536,19801046,training,Not Relevant
+3537,17483727,training,Not Relevant
+3538,21676449,training,Not Relevant
+3539,3581803,training,Not Relevant
+3540,4608579,training,Not Relevant
+3541,11748064,training,Not Relevant
+3542,12595170,training,Not Relevant
+3543,19167488,training,Not Relevant
+3544,937235,training,Not Relevant
+3545,15180477,training,Not Relevant
+3546,5929473,training,Not Relevant
+3547,22888226,training,Relevant
+3548,22292783,training,Not Relevant
+3549,17923345,training,Not Relevant
+3550,2113596,training,Not Relevant
+3551,14634591,training,Not Relevant
+3552,11431343,training,Not Relevant
+3553,12455153,training,Not Relevant
+3554,23755828,training,Not Relevant
+3555,29409861,training,Not Relevant
+3556,23222216,training,Not Relevant
+3557,26321516,training,Relevant
+3558,15936513,training,Not Relevant
+3559,26140311,training,Not Relevant
+3560,9565681,training,Not Relevant
+3561,28905411,training,Not Relevant
+3562,4062279,training,Relevant
+3563,21191714,training,Not Relevant
+3564,17125263,training,Not Relevant
+3565,3309213,training,Not Relevant
+3566,24641773,training,Relevant
+3567,19594759,training,Relevant
+3568,9458185,training,Not Relevant
+3569,25316744,training,Not Relevant
+3570,3367511,training,Relevant
+3571,26272123,training,Not Relevant
+3572,16515896,training,Relevant
+3573,1467998,training,Not Relevant
+3574,3341792,training,Not Relevant
+3575,16830558,training,Not Relevant
+3576,3586127,training,Relevant
+3577,21245207,training,Not Relevant
+3578,6813184,training,Not Relevant
+3579,7696534,training,Not Relevant
+3580,9249590,training,Not Relevant
+3581,7092570,training,Relevant
+3582,7154248,training,Relevant
+3583,3305823,training,Relevant
+3584,22970859,training,Not Relevant
+3585,3244615,training,Not Relevant
+3586,11786284,training,Not Relevant
+3587,1979852,training,Not Relevant
+3588,9048663,training,Not Relevant
+3589,17200661,training,Not Relevant
+3590,2312248,training,Not Relevant
+3591,3108221,training,Not Relevant
+3592,2947633,training,Not Relevant
+3593,15136053,training,Not Relevant
+3594,6871303,training,Relevant
+3595,11348531,training,Relevant
+3596,12915140,training,Not Relevant
+3597,8040131,training,Relevant
+3598,10498191,training,Not Relevant
+3599,18813047,training,Not Relevant
+3600,17091502,training,Not Relevant
+3601,17646232,training,Not Relevant
+3602,22047993,training,Not Relevant
+3603,2196803,training,Not Relevant
+3604,952408,training,Not Relevant
+3605,11939684,training,Not Relevant
+3606,812652,training,Not Relevant
+3607,29869307,training,Relevant
+3608,6020372,training,Not Relevant
+3609,1412145,training,Not Relevant
+3610,9806912,training,Not Relevant
+3611,7492975,training,Not Relevant
+3612,9809202,training,Not Relevant
+3613,420128,training,Not Relevant
+3614,23380429,training,Relevant
+3615,26028483,training,Not Relevant
+3616,16612588,training,Not Relevant
+3617,599404,training,Not Relevant
+3618,12424503,training,Not Relevant
+3619,454083,training,Not Relevant
+3620,2946827,training,Not Relevant
+3621,10687864,training,Not Relevant
+3622,2988459,training,Relevant
+3623,16846463,training,Relevant
+3624,8223410,training,Not Relevant
+3625,90923,training,Not Relevant
+3626,11566783,training,Not Relevant
+3627,28916621,training,Not Relevant
+3628,1317047,training,Not Relevant
+3629,4443807,training,Not Relevant
+3630,3042947,training,Not Relevant
+3631,25976487,training,Not Relevant
+3632,20172073,training,Not Relevant
+3633,27998190,training,Not Relevant
+3634,2954813,training,Not Relevant
+3635,2704055,training,Relevant
+3636,3740309,training,Not Relevant
+3637,24099564,training,Not Relevant
+3638,477954,training,Not Relevant
+3639,18475294,training,Relevant
+3640,3745152,training,Not Relevant
+3641,1550563,training,Not Relevant
+3642,27006280,training,Not Relevant
+3643,10496672,training,Relevant
+3644,15901041,training,Relevant
+3645,7711446,training,Relevant
+3646,26269236,training,Not Relevant
+3647,26810316,training,Not Relevant
+3648,12652815,training,Not Relevant
+3649,16807032,training,Not Relevant
+3650,10971229,training,Relevant
+3651,30148083,training,Not Relevant
+3652,13202422,training,Not Relevant
+3653,16181741,training,Not Relevant
+3654,12067574,training,Not Relevant
+3655,31015032,training,Not Relevant
+3656,14569237,training,Not Relevant
+3657,20712521,training,Not Relevant
+3658,13800057,training,Not Relevant
+3659,22553050,training,Not Relevant
+3660,24900185,training,Relevant
+3661,26045659,training,Not Relevant
+3662,6504402,training,Not Relevant
+3663,1092161,training,Not Relevant
+3664,25354943,training,Not Relevant
+3665,2360333,training,Relevant
+3666,12221059,training,Not Relevant
+3667,2369812,training,Not Relevant
+3668,30142410,training,Not Relevant
+3669,5653693,training,Not Relevant
+3670,1362930,training,Not Relevant
+3671,16954550,training,Not Relevant
+3672,7097457,training,Not Relevant
+3673,6616139,training,Relevant
+3674,26922034,training,Not Relevant
+3675,22237927,training,Not Relevant
+3676,6945861,training,Not Relevant
+3677,21540647,training,Relevant
+3678,318213,training,Relevant
+3679,18277073,training,Not Relevant
+3680,15031013,training,Not Relevant
+3681,6294363,training,Relevant
+3682,10787102,training,Not Relevant
+3683,15076005,training,Not Relevant
+3684,4653481,training,Not Relevant
+3685,1479539,training,Relevant
+3686,31502101,training,Not Relevant
+3687,2507138,training,Not Relevant
+3688,8897839,training,Not Relevant
+3689,5685808,training,Not Relevant
+3690,25155592,training,Relevant
+3691,11605292,training,Not Relevant
+3692,24672263,training,Relevant
+3693,2245488,training,Not Relevant
+3694,4170164,training,Not Relevant
+3695,11448962,training,Not Relevant
+3696,26316073,training,Not Relevant
+3697,30565117,training,Not Relevant
+3698,30274098,training,Not Relevant
+3699,1672896,training,Not Relevant
+3700,1663355,training,Relevant
+3701,2333280,training,Relevant
+3702,2746726,training,Relevant
+3703,9344166,training,Relevant
+3704,9038083,training,Not Relevant
+3705,26079512,training,Not Relevant
+3706,2316191,training,Relevant
+3707,12076349,training,Not Relevant
+3708,3378277,training,Not Relevant
+3709,27668697,training,Relevant
+3710,6311553,training,Not Relevant
+3711,22564843,training,Relevant
+3712,7057787,training,Not Relevant
+3713,15189673,training,Not Relevant
+3714,28770827,training,Relevant
+3715,3695503,training,Not Relevant
+3716,19025902,training,Not Relevant
+3717,15566093,training,Relevant
+3718,3621447,training,Relevant
+3719,29886929,training,Not Relevant
+3720,100370,training,Not Relevant
+3721,27135366,training,Not Relevant
+3722,2253668,training,Relevant
+3723,1489328,training,Relevant
+3724,24510752,training,Not Relevant
+3725,1731580,training,Not Relevant
+3726,14697223,training,Not Relevant
+3727,9383724,training,Not Relevant
+3728,171822,training,Not Relevant
+3729,7789393,training,Not Relevant
+3730,9266040,training,Not Relevant
+3731,11934554,training,Not Relevant
+3732,12739755,training,Not Relevant
+3733,27145450,training,Not Relevant
+3734,12729862,training,Not Relevant
+3735,28888355,training,Not Relevant
+3736,1198671,training,Relevant
+3737,18936621,training,Not Relevant
+3738,6207286,training,Not Relevant
+3739,17685392,training,Relevant
+3740,16446602,training,Relevant
+3741,12224598,training,Not Relevant
+3742,23110261,training,Not Relevant
+3743,16757170,training,Relevant
+3744,18628777,training,Not Relevant
+3745,7967223,training,Not Relevant
+3746,11453611,training,Not Relevant
+3747,14504308,training,Not Relevant
+3748,27406420,training,Not Relevant
+3749,7173598,training,Relevant
+3750,22367877,training,Not Relevant
+3751,11227429,training,Not Relevant
+3752,36107,training,Relevant
+3753,23726267,training,Relevant
+3754,8368610,training,Relevant
+3755,29072917,training,Not Relevant
+3756,2822672,training,Not Relevant
+3757,2764717,training,Relevant
+3758,14684277,training,Not Relevant
+3759,9180396,training,Not Relevant
+3760,21430500,training,Not Relevant
+3761,946379,training,Not Relevant
+3762,8888068,training,Relevant
+3763,24564797,training,Not Relevant
+3764,17199017,training,Not Relevant
+3765,2418259,training,Not Relevant
+3766,26940767,training,Not Relevant
+3767,24982342,training,Not Relevant
+3768,22204883,training,Not Relevant
+3769,7995005,training,Relevant
+3770,1527081,training,Not Relevant
+3771,3572563,training,Not Relevant
+3772,30610497,training,Not Relevant
+3773,6990859,training,Not Relevant
+3774,6407839,training,Not Relevant
+3775,5057208,training,Not Relevant
+3776,21151159,training,Not Relevant
+3777,18706773,training,Not Relevant
+3778,25559689,training,Not Relevant
+3779,8500736,training,Not Relevant
+3780,1986642,training,Not Relevant
+3781,2713875,training,Not Relevant
+3782,21221068,training,Not Relevant
+3783,29746728,training,Relevant
+3784,25590058,training,Not Relevant
+3785,8820464,training,Not Relevant
+3786,731339,training,Not Relevant
+3787,24387781,training,Not Relevant
+3788,25343296,training,Not Relevant
+3789,30486979,training,Relevant
+3790,10747237,training,Not Relevant
+3791,21052564,training,Not Relevant
+3792,16181300,training,Relevant
+3793,16736066,training,Not Relevant
+3794,30091852,training,Relevant
+3795,6268765,training,Not Relevant
+3796,28856728,training,Not Relevant
+3797,12387006,training,Not Relevant
+3798,17105992,training,Not Relevant
+3799,25100753,training,Not Relevant
+3800,10438058,training,Not Relevant
+3801,1715268,training,Not Relevant
+3802,23212890,training,Not Relevant
+3803,8710758,training,Relevant
+3804,23689660,training,Not Relevant
+3805,30337074,training,Not Relevant
+3806,1150046,training,Not Relevant
+3807,22612620,training,Relevant
+3808,12398395,training,Not Relevant
+3809,10296163,training,Not Relevant
+3810,11916544,training,Not Relevant
+3811,6180066,training,Not Relevant
+3812,21865031,training,Not Relevant
+3813,1427960,training,Not Relevant
+3814,14264554,training,Not Relevant
+3815,2718218,training,Not Relevant
+3816,12711454,training,Not Relevant
+3817,6506133,training,Not Relevant
+3818,18589298,training,Not Relevant
+3819,2729181,training,Not Relevant
+3820,29565998,training,Not Relevant
+3821,1856145,training,Relevant
+3822,16211753,training,Relevant
+3823,24224523,training,Relevant
+3824,23279047,training,Not Relevant
+3825,27128231,training,Relevant
+3826,2428440,training,Not Relevant
+3827,28737403,training,Not Relevant
+3828,8775916,training,Not Relevant
+3829,10835426,training,Not Relevant
+3830,20411598,training,Not Relevant
+3831,15082359,training,Not Relevant
+3832,7986244,training,Not Relevant
+3833,1517295,training,Not Relevant
+3834,22900471,training,Not Relevant
+3835,11802215,training,Not Relevant
+3836,18050297,training,Not Relevant
+3837,12161862,training,Not Relevant
+3838,4062269,training,Not Relevant
+3839,21395375,training,Not Relevant
+3840,37091,training,Relevant
+3841,17914077,training,Not Relevant
+3842,11140777,training,Not Relevant
+3843,29458790,training,Not Relevant
+3844,18037624,training,Not Relevant
+3845,27196716,training,Not Relevant
+3846,19744810,training,Not Relevant
+3847,11879060,training,Not Relevant
+3848,14146538,training,Not Relevant
+3849,7351238,training,Not Relevant
+3850,1531155,training,Not Relevant
+3851,14996627,training,Not Relevant
+3852,3620488,training,Not Relevant
+3853,15018802,training,Relevant
+3854,29915588,training,Not Relevant
+3855,18560630,training,Relevant
+3856,7012888,training,Not Relevant
+3857,17491110,training,Not Relevant
+3858,8335038,training,Not Relevant
+3859,30409432,training,Not Relevant
+3860,18608553,training,Not Relevant
+3861,22454136,training,Relevant
+3862,28126392,training,Not Relevant
+3863,9119356,training,Not Relevant
+3864,28428543,training,Not Relevant
+3865,8000380,training,Relevant
+3866,3141451,training,Not Relevant
+3867,11270806,training,Relevant
+3868,28185961,training,Not Relevant
+3869,26079203,training,Not Relevant
+3870,27169852,training,Not Relevant
+3871,4357525,training,Not Relevant
+3872,29371020,training,Not Relevant
+3873,2275917,training,Not Relevant
+3874,7349330,training,Relevant
+3875,11179210,training,Not Relevant
+3876,6342774,training,Not Relevant
+3877,29607891,training,Relevant
+3878,24014186,training,Relevant
+3879,848770,training,Not Relevant
+3880,21464174,training,Relevant
+3881,2699478,training,Not Relevant
+3882,25643920,training,Relevant
+3883,3308297,training,Not Relevant
+3884,18388122,training,Not Relevant
+3885,21672215,training,Not Relevant
+3886,1742921,training,Not Relevant
+3887,9137523,training,Relevant
+3888,965131,training,Relevant
+3889,10773014,training,Not Relevant
+3890,9509899,training,Not Relevant
+3891,12054475,training,Not Relevant
+3892,2724094,training,Relevant
+3893,15621257,training,Not Relevant
+3894,18766262,training,Relevant
+3895,6644309,training,Not Relevant
+3896,25850750,training,Relevant
+3897,9681144,training,Not Relevant
+3898,28277886,training,Not Relevant
+3899,30668390,training,Not Relevant
+3900,10626948,training,Relevant
+3901,11404005,training,Not Relevant
+3902,30623310,training,Not Relevant
+3903,30642931,training,Relevant
+3904,26755708,training,Not Relevant
+3905,2694162,training,Not Relevant
+3906,30629193,training,Relevant
+3907,582104,training,Not Relevant
+3908,25336386,training,Not Relevant
+3909,15885411,training,Not Relevant
+3910,6191407,training,Not Relevant
+3911,1569060,training,Relevant
+3912,8586607,training,Not Relevant
+3913,8837066,training,Not Relevant
+3914,8783774,training,Not Relevant
+3915,24427325,training,Not Relevant
+3916,7905383,training,Not Relevant
+3917,31288488,training,Not Relevant
+3918,11710679,training,Not Relevant
+3919,29408710,training,Not Relevant
+3920,26577956,training,Not Relevant
+3921,1910070,training,Relevant
+3922,3392144,training,Not Relevant
+3923,8061832,training,Relevant
+3924,10085788,training,Relevant
+3925,31075798,training,Not Relevant
+3926,2644930,training,Not Relevant
+3927,3665805,training,Not Relevant
+3928,29635061,training,Relevant
+3929,8596833,training,Relevant
+3930,19856795,training,Relevant
+3931,29607927,training,Not Relevant
+3932,7396455,training,Relevant
+3933,11802091,training,Relevant
+3934,26886328,training,Not Relevant
+3935,17704033,training,Not Relevant
+3936,21794149,training,Not Relevant
+3937,6511790,training,Not Relevant
+3938,16473056,training,Not Relevant
+3939,7731022,training,Not Relevant
+3940,2691873,training,Not Relevant
+3941,15687110,training,Not Relevant
+3942,8091243,training,Not Relevant
+3943,5386122,training,Not Relevant
+3944,28144138,training,Not Relevant
+3945,5285802,training,Not Relevant
+3946,5434670,training,Not Relevant
+3947,22913551,training,Not Relevant
+3948,27608317,training,Not Relevant
+3949,24789274,training,Not Relevant
+3950,24019205,training,Relevant
+3951,26381054,training,Relevant
+3952,28667670,training,Not Relevant
+3953,26082973,training,Not Relevant
+3954,7742576,training,Not Relevant
+3955,24741485,training,Relevant
+3956,959468,training,Not Relevant
+3957,28326559,training,Not Relevant
+3958,8115380,training,Not Relevant
+3959,30595526,training,Relevant
+3960,1819743,training,Not Relevant
+3961,12057646,training,Not Relevant
+3962,3050368,training,Not Relevant
+3963,6461460,training,Not Relevant
+3964,28473642,training,Not Relevant
+3965,16496491,training,Not Relevant
+3966,7842707,training,Not Relevant
+3967,20141884,training,Not Relevant
+3968,2274571,training,Not Relevant
+3969,26919546,training,Not Relevant
+3970,962181,training,Not Relevant
+3971,24041886,training,Not Relevant
+3972,23214383,training,Not Relevant
+3973,21252391,training,Relevant
+3974,23211429,training,Not Relevant
+3975,17121084,training,Not Relevant
+3976,12093595,training,Not Relevant
+3977,14745002,training,Not Relevant
+3978,29688783,training,Relevant
+3979,24883145,training,Not Relevant
+3980,1309880,training,Not Relevant
+3981,22525313,training,Not Relevant
+3982,16897319,training,Not Relevant
+3983,23090839,training,Not Relevant
+3984,28255359,training,Not Relevant
+3985,7695782,training,Relevant
+3986,17320115,training,Not Relevant
+3987,11602692,training,Not Relevant
+3988,5011920,training,Not Relevant
+3989,675695,training,Not Relevant
+3990,21315406,training,Not Relevant
+3991,28508378,training,Relevant
+3992,24593792,training,Relevant

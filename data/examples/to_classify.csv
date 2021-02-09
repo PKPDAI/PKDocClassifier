@@ -1,0 +1,132 @@
+abstract,mesh_terms,publication_types,title,pmid
+"Rituximab, an anti-CD20 monoclonal antibody, is a key therapeutic in the 
+treatment of B cell lymphomas and rheumatoid arthritis (RA). Global rates of 
+non-Hodgkin's lymphoma (NHL), chronic lymphocytic leukemia (CLL) and RA are 
+increasing, with a concomitant rise in individual and overall treatment costs. 
+As such, biosimilar development may help facilitate greater access to treatment. 
+The rituximab biosimilar CT-P10 (Truxima®) has recently received approval in 
+Europe and South Korea for all indications held by reference rituximab (RTX). 
+Areas covered: Here, the unmet needs and current market in the treatment of NHL, 
+CLL and RA are outlined, followed by a comprehensive examination of the 
+analytical, pre-clinical and clinical data demonstrating the equivalence and 
+similarity of CT-P10 to RTX including with respect to pharmacokinetics, 
+efficacy, safety and immunogenicity. Expert commentary: The rising treatment 
+costs of NHL, CLL and RA pose a challenge to constrained healthcare budgets 
+worldwide. Biosimilars may provide an effective solution to this conundrum. 
+CT-P10 is equivalent to RTX in terms of efficacy and pharmacokinetics, and has a 
+similar safety and immunogenicity profile. Approved in all indications held by 
+RTX, CT-P10 has the potential to reduce treatment costs and thereby increase 
+patient access to rituximab therapy.",,D016454:Review,"Pharmacokinetics, efficacy and safety of the rituximab biosimilar CT-P10.",28766389
+"Background: Biosimilars are highly similar to the licensed biologic (""reference product""), with no clinically meaningful differences in safety, purity, or potency between the two products.
+
+Objective: This comparative 52-week clinical study evaluated the efficacy, safety, immunogenicity, pharmacokinetics (PK), and pharmacodynamics (PD) of PF-05280586 (Ruxience™ [a rituximab biosimilar]) versus rituximab reference product sourced from the EU (MabThera®; rituximab-EU).
+
+Patients and methods: Subjects with CD20-positive, low-tumor-burden follicular lymphoma (LTB-FL) and an Eastern Cooperative Oncology Group performance status 0-1 were randomized (1:1) to PF-05280586 or rituximab-EU (375 mg/m2 intravenously [once weekly for 4 weeks at days 1, 8, 15, and 22]), stratified using the Follicular Lymphoma International Prognostic Index 2 classification. The primary endpoint was overall response rate (ORR) at week 26 (percentage of subjects achieving complete response [CR] or partial response [PR]). Therapeutic equivalence was concluded if the two-sided 95% confidence interval (CI) for the difference in ORR between groups was within the prespecified margin (± 16%). Secondary endpoints included progression-free survival (PFS), CR rate, safety, immunogenicity, PK, and PD.
+
+Results: A total of 394 subjects were randomized: PF-05280586 (n = 196) or rituximab-EU (n = 198). ORR at week 26 was 75.5% (PF-05280586) versus 70.7% (rituximab-EU), for a difference of 4.66%; 95% CI (- 4.16 to 13.47), which was entirely within the prespecified equivalence margin. Rates of CR were 29.3% (PF-05280586) versus 31.0% (rituximab-EU). Estimated 1-year PFS rates were 78.2% (95% CI 70.2-84.2) and 83.0% (95% CI 75.0-88.6) for PF-05280586 and rituximab-EU, respectively. Safety, immunogenicity, and mean serum concentrations were similar between groups.
+
+Conclusions: The efficacy, safety, immunogenicity, PK, and PD of PF-05280586 and rituximab-EU were similar up to week 52 in subjects with previously untreated CD20-positive LTB-FL.",,'D016430:Clinical Trial; D016428:Journal Article',"A Randomized, Double-Blind, Efficacy and Safety Study of PF-05280586 (a Rituximab Biosimilar) Compared with Rituximab Reference Product (MabThera ®) in Subjects with Previously Untreated CD20-Positive, Low-Tumor-Burden Follicular Lymphoma (LTB-FL)",31820339
+"AIMS: Rituximab is standard care in a number of lymphoma subtypes, including 
+follicular lymphoma (FL), although many patients are resistant to rituximab, or 
+develop resistance with repeated treatment, and a high proportion relapse. 
+Obinutuzumab is a novel anti-CD20 monoclonal antibody with improved efficacy 
+over rituximab. It is approved for previously untreated chronic lymphocytic 
+leukaemia (CLL), and for use with bendamustine in patients with 
+rituximab-relapsed/refractory FL.
+METHODS: Using a previously described population pharmacokinetic (PK) model of 
+obinutuzumab in patients with non-Hodgkin lymphoma and CLL, we conducted an 
+exposure-response analysis using data from 6 clinical trials in patients with 
+CD20+ B-cell malignancies (CLL11, GADOLIN, GATHER, GAUDI, GAUGUIN and GAUSS) to 
+describe the PK properties of obinutuzumab, identify covariates influencing 
+exposure, and explore how exposure affects safety, efficacy and 
+pharmacodynamics.
+RESULTS: A 2-compartment model with linear and time-dependent clearance 
+described obinutuzumab PK. Disease type and subtype, body weight, baseline 
+tumour size, and sex had the largest effects on PK. Obinutuzumab exposure was 
+not associated with occurrence or severity of adverse events, but higher 
+exposure appeared to be associated with greater efficacy, particularly longer 
+progression-free survival. However, in multivariate Cox regression analysis, 
+progression-free survival benefit in the obinutuzumab plus bendamustine arm was 
+independent of exposure.
+CONCLUSION: The updated population PK model reported here accurately describes 
+the PK of obinutuzumab patients with non-Hodgkin lymphoma and CLL. The selected 
+obinutuzumab dosing regimen offers clinical benefit in a majority of 
+rituximab-refractory FL patients treated with bendamustine, irrespective of 
+variability in exposure, whilst minimising adverse events.
+",,'D016430:Clinical Trial; D016428:Journal Article; D016449:Randomized Controlled Trial',"Pharmacokinetics, exposure, efficacy and safety of obinutuzumab in 
+rituximab-refractory follicular lymphoma patients in the GADOLIN phase III 
+Study.",31050355
+"BACKGROUND: Studies in patients with rheumatoid arthritis have shown that the 
+rituximab biosimilar CT-P10 (Celltrion, Incheon, South Korea) has equivalent 
+efficacy and pharmacokinetics to rituximab. In this phase 3 study, we aimed to 
+assess the non-inferior efficacy and pharmacokinetic equivalence of CT-P10 
+compared with rituximab, when used in combination with cyclophosphamide, 
+vincristine, and prednisone (CVP) in patients with newly diagnosed 
+advanced-stage follicular lymphoma.
+METHODS: In this ongoing, randomised, double-blind, parallel-group, 
+active-controlled study, patients aged 18 years or older with Ann Arbor stage 
+III-IV follicular lymphoma were assigned 1:1 to CVP plus intravenous infusions 
+of 375 mg/m2 CT-P10 or rituximab on day 1 of eight 21-day cycles. Randomisation 
+was done by the investigators using an interactive web or voice response system 
+and a computer-generated randomisation schedule, prepared by a clinical research 
+organisation. Randomisation was balanced using permuted blocks and was 
+stratified by country, gender, and Follicular Lymphoma International Prognostic 
+Index score (0-2 vs 3-5). Study teams from the sponsor and clinical research 
+organisation, investigators, and patients were masked to treatment assignment. 
+The study was divided into two parts: part 1 assessing equivalence of 
+pharmacokinetics (in the pharmacokinetics subset), and part 2 assessing efficacy 
+in all randomised patients (patients from the pharmacokinetics subset plus 
+additional patients enrolled in part 2). Equivalence of pharmacokinetics was 
+shown if the 90% CIs for the geometric mean ratio of CT-P10 to rituximab in AUCτ 
+and CmaxSS were within the bounds of the equivalence margin of 80% and 125%. 
+Non-inferiority of response was shown if the one-sided 97·5% CI lay on the 
+positive side of the -7% margin, using a one-sided test done at the 2·5% 
+significance level. The primary efficacy endpoint was the proportion of patients 
+who had an overall response over eight cycles and was assessed in the efficacy 
+population (all randomised patients). The primary pharmacokinetic endpoints were 
+area under the serum concentration-time curve at steady state (AUCτ) and maximum 
+serum concentration at steady state (CmaxSS) at cycle 4, assessed in the 
+pharmokinetic population. This trial is registered with ClinicalTrials.gov, 
+number NCT02162771.
+FINDINGS: Between July 28, 2014, and Dec 29, 2015, 140 patients were enrolled. 
+Here we report data for the eight-cycle induction period, up to week 24. The 
+proportion of patients with an overall response in the efficacy population was 
+64 (97·0%) of 66 patients in the CT-P10 treatment group and 63 (92·6%) of 68 
+patients in the rituximab treatment group (4·3%; one-sided 97·5% CI -4·25), 
+which lay on the positive side of the predefined non-inferiority margin. The 
+ratio of geometric least squares means (CT-P10/rituximab) was 102·25% (90% CI 
+94·05-111·17) for AUCτ and 100·67% (93·84-108·00) for CmaxSS, with all CIs 
+within the bioequivalence margin of 80-125%. Treatment-emergent adverse events 
+were reported for 58 (83%) of 70 patients in the CT-P10 treatment group and 56 
+(80%) of 70 in the rituximab treatment group. The most common grade 3 or 4 
+treatment-emergent adverse event in each treatment group was neutropenia (grade 
+3, 15 [21%] of 70 patients in the CT-P10 group and seven [10%] of 70 patients in 
+the rituximab group). The proportion of patients who experienced at least one 
+treatment-emergent serious adverse event was 16 (23%) of 70 patients in the 
+CT-P10 group and nine (13%) of 70 patients in the rituximab group.
+INTERPRETATION: In this study, we show that CT-P10 exhibits non-inferior 
+efficacy and pharmacokinetic equivalence to rituximab. The safety profile of 
+CT-P10 was comparable to that of rituximab. CT-P10 might represent a new 
+therapeutic option for advanced-stage follicular lymphoma.",,'D016430:Clinical Trial; D016428:Journal Article; D016449:Randomized Controlled Trial',"Efficacy, pharmacokinetics, and safety of the biosimilar CT-P10 compared with 
+rituximab in patients with previously untreated advanced-stage follicular 
+lymphoma: a randomised, double-blind, parallel-group, non-inferiority phase 3 
+Trial.",28712940
+"Rituximab, a chimeric monoclonal antibody targeted against the pan-B-cell marker 
+CD20, was the first monoclonal antibody to be approved for therapeutic use. 
+Treatment with rituximab at standard weekly dosing is effective in more than 50% 
+of patients with relapsed or refractory CD20-positive follicular non-Hodgkin's 
+lymphoma, but is not curative. It is less effective in other subtypes of 
+CD20-positive lymphoma and for retreatment, even with CD20 still expressed. 
+Thus, binding of rituximab to CD20 is not sufficient to kill many lymphoma 
+cells, indicating that there are mechanisms of resistance. Mechanisms of cell 
+destruction that have been demonstrated to be activated by rituximab binding to 
+CD20 include direct signaling of apoptosis, complement activation and 
+cell-mediated cytotoxicity. The relative importance of each of these mechanisms 
+in determining clinical response to rituximab treatment remains a matter of 
+conjecture. Thus, the role of various resistance pathways, some documented in 
+experimental systems and others still hypothetical, remains uncertain. 
+Resistance could potentially be mediated by alterations in CD20 expression or 
+signaling, elevated apoptotic threshold, modulation of complement activity or 
+diminished cellular cytotoxicity. As the first of an expanding class of 
+anticancer agents, lessons learned regarding the mechanism of rituximab action 
+and resistance will be of increasing importance.",,D016454:Review,Rituximab (monoclonal anti-CD20 antibody): mechanisms of action and resistance.,14576843
