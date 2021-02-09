@@ -217,5 +217,6 @@ Final results on the test set should be printed on the terminal.
 
 ## Make new predictions
 
+See a toy example of how to make new predictions [here](https://github.com/fgh95/PKDocClassifier/tree/master/scripts/NewPredictions.ipynb).
 
 ## Citation
