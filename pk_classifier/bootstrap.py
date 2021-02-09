@@ -1,5 +1,5 @@
 import argparse
-
+from sklearn.model_selection import train_test_split
 from sklearn.base import BaseEstimator, TransformerMixin
 from scipy.sparse import csr_matrix
 import matplotlib.pyplot as plt
@@ -92,6 +92,8 @@ def read_in_bow(path_preproc, path_labels):
     only 2 labels. Returns data as 2 pandas dataframes"""
     features = pd.read_parquet(path_preproc).sort_values(by=['pmid']).reset_index(drop=True)
     labs = pd.read_csv(path_labels).sort_values(by=['pmid']).reset_index(drop=True)
+    features.pmid = features.pmid.astype('int64')
+    labs.pmid = labs.pmid.astype('int64')
     assert features['pmid'].equals(labs['pmid'])
     assert len(labs['label'].unique()) == 2
     return features, labs
@@ -109,3 +111,31 @@ def str2bool(v):
         return False
     else:
         raise argparse.ArgumentTypeError('Boolean value expected.')
+
+
+def make_ids_per_test(inp_df: pd.DataFrame):
+    ids_per_test = pd.DataFrame(inp_df['pmid'], columns=['pmid'])
+    ids_per_test['Dataset'] = inp_df['Dataset']
+    ids_per_test['Real label'] = inp_df.label
+    ids_per_test['times_correct'] = 0
+    ids_per_test['times_test'] = 0
+    return ids_per_test
+
+
+def split_train_val_test(features, labels, test_size, seed):
+    x_train, x_val, y_train, y_val, pmids_train, pmids_val = train_test_split(features,
+                                                                              labels['label'],
+                                                                              labels['pmid'],
+                                                                              test_size=test_size,
+                                                                              shuffle=True,
+                                                                              random_state=seed,
+                                                                              stratify=labels['label'])
+    new_per = len(y_val) / len(y_train)
+    x_train, x_test, y_train, y_test, pmids_train, pmids_test = train_test_split(x_train,
+                                                                                 y_train,
+                                                                                 pmids_train,
+                                                                                 test_size=new_per,
+                                                                                 shuffle=True,
+                                                                                 random_state=seed,
+                                                                                 stratify=y_train)
+    return x_train, x_val, x_test, y_train, y_val, y_test, pmids_train, pmids_val, pmids_test

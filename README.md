@@ -10,8 +10,6 @@ This repository contains custom pipes and models to classify scientific publicat
 
 The labels assigned to each publication in the training and test sets are available in CSV format at the [labels folder](https://github.com/fgh95/PKDocClassifier/tree/master/data/labels). We also provide the textual fields from each publication after being parsed at the [subsets folder](https://github.com/fgh95/PKDocClassifier/tree/master/data/subsets).
 
-
-
 ## Reproduce our results
 
 ### 1. Installing dependencies 
@@ -73,7 +71,8 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
       --input-dir data/encoded/fields \
       --output-dir data/results/fields \
       --output-dir-bootstrap data/results/fields/bootstrap \
-      --path-labels data/labels/dev_data.csv
+      --path-labels data/labels/dev_data.csv \
+      --overwrite True
    ````
 
 3. Bootstrap n-grams (~3h on 12 threads, requires at least 16GB of RAM)
@@ -83,7 +82,8 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
       --input-dir data/encoded/ngrams \
       --output-dir data/results/ngrams \
       --output-dir-bootstrap data/results/ngrams/bootstrap \
-      --path-labels data/labels/dev_data.csv
+      --path-labels data/labels/dev_data.csv \
+      --overwrite True
    ````
 
 4. Display results
@@ -152,7 +152,8 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
       --output-dir data/results/distributional \
       --output-dir-bootstrap data/results/distributional/bootstrap \
       --path-labels data/labels/dev_data.csv \
-      --path-optimal-bow data/encoded/ngrams/dev_unigrams.parquet
+      --path-optimal-bow data/encoded/ngrams/dev_unigrams.parquet \
+      --overwrite True
    ````
    
    ````

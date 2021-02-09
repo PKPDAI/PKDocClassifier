@@ -4,25 +4,21 @@ import os
 from sklearn.pipeline import Pipeline, FeatureUnion
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.metrics import precision_recall_fscore_support
-from sklearn.model_selection import train_test_split
 import xgboost as xgb
 from tqdm import tqdm
 import argparse
 import warnings
-from pk_classifier.bootstrap import Tokenizer, TextSelector, plot_it, f1_eval, update, read_in_distributional, str2bool
+from pk_classifier.bootstrap import Tokenizer, TextSelector, plot_it, f1_eval, update, read_in_distributional, str2bool, \
+    make_ids_per_test, split_train_val_test
 
 
 def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figure, out_path_bootstrap, is_specter,
                  use_bow, path_optimal_bow):
     all_features, all_labs = read_in_distributional(input_tuple[0], input_tuple[1], is_specter, path_optimal_bow)
 
-    all_metrics_test = []
-    ids_per_test = pd.DataFrame(all_labs['pmid'], columns=['pmid'])
-    ids_per_test['Dataset'] = all_labs['Dataset']
-    ids_per_test['Real label'] = all_labs.label
-    ids_per_test['times_correct'] = 0
-    ids_per_test['times_test'] = 0
+    ids_per_test = make_ids_per_test(inp_df=all_labs)
 
+    all_metrics_test = []
     optimal_epochs = []
     median_optimal_epochs = []
     median_f1s = []
@@ -35,21 +31,8 @@ def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figu
         #               Make splits: 60% train, 20% validation, 20% temp test
         # ======================================================================================================
 
-        x_train, x_val, y_train, y_val, pmids_train, pmids_val = train_test_split(all_features,
-                                                                                  all_labs['label'],
-                                                                                  all_labs['pmid'],
-                                                                                  test_size=per,
-                                                                                  shuffle=True,
-                                                                                  random_state=rd_seed,
-                                                                                  stratify=all_labs['label'])
-        new_per = len(y_val) / len(y_train)
-        x_train, x_test, y_train, y_test, pmids_train, pmids_test = train_test_split(x_train,
-                                                                                     y_train,
-                                                                                     pmids_train,
-                                                                                     test_size=new_per,
-                                                                                     shuffle=True,
-                                                                                     random_state=rd_seed,
-                                                                                     stratify=y_train)
+        x_train, x_val, x_test, y_train, y_val, y_test, pmids_train, pmids_val, pmids_test = \
+            split_train_val_test(features=all_features, labels=all_labs, test_size=per, seed=rd_seed)
 
         # =====================================================================================================
         #               Decide max number of iterations using early stopping criteria on the validation set
@@ -67,7 +50,7 @@ def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figu
 
         if use_bow:
             # Define encoding pipeline
-            EncPip = Pipeline([
+            enc_pip = Pipeline([
                 ('encoder', FeatureUnion(transformer_list=[
                     ('bow', Pipeline([
                         ('selector', TextSelector('BoW_Ready', emb=False)),
@@ -82,7 +65,7 @@ def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figu
             ])
 
         else:
-            EncPip = Pipeline([
+            enc_pip = Pipeline([
                 ('encoder', FeatureUnion(transformer_list=[
                     ('abs', Pipeline([
                         ('selector', TextSelector('embedding', emb=True))
@@ -90,8 +73,8 @@ def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figu
                 ]))
             ])
 
-        x_train_features = EncPip.fit_transform(x_train)
-        x_val_features = EncPip.transform(x_val)
+        x_train_features = enc_pip.fit_transform(x_train)
+        x_val_features = enc_pip.transform(x_val)
         if a == 0:
             print("Using: ", x_train_features.shape[1], "features")
 
@@ -111,7 +94,7 @@ def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figu
         #               Apply predictions to the temp test set
         # ======================================================================================================
 
-        x_test_encoded = EncPip.transform(x_test)
+        x_test_encoded = enc_pip.transform(x_test)
         pred_test = decoder.predict(x_test_encoded)
         test_results = pd.DataFrame(pred_test == y_test.values, columns=['Result'])
         test_results['Result'] = test_results['Result'].astype(int)
@@ -146,7 +129,7 @@ def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figu
 
 
 def run(is_specter: bool, use_bow: bool, input_dir: str, output_dir: str, output_dir_bootstrap: str, path_labels: str,
-        path_optimal_bow: str):
+        path_optimal_bow: str, overwrite: bool):
     if not os.path.isdir(output_dir):
         os.makedirs(output_dir, exist_ok=True)
     if not os.path.isdir(output_dir_bootstrap):
@@ -158,6 +141,8 @@ def run(is_specter: bool, use_bow: bool, input_dir: str, output_dir: str, output
         inp_files = os.listdir(input_dir)
         repl = ".parquet"
 
+    inp_files = [inp_f for inp_f in inp_files if 'test' not in inp_f]
+
     for inp_file in inp_files:
         inp_path = os.path.join(input_dir, inp_file)
         experiment_name = inp_file.replace("dev_", "").replace(repl, "")
@@ -165,7 +150,7 @@ def run(is_specter: bool, use_bow: bool, input_dir: str, output_dir: str, output
             experiment_name = experiment_name + "_bow"
         print("================== ", experiment_name, "=============================")
         # Define output
-        if "res_" + experiment_name + ".csv" not in os.listdir(output_dir):
+        if "res_" + experiment_name + ".csv" not in os.listdir(output_dir) or overwrite:
             out_res = os.path.join(output_dir, "res_" + experiment_name + ".csv")
             out_fig = os.path.join(output_dir_bootstrap, "res_" + experiment_name + ".png")
             out_dev = os.path.join(output_dir_bootstrap, "bootstrap_" + experiment_name + ".csv")
@@ -210,10 +195,13 @@ def main():
     parser.add_argument("--path-optimal-bow", type=str, help="Path to the parquet file with the optimal BoW features",
                         default="../data/encoded/ngrams/dev_unigrams.parquet")
 
+    parser.add_argument("--overwrite", type=bool, help="Whether to overwrite files if results already present in the "
+                                                       "output directory.", default=False)
+
     args = parser.parse_args()
     run(is_specter=args.is_specter, use_bow=args.use_bow, input_dir=args.input_dir, output_dir=args.output_dir,
         output_dir_bootstrap=args.output_dir_bootstrap, path_labels=args.path_labels,
-        path_optimal_bow=args.path_optimal_bow)
+        path_optimal_bow=args.path_optimal_bow, overwrite=args.overwrite)
 
 
 if __name__ == '__main__':
