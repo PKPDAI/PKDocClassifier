@@ -164,7 +164,8 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
       --output-dir data/results/distributional \
       --output-dir-bootstrap data/results/distributional/bootstrap \
       --path-labels data/labels/dev_data.csv \
-      --path-optimal-bow data/encoded/ngrams/dev_unigrams.parquet
+      --path-optimal-bow data/encoded/ngrams/dev_unigrams.parquet \
+      --overwrite True
    ````
 
    
