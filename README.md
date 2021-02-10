@@ -246,6 +246,6 @@ print(pred_test)
 ```
 
 
-You can reproduce this example on ar jupyter notebook: [here](https://github.com/fgh95/PKDocClassifier/tree/master/scripts/NewPredictions.ipynb).
+You can reproduce this example on our jupyter notebook: [here](https://github.com/fgh95/PKDocClassifier/tree/master/scripts/NewPredictions.ipynb).
 
 ## Citation
