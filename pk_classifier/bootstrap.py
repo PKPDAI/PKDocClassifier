@@ -9,7 +9,7 @@ from pk_classifier.utils import read_jsonl
 import pandas as pd
 
 
-def Tokenizer(str_input):
+def simple_tokenizer(str_input):
     return str_input.split(" ;; ")
 
 
@@ -30,21 +30,6 @@ class TextSelector(BaseEstimator, TransformerMixin):
             return documents_ready
         else:
             return X[self.field].fillna('')
-
-
-def plot_it(df_results, out_path=None):
-    f1s = df_results['F1-score'].values
-    plt.figure(figsize=(10, 10))
-    plt.hist(f1s, bins='auto')  # arguments are passed to np.histogram
-    plt.title("F1-distribution")
-    plt.ylabel('Absolute frequency')
-    plt.xlabel('F1-score')
-    if out_path:
-        plt.savefig(out_path)
-        plt.close()
-    else:
-        plt.show()
-        plt.close()
 
 
 def f1_eval(y_pred, dtrain):
@@ -123,6 +108,8 @@ def make_ids_per_test(inp_df: pd.DataFrame):
 
 
 def split_train_val_test(features, labels, test_size, seed):
+    """Splits a dataset into training, dev and test, and keeps dev and test the same size (test_size proportion).
+    So if test_size is 0.2 (20%) it will split the input into 60% training, 20% dev and 20% test"""
     x_train, x_val, y_train, y_val, pmids_train, pmids_val = train_test_split(features,
                                                                               labels['label'],
                                                                               labels['pmid'],
@@ -139,3 +126,5 @@ def split_train_val_test(features, labels, test_size, seed):
                                                                                  random_state=seed,
                                                                                  stratify=y_train)
     return x_train, x_val, x_test, y_train, y_val, y_test, pmids_train, pmids_val, pmids_test
+
+

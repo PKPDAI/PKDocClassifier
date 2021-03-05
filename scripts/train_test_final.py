@@ -8,7 +8,7 @@ from typing import Dict
 import joblib
 from sklearn.metrics import precision_recall_fscore_support
 
-from pk_classifier.bootstrap import Tokenizer, TextSelector, str2bool
+from pk_classifier.bootstrap import simple_tokenizer, TextSelector, str2bool
 from pk_classifier.utils import read_crossval, ConcatenizerEmb, Embedder, EmbeddingsJoiner
 from pk_classifier.utils import make_preprocessing_pipeline
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
@@ -35,7 +35,7 @@ def train_final_pipeline(train_data: pd.DataFrame, train_labels: pd.DataFrame, b
     rd_seed = 10042006
     train_labels = train_labels['label']
     balancing_factor = train_labels.value_counts()["Not Relevant"] / train_labels.value_counts()["Relevant"]
-    encoder = CountVectorizer(tokenizer=Tokenizer, ngram_range=(1, 1), lowercase=False, preprocessor=None,
+    encoder = CountVectorizer(tokenizer=simple_tokenizer, ngram_range=(1, 1), lowercase=False, preprocessor=None,
                               min_df=best_params_cv['encoder__bow__vect__min_df'])
     normalizer = TfidfTransformer(norm="l1", use_idf=False)
     decoder = xgb.XGBClassifier(random_state=rd_seed,

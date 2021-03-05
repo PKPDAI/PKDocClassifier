@@ -7,8 +7,9 @@ from sklearn.metrics import precision_recall_fscore_support
 import xgboost as xgb
 from tqdm import tqdm
 import argparse
-from pk_classifier.bootstrap import Tokenizer, TextSelector, f1_eval, plot_it, update, read_in_bow, make_ids_per_test, \
+from pk_classifier.bootstrap import simple_tokenizer, TextSelector, f1_eval, update, read_in_bow, make_ids_per_test, \
     split_train_val_test
+from pk_classifier.stats import plot_df
 
 
 def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figure, out_path_bootstrap):
@@ -38,7 +39,7 @@ def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figu
         balancing_factor = y_train.value_counts()["Not Relevant"] / y_train.value_counts()["Relevant"]
         if round_i == 0:
             print("Training with--- ", y_train.value_counts()["Relevant"], " ---Relevant instances")
-        encoder = CountVectorizer(tokenizer=Tokenizer, ngram_range=(1, 1), lowercase=False, preprocessor=None,
+        encoder = CountVectorizer(tokenizer=simple_tokenizer, ngram_range=(1, 1), lowercase=False, preprocessor=None,
                                   min_df=2)
         normalizer = TfidfTransformer(norm="l1", use_idf=False)
         decoder = xgb.XGBClassifier(random_state=rd_seed, n_jobs=-1, n_estimators=2000, objective='binary:logistic',
@@ -105,7 +106,7 @@ def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figu
     print("Validation Median:", df_results_test.median())
     print("Validation std:", df_results_test.std())
     df_results_test.to_csv(out_path_results)
-    plot_it(df_results_test, out_path=out_path_figure)
+    plot_df(df_results_test, out_path=out_path_figure)
 
     ids_per_test['CorrectlyClassified'] = ids_per_test[['times_correct']].div(ids_per_test.times_test, axis=0) * 100
     ids_per_val = ids_per_test.sort_values(by=['CorrectlyClassified'], ascending=True)

@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.model_selection import GridSearchCV
 from sklearn.pipeline import Pipeline, FeatureUnion
 from sklearn.metrics import f1_score, make_scorer
-from pk_classifier.bootstrap import read_in_distributional, Tokenizer, TextSelector
+from pk_classifier.bootstrap import read_in_distributional, simple_tokenizer, TextSelector
 import xgboost as xgb
 import pandas as pd
 import joblib
@@ -29,7 +29,7 @@ def cross_validate_pk(training_embeddings: str, training_optimal_bow: str, train
     # ======================================================================================================
     hyp_grid = HYPERPARAMETER_GRID
     balancing_factor = all_labs.value_counts()["Not Relevant"] / all_labs.value_counts()["Relevant"]
-    encoder = CountVectorizer(tokenizer=Tokenizer, ngram_range=(1, 1), lowercase=False, preprocessor=None)
+    encoder = CountVectorizer(tokenizer=simple_tokenizer, ngram_range=(1, 1), lowercase=False, preprocessor=None)
     normalizer = TfidfTransformer(norm="l1", use_idf=False)
     decoder = xgb.XGBClassifier(random_state=rd_seed,
                                 n_estimators=148,  # Median value of the optimal n_estimators across 200 bootstrapping
