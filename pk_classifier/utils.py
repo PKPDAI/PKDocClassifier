@@ -177,7 +177,7 @@ def cleanup(token):
     table = str.maketrans('', '', string.punctuation)  # define characters to be removed inside the token
     try:
         token = token.replace('\n', '')
-        if hasNumbers(token):
+        if hasnumbers(token):
             cleaned_token = token.translate(table)  # remove specific punctuation types inside token
         else:
             cleaned_token = token
@@ -218,9 +218,9 @@ def generate_ngrams(unigram_list, n, separator=" "):
         return [separator.join(ngram) for ngram in ngrams]
 
 
-def hasNumbers(inputString):
+def hasnumbers(input_string):
     """Checks whether the string has any digit value"""
-    return any(char.isdigit() for char in inputString)
+    return any(char.isdigit() for char in input_string)
 
 
 def simple_preproc(str_list, identifier, unifier):

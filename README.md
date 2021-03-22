@@ -2,7 +2,7 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/fgh95/PKDocClassifier/blob/master/LICENSE) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://app.pkpdai.com/) ![version](https://img.shields.io/badge/version-0.1.0-blue) 
 
 
-[**PKDocClassifier**](#pkdocclassifier)| [**Data**](#data) | [**Reproduce our results**](#reproduce-our-results) | [**User our model**](#user-our-model) | [**Citing**](#citation)
+[**PKDocClassifier**](#pkdocclassifier)| [**Data**](#data) | [**Reproduce our results**](#reproduce-our-results) | [**Make new predictions**](#make-new-predictions) | [**Citing**](#citation)
 
 This repository contains custom pipes and models to classify scientific publications from PubMed depending on whether they estimate pharmacokinetic (PK) parameters from _in vivo_ studies. The final pipeline retrieved more than 121K PK publications and runs weekly updates available at https://app.pkpdai.com/.
 
@@ -197,7 +197,7 @@ Run the cross-validation analyses:
       --training-embeddings  data/encoded/biobert/dev_biobert_avg.parquet \
       --training-optimal-bow  data/encoded/ngrams/dev_unigrams.parquet \
       --training-labels  data/labels/dev_data.csv\
-      --output-dir  data/results/final-pipeline \
+      --output-dir  data/results/final-pipeline 
    ````
 
 Train the final pipeline (preprocessing, encoding, decoding) from scratch with optimal hyperparameters and apply it to the test set:
@@ -215,7 +215,7 @@ Train the final pipeline (preprocessing, encoding, decoding) from scratch with o
 
 Final results on the test set should be printed on the terminal.
 
-## User our model
+## Make new predictions
 
 You can make new predictions in three simple steps: 
 
@@ -227,12 +227,12 @@ import joblib
 data = pd.read_csv('data/examples/to_classify.csv').reset_index(drop=True)
 data['pmid'] = data['pmid'].fillna(0).astype(int).fillna('')
 data.head()
->>>                                             abstract  mesh_terms  ...                                              title      pmid
->>> 0  Rituximab, an anti-CD20 monoclonal antibody, i...         NaN  ...  Pharmacokinetics, efficacy and safety of the r...  28766389
->>> 1  Background: Biosimilars are highly similar to ...         NaN  ...  A Randomized, Double-Blind, Efficacy and Safet...  31820339
->>> 2  AIMS: Rituximab is standard care in a number o...         NaN  ...  Pharmacokinetics, exposure, efficacy and safet...  31050355
->>> 3  BACKGROUND: Studies in patients with rheumatoi...         NaN  ...  Efficacy, pharmacokinetics, and safety of the ...  28712940
->>> 4  Rituximab, a chimeric monoclonal antibody targ...         NaN  ...  Rituximab (monoclonal anti-CD20 antibody): mec...  14576843
+#>>>                                             abstract  mesh_terms  ...                                              title      pmid
+#>>> 0  Rituximab, an anti-CD20 monoclonal antibody, i...         NaN  ...  Pharmacokinetics, efficacy and safety of the r...  28766389
+#>>> 1  Background: Biosimilars are highly similar to ...         NaN  ...  A Randomized, Double-Blind, Efficacy and Safet...  31820339
+#>>> 2  AIMS: Rituximab is standard care in a number o...         NaN  ...  Pharmacokinetics, exposure, efficacy and safet...  31050355
+#>>> 3  BACKGROUND: Studies in patients with rheumatoi...         NaN  ...  Efficacy, pharmacokinetics, and safety of the ...  28712940
+#>>> 4  Rituximab, a chimeric monoclonal antibody targ...         NaN  ...  Rituximab (monoclonal anti-CD20 antibody): mec...  14576843
 
 # 2. Import trained model
 pipeline_trained = joblib.load("data/results/final-pipeline/optimal_pipeline.pkl")
@@ -240,8 +240,8 @@ pipeline_trained = joblib.load("data/results/final-pipeline/optimal_pipeline.pkl
 # 3. Make predictions
 pred_test = pipeline_trained.predict(data)
 print(pred_test)
->>> array(['Not Relevant', 'Not Relevant', 'Relevant', 'Relevant',
-       'Not Relevant'], dtype=object)
+#>>> array(['Not Relevant', 'Not Relevant', 'Relevant', 'Relevant',
+#       'Not Relevant'], dtype=object)
 
 ```
 

@@ -2,7 +2,6 @@ import argparse
 from sklearn.model_selection import train_test_split
 from sklearn.base import BaseEstimator, TransformerMixin
 from scipy.sparse import csr_matrix
-import matplotlib.pyplot as plt
 from sklearn.metrics import f1_score
 import numpy as np
 from pk_classifier.utils import read_jsonl
