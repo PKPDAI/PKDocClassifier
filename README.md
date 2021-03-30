@@ -249,3 +249,7 @@ print(pred_test)
 You can reproduce this example on our jupyter notebook: [here](https://github.com/fgh95/PKDocClassifier/tree/master/scripts/NewPredictions.ipynb).
 
 ## Citation
+
+Cite the code: 
+
+[![DOI](https://zenodo.org/badge/291502029.svg)](https://zenodo.org/badge/latestdoi/291502029)
