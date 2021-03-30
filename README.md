@@ -8,7 +8,8 @@ This repository contains custom pipes and models to classify scientific publicat
 
 ## Data
 
-The labels assigned to each publication in the training and test sets are available in CSV format at the [labels folder](https://github.com/fgh95/PKDocClassifier/tree/master/data/labels). We also provide the textual fields from each publication after being parsed at the [subsets folder](https://github.com/fgh95/PKDocClassifier/tree/master/data/subsets).
+The labels assigned to each publication can be found in the [labels folder](https://github.com/fgh95/PKDocClassifier/tree/master/data/labels). These labels are available under the terms of the Creative Commons Zero "No rights reserved" data (CC0 1.0 Public domain dedication).
+
 
 ## Reproduce our results
 
@@ -250,6 +251,7 @@ You can reproduce this example on our jupyter notebook: [here](https://github.co
 
 ## Citation
 
-Cite the code: 
+Cite the repository: 
 
 [![DOI](https://zenodo.org/badge/291502029.svg)](https://zenodo.org/badge/latestdoi/291502029)
+
