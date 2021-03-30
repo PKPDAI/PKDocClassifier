@@ -118,12 +118,12 @@ def main():
     parser.add_argument("--path-train",
                         type=str,
                         help="Parquet file with the raw training data.",
-                        default="../data/subsets/dev_subset.parquet")
+                        default="../data/subsets/training_subset.parquet")
 
     parser.add_argument("--train-labels",
                         type=str,
                         help="Path to the CSV file with the labels of the training data.",
-                        default="../data/labels/dev_data.csv")
+                        default="../data/labels/training_labels.csv")
 
     parser.add_argument("--path-test",
                         type=str,
@@ -133,7 +133,7 @@ def main():
     parser.add_argument("--test-labels",
                         type=str,
                         help="Path to the CSV file with the labels of the test data.",
-                        default="../data/labels/test_data.csv")
+                        default="../data/labels/test_labels.csv")
 
     parser.add_argument("--cv-dir",
                         type=str,

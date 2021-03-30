@@ -42,8 +42,8 @@ def run(list_dict, input_file, output_dir, is_test):
         if not is_test:
             if "dev_" + inp_dict["name"] + ".parquet" not in os.listdir(output_dir):
                 path_out_dev = os.path.join(output_dir, "dev_" + inp_dict["name"] + ".parquet")
-                if inp_dict["name"] == "biobert_avg" and "dev_biobert_all.parquet" in os.listdir(output_dir):
-                    mini_preprocess(inp_path=os.path.join(output_dir, "dev_biobert_all.parquet"), out_path=path_out_dev)
+                if inp_dict["name"] == "biobert_avg" and "training_biobert_all.parquet" in os.listdir(output_dir):
+                    mini_preprocess(inp_path=os.path.join(output_dir, "training_biobert_all.parquet"), out_path=path_out_dev)
                 else:
                     pre_process(inp_path=input_file, out_path=path_out_dev, maxmin=maxmin)
         else:
@@ -53,7 +53,7 @@ def run(list_dict, input_file, output_dir, is_test):
 
 
 if __name__ == '__main__':
-    path_dev = os.path.join("data", "subsets", "dev_subset.parquet")
+    path_dev = os.path.join("data", "subsets", "training_subset.parquet")
     path_test = os.path.join("data", "subsets", "test_subset.parquet")
 
     # 2. Process data for BioBERT

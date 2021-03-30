@@ -46,7 +46,7 @@ def run(list_dict, input_file, output_dir, is_test):
 
 if __name__ == '__main__':
     # 1. Input paths and output dirs
-    path_dev = os.path.join("data", "subsets", "dev_subset.parquet")
+    path_dev = os.path.join("data", "subsets", "training_subset.parquet")
     path_test = os.path.join("data", "subsets", "test_subset.parquet")
     out_dir = os.path.join("data", "encoded", "fields")
     out_dir_ngrams = os.path.join("data", "encoded", "ngrams")

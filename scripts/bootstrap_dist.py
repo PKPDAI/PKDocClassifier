@@ -136,7 +136,7 @@ def run(is_specter: bool, use_bow: bool, input_dir: str, output_dir: str, output
     if not os.path.isdir(output_dir_bootstrap):
         os.makedirs(output_dir_bootstrap, exist_ok=True)
     if is_specter:
-        inp_files = [x for x in os.listdir(input_dir) if "dev_specter.jsonl" == x]
+        inp_files = [x for x in os.listdir(input_dir) if "training_specter.jsonl" == x]
         repl = ".jsonl"
     else:
         inp_files = os.listdir(input_dir)
@@ -191,10 +191,10 @@ def main():
 
     parser.add_argument("--path-labels", type=str, help="Path to the csv containing the labels of the training "
                                                         "(dev) and test set",
-                        default="../data/labels/dev_data.csv")
+                        default="../data/labels/training_labels.csv")
 
     parser.add_argument("--path-optimal-bow", type=str, help="Path to the parquet file with the optimal BoW features",
-                        default="../data/encoded/ngrams/dev_unigrams.parquet")
+                        default="../data/encoded/ngrams/training_unigrams.parquet")
 
     parser.add_argument("--overwrite", type=bool, help="Whether to overwrite files if results already present in the "
                                                        "output directory.", default=False)

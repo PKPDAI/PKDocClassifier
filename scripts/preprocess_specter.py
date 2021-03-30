@@ -39,14 +39,14 @@ def save_json(inp_dict, output_dir, out_file):
 if __name__ == '__main__':
     # 1. Paths
     out_dir = os.path.join("data", "encoded", "specter")
-    path_dev = os.path.join("data", "subsets", "dev_subset.parquet")
+    path_dev = os.path.join("data", "subsets", "training_subset.parquet")
     path_test = os.path.join("data", "subsets", "test_subset.parquet")
     # 2. Output paths
     dev_ids, dev_meta = processthem(path_dev)
     test_ids, test_meta = processthem(path_test)
 
-    save_ids(inp_list=dev_ids, output_dir=out_dir, out_file="dev_ids.ids")
+    save_ids(inp_list=dev_ids, output_dir=out_dir, out_file="training_ids.ids")
     save_ids(inp_list=test_ids, output_dir=out_dir, out_file="test_ids.ids")
 
-    save_json(inp_dict=dev_meta, output_dir=out_dir, out_file="dev_meta.json")
+    save_json(inp_dict=dev_meta, output_dir=out_dir, out_file="training_meta.json")
     save_json(inp_dict=test_meta, output_dir=out_dir, out_file="test_meta.json")

@@ -80,17 +80,17 @@ def main():
     parser.add_argument("--training-embeddings",
                         type=str,
                         help="Parquet file with the embeddings of the training data.",
-                        default="../data/encoded/biobert/dev_biobert_avg.parquet")
+                        default="../data/encoded/biobert/training_biobert_avg.parquet")
 
     parser.add_argument("--training-optimal-bow",
                         type=str,
                         help="Path to the parquet file with the optimal BoW features of the training set.",
-                        default="../data/encoded/ngrams/dev_unigrams.parquet")
+                        default="../data/encoded/ngrams/training_unigrams.parquet")
 
     parser.add_argument("--training-labels",
                         type=str,
                         help="Path to the CSV file containing the labels of the training data.",
-                        default="../data/labels/dev_data.csv")
+                        default="../data/labels/training_labels.csv")
 
     parser.add_argument("--output-dir",
                         type=str,

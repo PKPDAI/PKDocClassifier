@@ -49,7 +49,7 @@ If you would like to reproduce the steps taken for data retrieval and parsing yo
 However, you can also skip this step and use the parsed data available at [data/subsets/](https://github.com/fgh95/PKDocClassifier/tree/master/data/subsets). Alternatively, follow the steps at [pubmed_parser wiki](https://github.com/titipata/pubmed_parser/wiki/Download-and-preprocess-MEDLINE-dataset) and place the resulting `medline_lastview.parquet` file at _data/medline_lastview.parquet_. Then, change the [spark config file](https://github.com/fgh95/PKDocClassifier/blob/master/sparksetup/sparkconf.py) to your spark configuration and run:
 
 ````bash
-python getready.py
+python scripts/getready.py
 ````
 
 This should generate the files at [data/subsets/](https://github.com/fgh95/PKDocClassifier/tree/master/data/subsets).
@@ -71,7 +71,7 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
       --input-dir data/encoded/fields \
       --output-dir data/results/fields \
       --output-dir-bootstrap data/results/fields/bootstrap \
-      --path-labels data/labels/dev_data.csv \
+      --path-labels data/labels/training_labels.csv \
       --overwrite True
    ````
 
@@ -82,7 +82,7 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
       --input-dir data/encoded/ngrams \
       --output-dir data/results/ngrams \
       --output-dir-bootstrap data/results/ngrams/bootstrap \
-      --path-labels data/labels/dev_data.csv \
+      --path-labels data/labels/training_labels.csv \
       --overwrite True
    ````
 
@@ -115,9 +115,9 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
 
    ````bash
    python scripts/embed.py \
-      --ids ../data/encoded/specter/dev_ids.ids --metadata ../data/encoded/specter/dev_meta.json \
+      --ids ../data/encoded/specter/training_ids.ids --metadata ../data/encoded/specter/training_meta.json \
       --model ./model.tar.gz \
-      --output-file ../data/encoded/specter/dev_specter.jsonl \
+      --output-file ../data/encoded/specter/training_specter.jsonl \
       --vocab-dir data/vocab/ \
       --batch-size 16 \
       --cuda-device -1
@@ -134,7 +134,7 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
    ````
 
    This should output two files in the data directory: 
-   `/data/encoded/specter/dev_specter.jsonl` and `data/encoded/specter/test_specter.jsonl`
+   `/data/encoded/specter/training_specter.jsonl` and `data/encoded/specter/test_specter.jsonl`
 
 
 2. Generate BioBERT representations:
@@ -151,8 +151,8 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
       --input-dir data/encoded/specter \
       --output-dir data/results/distributional \
       --output-dir-bootstrap data/results/distributional/bootstrap \
-      --path-labels data/labels/dev_data.csv \
-      --path-optimal-bow data/encoded/ngrams/dev_unigrams.parquet \
+      --path-labels data/labels/training_labels.csv \
+      --path-optimal-bow data/encoded/ngrams/training_unigrams.parquet \
       --overwrite True
    ````
    
@@ -163,8 +163,8 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
       --input-dir data/encoded/biobert \
       --output-dir data/results/distributional \
       --output-dir-bootstrap data/results/distributional/bootstrap \
-      --path-labels data/labels/dev_data.csv \
-      --path-optimal-bow data/encoded/ngrams/dev_unigrams.parquet \
+      --path-labels data/labels/training_labels.csv \
+      --path-optimal-bow data/encoded/ngrams/training_unigrams.parquet \
       --overwrite True
    ````
 
@@ -194,9 +194,9 @@ Run the cross-validation analyses:
 
    ````bash
    python scripts/cross_validate.py \
-      --training-embeddings  data/encoded/biobert/dev_biobert_avg.parquet \
-      --training-optimal-bow  data/encoded/ngrams/dev_unigrams.parquet \
-      --training-labels  data/labels/dev_data.csv\
+      --training-embeddings  data/encoded/biobert/training_biobert_avg.parquet \
+      --training-optimal-bow  data/encoded/ngrams/training_unigrams.parquet \
+      --training-labels  data/labels/training_labels.csv\
       --output-dir  data/results/final-pipeline 
    ````
 
@@ -204,10 +204,10 @@ Train the final pipeline (preprocessing, encoding, decoding) from scratch with o
 
    ````bash
    python scripts/train_test_final.py \
-      --path-train  data/subsets/dev_subset.parquet \
-      --train-labels  data/labels/dev_data.csv \
+      --path-train  data/subsets/training_subset.parquet \
+      --train-labels  data/labels/training_labels.csv \
       --path-test  data/subsets/test_subset.parquet \
-      --test-labels  data/labels/test_data.csv \
+      --test-labels  data/labels/test_labels.csv \
       --cv-dir  data/results/final-pipeline \
       --output-dir  data/results/final-pipeline \
       --train-pipeline  True 
