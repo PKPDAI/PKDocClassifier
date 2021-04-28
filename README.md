@@ -4,7 +4,8 @@
 
 [**PKDocClassifier**](#pkdocclassifier)| [**Data**](#data) | [**Reproduce our results**](#reproduce-our-results) | [**Make new predictions**](#make-new-predictions) | [**Citing**](#citation)
 
-This repository contains custom pipes and models to classify scientific publications from PubMed depending on whether they estimate pharmacokinetic (PK) parameters from _in vivo_ studies. The final pipeline retrieved more than 121K PK publications and runs weekly updates available at https://app.pkpdai.com/.
+This repository contains custom pipes and models to classify scientific publications from PubMed depending on whether they estimate pharmacokinetic (PK) parameters from _in vivo_ studies. The final pipeline retrieved more than 121K PK publications and runs weekly updates available at https://app.pkpdai.com/. The architectures in this repository are described in the following publication:
+https://wellcomeopenresearch.org/articles/6-88/v1
 
 ## Data
 
@@ -47,7 +48,7 @@ You will need an environment with **Python 3.7+**. We strongly recommend that yo
 ### 2. Data download and parsing - Optional
 
 If you would like to reproduce the steps taken for data retrieval and parsing you will need to download the whole MEDLINE dataset and store it into a spark dataframe. 
-However, you can also skip this step and use the parsed data available at [data/subsets/](https://github.com/fgh95/PKDocClassifier/tree/master/data/subsets). Alternatively, follow the steps at [pubmed_parser wiki](https://github.com/titipata/pubmed_parser/wiki/Download-and-preprocess-MEDLINE-dataset) and place the resulting `medline_lastview.parquet` file at _data/medline_lastview.parquet_. Then, change the [spark config file](https://github.com/fgh95/PKDocClassifier/blob/master/sparksetup/sparkconf.py) to your spark configuration and run:
+Alternatively, you can also skip this step and use the parsed data available at [data/subsets/](https://github.com/fgh95/PKDocClassifier/tree/master/data/subsets). Alternatively, follow the steps at [pubmed_parser wiki](https://github.com/titipata/pubmed_parser/wiki/Download-and-preprocess-MEDLINE-dataset) and place the resulting `medline_lastview.parquet` file at _data/medline_lastview.parquet_. Then, change the [spark config file](https://github.com/fgh95/PKDocClassifier/blob/master/sparksetup/sparkconf.py) to your spark configuration and run:
 
 ````bash
 python scripts/getready.py
@@ -251,7 +252,16 @@ You can reproduce this example on our jupyter notebook: [here](https://github.co
 
 ## Citation
 
-Cite the repository: 
-
-[![DOI](https://zenodo.org/badge/291502029.svg)](https://zenodo.org/badge/latestdoi/291502029)
+```bibtex
+@article{hernandez2021automated,
+  title={An automated approach to identify scientific publications reporting pharmacokinetic parameters},
+  author={Hernandez, Ferran Gonzalez and Carter, Simon J and Iso-Sipil{\"a}, Juha and Goldsmith, Paul and Almousa, Ahmed A and Gastine, Silke and Lilaonitkul, Watjana and Kloprogge, Frank and Standing, Joseph F},
+  journal={Wellcome Open Research},
+  volume={6},
+  number={88},
+  pages={88},
+  year={2021},
+  publisher={F1000 Research Limited}
+}
+```
 
