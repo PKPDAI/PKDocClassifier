@@ -1,4 +1,4 @@
-lxml==4.6.2
+lxml==4.6.3
 pandas == 1.1.1
 pubmed-parser @ git+https://github.com/fgh95/pubmed_parser.git@b4697873051b8a44de58ef0a43350a08a0e2f688
 pyspark==3.0.1
