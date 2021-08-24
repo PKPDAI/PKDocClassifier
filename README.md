@@ -74,6 +74,15 @@ This should generate the files at [data/subsets/](https://github.com/fgh95/PKDoc
       --path-labels data/labels/training_labels.csv \
       --overwrite True
    ````
+   Optional analysis using idf scores for reweighing:
+   ````bash
+   python scripts/bootstrap_bow.py \
+      --input-dir data/encoded/fields \
+      --output-dir data/results/fields \
+      --output-dir-bootstrap data/results/fields/bootstrap \
+      --path-labels data/labels/training_labels.csv \
+      --use-idf True
+   ````
 
 3. Bootstrap n-grams (**set overwrite to False if you want to skip this step**)
 

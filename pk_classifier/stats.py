@@ -44,8 +44,8 @@ def rename(inp_word):
     mapper = dict(res_title='Title', res_authors='Authors', res_journal='Journal', res_keywords='Keywords',
                   res_abstract='Abstract', res_chemical='Chemicals', res_mesh='MeSH', res_pub_type='Pub. Type',
                   res_affiliations='Affiliations', res_all='All fields', res_optimal='Opt. Fields',
-                  res_unigrams='Unigrams', res_bigrams='Bigrams', res_trigrams='Trigrams',
-                  res_specter='SPECTER', res_biobert_avg='BioBERT\nmean pooling',
+                  res_optimal_idf='Opt. Fields IDF', res_unigrams='Unigrams', res_bigrams='Bigrams',
+                  res_trigrams='Trigrams', res_specter='SPECTER', res_biobert_avg='BioBERT\nmean pooling',
                   res_biobert_all='BioBERT mean\n+ min&max pooling', res_biobert_all_bow='Unigrams\n+ BioBERT mean\n+ '
                                                                                          'min&max pooling',
                   res_biobert_avg_bow='Unigrams\n+ BioBERT\nmean pooling')
@@ -86,11 +86,12 @@ def get_all_results(inp_result_files, input_dir, output_dir, convert_latex):
     # idx_medians_sorted = range(0,len(idx_medians_sorted))
     all_for_boxplot = [all_for_boxplot[i] * 100 for i in idx_medians_sorted]
     all_for_boxplot_names = [rename(all_for_boxplot_names[i]) for i in idx_medians_sorted]
+
     fig7, ax7 = plt.subplots()
     fig7.set_figheight(40)
     fig7.set_figwidth(10)
 
-    plt.ylim(70, 90)
+    plt.ylim(55, 90)
     ax7.boxplot(all_for_boxplot, labels=all_for_boxplot_names, whis=[2.5, 97.5])
     plt.ylabel('F1-score (%)', fontsize=16)
     plt.xticks(rotation=65, fontsize=12)

@@ -12,7 +12,7 @@ from pk_classifier.bootstrap import simple_tokenizer, TextSelector, f1_eval, upd
 from pk_classifier.stats import plot_df
 
 
-def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figure, out_path_bootstrap):
+def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figure, out_path_bootstrap, use_idf):
     all_features, all_labs = read_in_bow(input_tuple[0], input_tuple[1])
 
     ids_per_test = make_ids_per_test(inp_df=all_labs)
@@ -41,7 +41,8 @@ def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figu
             print("Training with--- ", y_train.value_counts()["Relevant"], " ---Relevant instances")
         encoder = CountVectorizer(tokenizer=simple_tokenizer, ngram_range=(1, 1), lowercase=False, preprocessor=None,
                                   min_df=2)
-        normalizer = TfidfTransformer(norm="l1", use_idf=False)
+        normalizer = TfidfTransformer(norm="l1", use_idf=use_idf)
+
         decoder = xgb.XGBClassifier(random_state=rd_seed, n_jobs=-1, n_estimators=2000, objective='binary:logistic',
                                     max_depth=4, learning_rate=0.1, colsample_bytree=1.,
                                     scale_pos_weight=balancing_factor, nthread=-1)
@@ -113,7 +114,7 @@ def process_them(input_tuple, rounds, test_prop, out_path_results, out_path_figu
     ids_per_val.to_csv(out_path_bootstrap)
 
 
-def run(input_dir: str, output_dir: str, output_dir_bootstrap: str, path_labels: str, overwrite: bool):
+def run(input_dir: str, output_dir: str, output_dir_bootstrap: str, path_labels: str, overwrite: bool, use_idf: bool):
     if not os.path.isdir(output_dir):
         os.makedirs(output_dir, exist_ok=True)
     if not os.path.isdir(output_dir_bootstrap):
@@ -123,16 +124,20 @@ def run(input_dir: str, output_dir: str, output_dir_bootstrap: str, path_labels:
 
     for inp_file in inp_dev_files:
         inp_path = os.path.join(input_dir, inp_file)
-        experiment_name = inp_file.replace("dev_", "").replace(".parquet", "")
+        experiment_name = inp_file.replace("dev_", "").replace(".parquet", "").replace("training_", "")
+        if use_idf and "optimal" in experiment_name:
+            experiment_name += "_idf"
         print("================== ", experiment_name, "=============================")
         # Define output
         if "res_" + experiment_name + ".csv" not in os.listdir(output_dir) or overwrite:
+            print(os.listdir(output_dir))
+            print("res_" + experiment_name + ".csv")
             out_res = os.path.join(output_dir, "res_" + experiment_name + ".csv")
             out_fig = os.path.join(output_dir_bootstrap, "res_" + experiment_name + ".png")
             out_dev = os.path.join(output_dir_bootstrap, "bootstrap_" + experiment_name + ".csv")
             inp_tuple = (inp_path, path_labels)
             process_them(input_tuple=inp_tuple, rounds=200, test_prop=0.2, out_path_results=out_res,
-                         out_path_figure=out_fig, out_path_bootstrap=out_dev)
+                         out_path_figure=out_fig, out_path_bootstrap=out_dev, use_idf=use_idf)
         else:
             print("Ignoring ", experiment_name, " since there is already results files in output directory")
 
@@ -156,9 +161,11 @@ def main():
     parser.add_argument("--overwrite", type=bool, help="Whether to overwrite files if results already present in the "
                                                        "output directory.", default=False)
 
+    parser.add_argument("--use-idf", type=bool, help="Whether to use idf scores", default=False)
+
     args = parser.parse_args()
     run(input_dir=args.input_dir, output_dir=args.output_dir, output_dir_bootstrap=args.output_dir_bootstrap,
-        path_labels=args.path_labels, overwrite=args.overwrite)
+        path_labels=args.path_labels, overwrite=args.overwrite, use_idf=args.use_idf)
 
 
 if __name__ == '__main__':
