@@ -1,6 +1,6 @@
 lxml==4.6.3
 pandas == 1.1.1
-pubmed-parser @ git+git://github.com/fgh95/pubmed_parser.git@e33d13919a6cdfa34f30916b556a8577345d9d5c
+pubmed-parser @ git+git://github.com/fgh95/pubmed_parser.git@a1622cec1b153829e22fb984825be0dd815ca541
 pyspark==3.1.2
 findspark==1.4.2
 spacy==2.3.2
