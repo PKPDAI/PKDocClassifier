@@ -1,10 +1,10 @@
 # PKDocClassifier
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/fgh95/PKDocClassifier/blob/master/LICENSE) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://app.pkpdai.com/) ![version](https://img.shields.io/badge/version-0.1.0-blue) 
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/fgh95/PKDocClassifier/blob/master/LICENSE) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://pkpdai-search.com/) ![version](https://img.shields.io/badge/version-0.1.0-blue) 
 
 
 [**PKDocClassifier**](#pkdocclassifier)| [**Data**](#data) | [**Reproduce our results**](#reproduce-our-results) | [**Make new predictions**](#make-new-predictions) | [**Citing**](#citation)
 
-This repository contains custom pipes and models to classify scientific publications from PubMed depending on whether they estimate pharmacokinetic (PK) parameters from _in vivo_ studies. The final pipeline retrieved more than 121K PK publications and runs weekly updates available at https://app.pkpdai.com/. The architectures in this repository are described in the following publication: https://pubmed.ncbi.nlm.nih.gov/34381873/
+This repository contains custom pipes and models to classify scientific publications from PubMed depending on whether they estimate pharmacokinetic (PK) parameters from _in vivo_ studies. The final pipeline retrieved more than 121K PK publications and runs weekly updates available at https://pkpdai-search.com/. The architectures in this repository are described in the following publication: https://pubmed.ncbi.nlm.nih.gov/34381873/
 
 ## Data
 
