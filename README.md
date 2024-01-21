@@ -1,5 +1,5 @@
 # PKDocClassifier
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/fgh95/PKDocClassifier/blob/master/LICENSE) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://pkpdai-search.com/pkdocsearch) ![version](https://img.shields.io/badge/version-0.1.0-blue) 
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/fgh95/PKDocClassifier/blob/master/LICENSE) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://pkpdai.com/pkdocsearch) ![version](https://img.shields.io/badge/version-0.1.0-blue) 
 
 
 [**PKDocClassifier**](#pkdocclassifier)| [**Data**](#data) | [**Reproduce our results**](#reproduce-our-results) | [**Make new predictions**](#make-new-predictions) | [**Citing**](#citation)
